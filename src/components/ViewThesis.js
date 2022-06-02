@@ -15,7 +15,7 @@ export default class ViewThesis extends Component{
     }
     
     retrieveThesisPanels(){
-      axios.get("http://localhost:8000/ThesisPanels").then(res =>{
+      axios.get("https://afsliitproject.herokuapp.com/ThesisPanels").then(res =>{
         if(res.data.success){
           this.setState({
             thesis:res.data.existingThesisPanels
@@ -29,7 +29,7 @@ export default class ViewThesis extends Component{
     
     onDelete = (id) =>{
     
-      axios.delete(`http://localhost:8000/ThesisPanels/delete/${id}`).then((res)=>{
+      axios.delete(`https://afsliitproject.herokuapp.com/ThesisPanels/delete/${id}`).then((res)=>{
           alert("Delete successfully");
           this.retrieveThesisPanels();
             
@@ -49,7 +49,7 @@ export default class ViewThesis extends Component{
     handleSearchArea = (e) =>{
       const searchKey = e.currentTarget.value;
     
-      axios.get("http://localhost:8000/ThesisPanels").then(res=>{
+      axios.get("https://afsliitproject.herokuapp.com/ThesisPanels").then(res=>{
         if(res.data.success){
           this.filterData(res.data.existingThesisPanels,searchKey)
         }

@@ -167,7 +167,7 @@ onSubmit=(e)=>{
 
 
   //save data
-  axios.post("http://localhost:8000/PanelEves/savePost",data).then((res) =>{
+  axios.post("https://afsliitproject.herokuapp.com/PanelEves/savePost",data).then((res) =>{
     if(res.data.success){
       this.setState(
         {

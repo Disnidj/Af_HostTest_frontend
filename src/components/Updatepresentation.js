@@ -64,7 +64,7 @@ export default function UpdatePresentation()  {
       
 
          console.log(id)
-         await axios.put(`http://localhost:8000/PresentationPanels/update/${id?.id}`,present)
+         await axios.put(`https://afsliitproject.herokuapp.com/PresentationPanels/update/${id?.id}`,present)
          .then(res=>{
              console.log("return data",res);
             alert("Update Successfull!!");
@@ -79,7 +79,7 @@ export default function UpdatePresentation()  {
 
          useEffect(function effectFunction() {
              console.log("get ID",id);
-            axios.get(`http://localhost:8000/PresentationPanels/${id?.id}`)
+            axios.get(`https://afsliitproject.herokuapp.com/PresentationPanels/${id?.id}`)
             .then(res=>{
                 console.log("data",res);
                 setGroupId(res.data.present.GroupId);

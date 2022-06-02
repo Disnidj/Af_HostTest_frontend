@@ -23,7 +23,7 @@ const StudentAdd = () => {
       }
 
 
-      const res = await fetch(`http://localhost:8000/stdSubmit`, {
+      const res = await fetch(`https://afsliitproject.herokuapp.com/stdSubmit`, {
         method: "POST",
         body: data,
       });

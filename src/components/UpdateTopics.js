@@ -64,7 +64,7 @@ export default function UpdateTpics()  {
       
 
          console.log(id)
-         await axios.put(`http://localhost:8000/TopicPanels/update/${id?.id}`,topic)
+         await axios.put(`https://afsliitproject.herokuapp.com/TopicPanels/update/${id?.id}`,topic)
          .then(res=>{
              console.log("return data",res);
             alert("Update Successfull!!");
@@ -79,7 +79,7 @@ export default function UpdateTpics()  {
 
          useEffect(function effectFunction() {
              console.log("get ID",id);
-            axios.get(`http://localhost:8000/TopicPanels/${id?.id}`)
+            axios.get(`https://afsliitproject.herokuapp.com/TopicPanels/${id?.id}`)
             .then(res=>{
                 console.log("data",res);
                 setGroupId(res.data.topic.GroupId);

@@ -14,7 +14,7 @@
 //     componentDidMount(){
 //         const id = this.props.match.params.id;
  
-//         axios.get(`http://localhost:8000/travelor/${id}`).then((res)=>{  //post ->postRamona
+//         axios.get(`https://afsliitproject.herokuapp.com/travelor/${id}`).then((res)=>{  //post ->postRamona
 //             if(res.data.success){
 //                 this.setState({
 //                     travelor:res.data.travelor
@@ -128,7 +128,7 @@ export default function UpdateDetails()  {
       
 
          console.log(id)
-         await axios.put(`http://localhost:8000/group/update/${id?.id}`,group)
+         await axios.put(`https://afsliitproject.herokuapp.com/group/update/${id?.id}`,group)
          .then(res=>{
              console.log("return data",res);
             alert("Group is updated successfully!!");
@@ -142,7 +142,7 @@ export default function UpdateDetails()  {
         
         onDelete = (id) =>{
 
-          axios.delete(`http://localhost:8000/group/delete/${id}`).then((res) =>{
+          axios.delete(`https://afsliitproject.herokuapp.com/group/delete/${id}`).then((res) =>{
             alert("Deleted successfully!");
             this.retriveGroups();
           })
@@ -150,7 +150,7 @@ export default function UpdateDetails()  {
 
          useEffect(function effectFunction() {
              console.log("get ID",id);
-            axios.get(`http://localhost:8000/group/${id?.id}`)
+            axios.get(`https://afsliitproject.herokuapp.com/group/${id?.id}`)
             .then(res=>{
                 console.log("data",res);
                 setGName(res.data.group.GName);

@@ -31,7 +31,7 @@ import axios from 'axios';
       }
 
       console.log(data)
-      axios.post("http://localhost:8000/area/save",data).then((res) =>{
+      axios.post("https://afsliitproject.herokuapp.com/area/save",data).then((res) =>{
         if(res.data.success){
           this.setState(
             {

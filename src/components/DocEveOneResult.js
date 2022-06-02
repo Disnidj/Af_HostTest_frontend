@@ -57,7 +57,7 @@ export default function DocEveOneResult()  {
 
          useEffect(function effectFunction() {
              console.log("get ID",id);
-            axios.get(`http://localhost:8000/getOneDetailsuper/${id?.id}`)
+            axios.get(`https://afsliitproject.herokuapp.com/getOneDetailsuper/${id?.id}`)
             .then(res=>{
                 console.log("data",res);
                 setGroupname(res.data.getOneDetail.Groupname);

@@ -33,7 +33,7 @@ import axios from 'axios';
       }
 
       console.log(data)
-      axios.post("http://localhost:8000/area/save",data).then((res) =>{
+      axios.post("https://afsliitproject.herokuapp.com/area/save",data).then((res) =>{
         if(res.data.success){
           this.setState(
             {
@@ -50,7 +50,7 @@ import axios from 'axios';
   }
 
 retriveAreas(){
-  axios.get("http://localhost:8000/areas").then(res=>{
+  axios.get("https://afsliitproject.herokuapp.com/areas").then(res=>{
     if(res.data.success){
       this.setState({
         areas:res.data.existingAreas
@@ -73,7 +73,7 @@ filterData(areas,searchKey){
 handleSearchArea = (e) =>{
   const searchKey = e.currentTarget.value;
 
-  axios.get("http://localhost:8000/areas").then(res=>{
+  axios.get("https://afsliitproject.herokuapp.com/areas").then(res=>{
     if(res.data.success){
       this.filterData(res.data.existingAreas,searchKey)
     }

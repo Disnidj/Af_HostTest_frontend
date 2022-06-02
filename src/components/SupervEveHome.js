@@ -21,7 +21,7 @@ export default class SupervEveHome extends Component {
 
   //get request method
   retrievePanelEve(){
-      axios.get("http://localhost:8000/GetAlldetailssuper").then(res=>{
+      axios.get("https://afsliitproject.herokuapp.com/GetAlldetailssuper").then(res=>{
         console.log(res.data);
        
         if(res.data.success){
@@ -37,7 +37,7 @@ export default class SupervEveHome extends Component {
  //delete function
 
  onDelete = (id)=>{
-  axios.delete(`http://localhost:8000/SuperviEve/delete/${id}`).then((res)=>{
+  axios.delete(`https://afsliitproject.herokuapp.com/SuperviEve/delete/${id}`).then((res)=>{
 
     
 
@@ -66,7 +66,7 @@ handleSearchArea=(e)=>{
 
   const searchKey = e.currentTarget.value;
   
-  axios.get("http://localhost:8000/GetAlldetailssuper").then(res=>{
+  axios.get("https://afsliitproject.herokuapp.com/GetAlldetailssuper").then(res=>{
   if(res.data.success){
   
     this.filterData(res.data.existingDocs,searchKey)

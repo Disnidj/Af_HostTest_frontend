@@ -21,7 +21,7 @@ export default class PanelEveHome extends Component {
 
   //get request method
   retrievePanelEve(){
-      axios.get("http://localhost:8000/GetAlldetails").then(res=>{
+      axios.get("https://afsliitproject.herokuapp.com/GetAlldetails").then(res=>{
         console.log(res.data);
        
         if(res.data.success){
@@ -37,7 +37,7 @@ export default class PanelEveHome extends Component {
  //delete function
 
  onDelete = (id)=>{
-  axios.delete(`http://localhost:8000/stdDetails/delete/${id}`).then((res)=>{
+  axios.delete(`https://afsliitproject.herokuapp.com/stdDetails/delete/${id}`).then((res)=>{
 
     
 
@@ -66,7 +66,7 @@ handleSearchArea=(e)=>{
 
   const searchKey = e.currentTarget.value;
   
-  axios.get("http://localhost:8000/GetAlldetails").then(res=>{
+  axios.get("https://afsliitproject.herokuapp.com/GetAlldetails").then(res=>{
   if(res.data.success){
   
     this.filterData(res.data.existingDocs,searchKey)

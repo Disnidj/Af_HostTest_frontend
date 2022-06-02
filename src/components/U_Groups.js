@@ -15,7 +15,7 @@ export default class Home extends Component {
   }
 
 retriveGroups(){
-  axios.get("http://localhost:8000/groups").then(res=>{
+  axios.get("https://afsliitproject.herokuapp.com/groups").then(res=>{
     if(res.data.success){
       this.setState({
         groups:res.data.existingGroups
@@ -40,7 +40,7 @@ filterData(groups,searchKey){
 handleSearchArea = (e) =>{
   const searchKey = e.currentTarget.value;
 
-  axios.get("http://localhost:8000/groups").then(res=>{
+  axios.get("https://afsliitproject.herokuapp.com/groups").then(res=>{
     if(res.data.success){
       this.filterData(res.data.existingGroups,searchKey)
     }

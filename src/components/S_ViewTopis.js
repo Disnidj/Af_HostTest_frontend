@@ -15,7 +15,7 @@ export default class ViewTopis extends Component{
     }
     
     retrieveTopicpanel(){
-      axios.get("http://localhost:8000/TopicPanels").then(res =>{
+      axios.get("https://afsliitproject.herokuapp.com/TopicPanels").then(res =>{
         if(res.data.success){
           this.setState({
             topic:res.data.existingTopicPanels
@@ -42,7 +42,7 @@ export default class ViewTopis extends Component{
     handleSearchArea = (e) =>{
       const searchKey = e.currentTarget.value;
     
-      axios.get("http://localhost:8000/TopicPanels").then(res=>{
+      axios.get("https://afsliitproject.herokuapp.com/TopicPanels").then(res=>{
         if(res.data.success){
           this.filterData(res.data.existingTopicPanels,searchKey)
         }

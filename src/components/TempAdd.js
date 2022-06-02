@@ -23,7 +23,7 @@ const TempAdd = () => {
       }
 
 
-      const res = await fetch(`http://localhost:8000/Tempadmin`, {
+      const res = await fetch(`https://afsliitproject.herokuapp.com/Tempadmin`, {
         method: "POST",
         body: data,
       });

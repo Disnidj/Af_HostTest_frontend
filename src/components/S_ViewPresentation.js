@@ -15,7 +15,7 @@ export default class ViewPresentation extends Component{
     }
     
     retrievePresentationPanels(){
-      axios.get("http://localhost:8000/PresentationPanels").then(res =>{
+      axios.get("https://afsliitproject.herokuapp.com/PresentationPanels").then(res =>{
         if(res.data.success){
           this.setState({
             present:res.data.existingPresentationPanels
@@ -41,7 +41,7 @@ export default class ViewPresentation extends Component{
     handleSearchArea = (e) =>{
       const searchKey = e.currentTarget.value;
     
-      axios.get("http://localhost:8000/PresentationPanels").then(res=>{
+      axios.get("https://afsliitproject.herokuapp.com/PresentationPanels").then(res=>{
         if(res.data.success){
           this.filterData(res.data.existingPresentationPanels,searchKey)
         }

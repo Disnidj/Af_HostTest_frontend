@@ -6,7 +6,7 @@ const STDHome = () => {
 
  useEffect(() => {
     const fetchUsers = async () => {
-      const res = await fetch(`http://localhost:8000/stdSubmit`);
+      const res = await fetch(`https://afsliitproject.herokuapp.com/stdSubmit`);
       const data = await res.json();
       setUsers(data);
     };

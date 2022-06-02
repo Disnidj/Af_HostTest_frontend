@@ -2,12 +2,12 @@ import axios from 'axios';
 
 
 
-let LoginURL = "http://localhost:8000/signin";
-let AuthURL = "http://localhost:8000/auth";
-let getAllUsers = "http://localhost:8000/getallusers";
-let Createuser = "http://localhost:8000/createUser";
-let Updateuser = "http://localhost:8000/user/updateUserById/";
-let Deleteuser = "http://localhost:8000/user/deleteUser/";
+let LoginURL = "https://afsliitproject.herokuapp.com/signin";
+let AuthURL = "https://afsliitproject.herokuapp.com/auth";
+let getAllUsers = "https://afsliitproject.herokuapp.com/getallusers";
+let Createuser = "https://afsliitproject.herokuapp.com/createUser";
+let Updateuser = "https://afsliitproject.herokuapp.com/user/updateUserById/";
+let Deleteuser = "https://afsliitproject.herokuapp.com/user/deleteUser/";
 
 export async function RegisterCustomer(data) {
     const alldata = {

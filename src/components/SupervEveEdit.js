@@ -127,7 +127,7 @@ export default function SupervEveEdit()  {
       
 
          console.log(id)
-         await axios.put(`http://localhost:8000/SuperviEve/update/${id?.id}`,paneleve)
+         await axios.put(`https://afsliitproject.herokuapp.com/SuperviEve/update/${id?.id}`,paneleve)
          .then(res=>{
              console.log("return data",res);
             alert("Update Successfull!!");
@@ -142,7 +142,7 @@ export default function SupervEveEdit()  {
 
          useEffect(function effectFunction() {
              console.log("get ID",id);
-            axios.get(`http://localhost:8000/getOneDetailsuper/${id?.id}`)
+            axios.get(`https://afsliitproject.herokuapp.com/getOneDetailsuper/${id?.id}`)
             .then(res=>{
               console.log("data",res);
               setGroupname(res.data.getOneDetail.Groupname);

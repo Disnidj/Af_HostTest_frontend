@@ -45,7 +45,7 @@ handleInputChange = (e) =>{
      console.log(data);
    
     
-     axios.post(`http://localhost:8000/ThesisPanels/save`,data).then((res)=>{
+     axios.post(`https://afsliitproject.herokuapp.com/ThesisPanels/save`,data).then((res)=>{
         console.log(data);
          if(res.data.success){
              this.setState(

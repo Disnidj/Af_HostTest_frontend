@@ -40,7 +40,7 @@ export default function PresEveOneResult()  {
 
          useEffect(function effectFunction() {
              console.log("get ID",id);
-            axios.get(`http://localhost:8000/getOneDetail/${id?.id}`)
+            axios.get(`https://afsliitproject.herokuapp.com/getOneDetail/${id?.id}`)
             .then(res=>{
                 console.log("data",res);
                 setGroupname(res.data.getOneDetail.Groupname);

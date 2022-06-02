@@ -15,7 +15,7 @@ export default class Areas extends Component {
   }
 
 retriveAreas(){
-  axios.get("http://localhost:8000/areas").then(res=>{
+  axios.get("https://afsliitproject.herokuapp.com/areas").then(res=>{
     if(res.data.success){
       this.setState({
         areas:res.data.existingAreas
@@ -40,7 +40,7 @@ filterData(areas,searchKey){
 handleSearchArea = (e) =>{
   const searchKey = e.currentTarget.value;
 
-  axios.get("http://localhost:8000/areas").then(res=>{
+  axios.get("https://afsliitproject.herokuapp.com/areas").then(res=>{
     if(res.data.success){
       this.filterData(res.data.existingAreas,searchKey)
     }

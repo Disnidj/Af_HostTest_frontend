@@ -6,7 +6,7 @@ const DocumentDownload = () => {
 
  useEffect(() => {
     const fetchUsers = async () => {
-      const res = await fetch(`http://localhost:8000/admin`);
+      const res = await fetch(`https://afsliitproject.herokuapp.com/admin`);
       const data = await res.json();
       setUsers(data);
     };

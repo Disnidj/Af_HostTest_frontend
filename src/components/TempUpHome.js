@@ -6,7 +6,7 @@ const TempUploadHome = () => {
 
  useEffect(() => {
     const fetchUsers = async () => {
-      const res = await fetch(`http://localhost:8000/Tempadmin`);
+      const res = await fetch(`https://afsliitproject.herokuapp.com/Tempadmin`);
       const data = await res.json();
       setUsers(data);
     };
