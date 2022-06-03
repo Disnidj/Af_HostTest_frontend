@@ -6032,6 +6032,10 @@ function $59177492ce9c1b4e$export$2e2bcd8739ae039() {
 
 
 
+var $dd49d813c6064bd2$exports = {};
+$dd49d813c6064bd2$exports = new URL("register.34837ad6.jpg", "file:" + __filename).toString();
+
+
 class $89b2533ccfee3b3f$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
     constructor(props){
         super(props);
@@ -6116,12 +6120,12 @@ class $89b2533ccfee3b3f$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                                                 className: "nav-item",
                                                 children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
                                                     className: "nav-link",
-                                                    href: "/topicReg",
+                                                    href: "/groups",
                                                     style: {
                                                         fontsize: '15px',
                                                         color: 'rgb(255,255,255)'
                                                     },
-                                                    children: "Topic Registration"
+                                                    children: "Registered Groups"
                                                 })
                                             }),
                                             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
@@ -6140,24 +6144,36 @@ class $89b2533ccfee3b3f$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                                                 className: "nav-item",
                                                 children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
                                                     className: "nav-link",
-                                                    href: "#",
+                                                    href: "/EvaluationResult",
                                                     style: {
                                                         fontsize: '15px',
                                                         color: 'rgb(255,255,255)'
                                                     },
-                                                    children: "Panel Evaluations"
+                                                    children: "Panel Evaluations Results"
                                                 })
                                             }),
                                             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
                                                 className: "nav-item",
                                                 children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
                                                     className: "nav-link",
-                                                    href: "#",
+                                                    href: "/STDdownloads",
                                                     style: {
                                                         fontsize: '15px',
                                                         color: 'rgb(255,255,255)'
                                                     },
                                                     children: "Documents and templates"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                                className: "nav-item",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    className: "nav-link",
+                                                    href: "/SubmitNavbar",
+                                                    style: {
+                                                        fontsize: '15px',
+                                                        color: 'rgb(255,255,255)'
+                                                    },
+                                                    children: "Documents Submission page"
                                                 })
                                             }),
                                             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
@@ -6168,7 +6184,7 @@ class $89b2533ccfee3b3f$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                                                         height: "40px",
                                                         width: "100px",
                                                         marginTop: "8px",
-                                                        marginLeft: "900px"
+                                                        marginLeft: "800px"
                                                     },
                                                     children: "Log Out"
                                                 })
@@ -6185,24 +6201,39 @@ class $89b2533ccfee3b3f$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                     children: [
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
                             style: {
-                                height: '80px',
+                                height: '150px',
                                 width: '100%',
                                 backgroundColor: "#080523",
                                 marginTop: '-20px'
                             },
                             children: [
                                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h2", {
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("h2", {
                                     style: {
                                         color: 'white',
                                         textAlign: 'center'
                                     },
-                                    children: "Group Registration Form"
+                                    children: [
+                                        " ",
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
+                                            src: (/*@__PURE__*/$parcel$interopDefault($dd49d813c6064bd2$exports)),
+                                            class: "mx-auto",
+                                            alt: "",
+                                            width: "100",
+                                            height: "100"
+                                        }),
+                                        "Group Registration Form"
+                                    ]
                                 }),
                                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
                             ]
                         }),
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
+                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("b", {
+                                children: "Step 1 : Form a group with four members and register your group here with a group name and with the credentials of the group leader. Once you register your group you are able to start with your research project work."
+                            })
+                        }),
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
                             children: [
                                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("form", {
@@ -6339,17 +6370,7 @@ class $89b2533ccfee3b3f$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                                                     href: "/",
                                                     children: "Submit"
                                                 }),
-                                                "\xa0",
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
-                                                    type: "button",
-                                                    children: [
-                                                        " ",
-                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                            href: '/groups',
-                                                            children: "Click here to view all Groups "
-                                                        })
-                                                    ]
-                                                })
+                                                "\xa0"
                                             ]
                                         }),
                                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
@@ -6367,6 +6388,10 @@ class $89b2533ccfee3b3f$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
 
 
 
+
+
+var $67ddde14cdecaf6d$exports = {};
+$67ddde14cdecaf6d$exports = new URL("group.6682a512.png", "file:" + __filename).toString();
 
 
 class $739a5b9bddd5848e$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
@@ -6446,12 +6471,12 @@ class $739a5b9bddd5848e$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                                                 className: "nav-item",
                                                 children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
                                                     className: "nav-link",
-                                                    href: "/topicReg",
+                                                    href: "/groups",
                                                     style: {
                                                         fontsize: '15px',
                                                         color: 'rgb(255,255,255)'
                                                     },
-                                                    children: "Topic Registration"
+                                                    children: "Registered Groups"
                                                 })
                                             }),
                                             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
@@ -6470,24 +6495,36 @@ class $739a5b9bddd5848e$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                                                 className: "nav-item",
                                                 children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
                                                     className: "nav-link",
-                                                    href: "#",
+                                                    href: "/EvaluationResult",
                                                     style: {
                                                         fontsize: '15px',
                                                         color: 'rgb(255,255,255)'
                                                     },
-                                                    children: "Panel Evaluations"
+                                                    children: "Panel Evaluations Results"
                                                 })
                                             }),
                                             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
                                                 className: "nav-item",
                                                 children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
                                                     className: "nav-link",
-                                                    href: "#",
+                                                    href: "/STDdownloads",
                                                     style: {
                                                         fontsize: '15px',
                                                         color: 'rgb(255,255,255)'
                                                     },
                                                     children: "Documents and templates"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                                className: "nav-item",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    className: "nav-link",
+                                                    href: "/SubmitNavbar",
+                                                    style: {
+                                                        fontsize: '15px',
+                                                        color: 'rgb(255,255,255)'
+                                                    },
+                                                    children: "Documents Submission page"
                                                 })
                                             }),
                                             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
@@ -6498,7 +6535,7 @@ class $739a5b9bddd5848e$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                                                         height: "40px",
                                                         width: "100px",
                                                         marginTop: "8px",
-                                                        marginLeft: "900px"
+                                                        marginLeft: "800px"
                                                     },
                                                     children: "Log Out"
                                                 })
@@ -6514,12 +6551,42 @@ class $739a5b9bddd5848e$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                     className: "container",
                     children: [
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
-                            children: "Registered Groups"
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                            style: {
+                                height: '140px',
+                                width: '100%',
+                                backgroundColor: "#080523",
+                                marginTop: '-20px'
+                            },
+                            children: [
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("h2", {
+                                    style: {
+                                        color: 'white',
+                                        textAlign: 'center'
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
+                                            src: (/*@__PURE__*/$parcel$interopDefault($67ddde14cdecaf6d$exports)),
+                                            class: "mx-auto",
+                                            alt: "",
+                                            width: "150",
+                                            height: "100"
+                                        }),
+                                        "\xa0Registered Groups"
+                                    ]
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
+                            ]
                         }),
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
+                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("b", {
+                                children: "Step 2 : You can search for your group by the name you gave to the group and see the details you have entered. If you wish to change any information or delete the registered group you can click on the group name and continue."
+                            })
+                        }),
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
                             className: "col-lg-9 mt-2 mb-2",
                             children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
@@ -6616,6 +6683,10 @@ class $739a5b9bddd5848e$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
 
 
 
+var $cbe5f43fa61f963a$exports = {};
+$cbe5f43fa61f963a$exports = new URL("topic.e6485041.png", "file:" + __filename).toString();
+
+
 class $378695bfd0e51975$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
     constructor(props){
         super(props);
@@ -6709,12 +6780,12 @@ class $378695bfd0e51975$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                                                 className: "nav-item",
                                                 children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
                                                     className: "nav-link",
-                                                    href: "/topicReg",
+                                                    href: "/groups",
                                                     style: {
                                                         fontsize: '15px',
                                                         color: 'rgb(255,255,255)'
                                                     },
-                                                    children: "Topic Registration"
+                                                    children: "Registered Groups"
                                                 })
                                             }),
                                             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
@@ -6733,24 +6804,36 @@ class $378695bfd0e51975$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                                                 className: "nav-item",
                                                 children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
                                                     className: "nav-link",
-                                                    href: "#",
+                                                    href: "/EvaluationResult",
                                                     style: {
                                                         fontsize: '15px',
                                                         color: 'rgb(255,255,255)'
                                                     },
-                                                    children: "Panel Evaluations"
+                                                    children: "Panel Evaluations Results"
                                                 })
                                             }),
                                             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
                                                 className: "nav-item",
                                                 children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
                                                     className: "nav-link",
-                                                    href: "#",
+                                                    href: "/STDdownloads",
                                                     style: {
                                                         fontsize: '15px',
                                                         color: 'rgb(255,255,255)'
                                                     },
                                                     children: "Documents and templates"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                                className: "nav-item",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    className: "nav-link",
+                                                    href: "/SubmitNavbar",
+                                                    style: {
+                                                        fontsize: '15px',
+                                                        color: 'rgb(255,255,255)'
+                                                    },
+                                                    children: "Documents Submission page"
                                                 })
                                             }),
                                             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
@@ -6761,7 +6844,7 @@ class $378695bfd0e51975$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                                                         height: "40px",
                                                         width: "100px",
                                                         marginTop: "8px",
-                                                        marginLeft: "900px"
+                                                        marginLeft: "800px"
                                                     },
                                                     children: "Log Out"
                                                 })
@@ -6778,19 +6861,28 @@ class $378695bfd0e51975$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                     children: [
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
                             style: {
-                                height: '80px',
+                                height: '150px',
                                 width: '100%',
                                 backgroundColor: "#080523",
                                 marginTop: '-20px'
                             },
                             children: [
                                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h2", {
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("h2", {
                                     style: {
                                         color: 'white',
                                         textAlign: 'center'
                                     },
-                                    children: "Topic Registration Form"
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
+                                            src: (/*@__PURE__*/$parcel$interopDefault($cbe5f43fa61f963a$exports)),
+                                            class: "mx-auto",
+                                            alt: "",
+                                            width: "130",
+                                            height: "100"
+                                        }),
+                                        "\xa0Topic Registration Form"
+                                    ]
                                 }),
                                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
                             ]
@@ -6798,6 +6890,11 @@ class $378695bfd0e51975$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
                             children: [
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
+                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("b", {
+                                        children: "Step 5 - You can now register your selected topic here with the names of the supervisors and co-supervisors you wish to work with for the project. After registering your topic the supervisor responds to your request, so you can proceed with the work."
+                                    })
+                                }),
                                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("form", {
                                     className: "row g-3",
                                     children: [
@@ -6839,6 +6936,7 @@ class $378695bfd0e51975$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                                                 })
                                             ]
                                         }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
                                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
                                             className: "form-group",
                                             children: [
@@ -6876,6 +6974,542 @@ class $378695bfd0e51975$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                                                     required: true
                                                 })
                                             ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                                            class: "p-3 mb-2 bg-secondary text-white",
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("table", {
+                                                width: "1000px",
+                                                style: {
+                                                    fontFamily: "-moz-initial"
+                                                },
+                                                children: [
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("thead", {
+                                                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                                            children: [
+                                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("u", {
+                                                                        children: "Supervisors for IT Specialization"
+                                                                    })
+                                                                }),
+                                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("u", {
+                                                                        children: "Co-Supervisors for IT Specialization"
+                                                                    })
+                                                                }),
+                                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("u", {
+                                                                        children: "Supervisors for SE Specialization"
+                                                                    })
+                                                                }),
+                                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("th", {
+                                                                    children: [
+                                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("u", {
+                                                                            children: "Co-Supervisors for SE Specialization"
+                                                                        }),
+                                                                        " "
+                                                                    ]
+                                                                })
+                                                            ]
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tbody", {
+                                                        children: [
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                                                children: [
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Kamal Gamage"
+                                                                    }),
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. Nimal Silva"
+                                                                    }),
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Malan Gamage"
+                                                                    }),
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. Ruwan Silva"
+                                                                    })
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                                                children: [
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Warun Perera"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Anura Perera"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Arun Perera"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Olu Perera"
+                                                                    })
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                                                children: [
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Jayaweera Fernando"
+                                                                    }),
+                                                                    "  ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. Adithaya Silava"
+                                                                    }),
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Jayaweera Fernando"
+                                                                    }),
+                                                                    "  ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. Ayesh Silava"
+                                                                    }),
+                                                                    " "
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                                                children: [
+                                                                    "  ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Nimal Gamage"
+                                                                    }),
+                                                                    "    ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. Jayaweera Fernando"
+                                                                    }),
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Kamlee Gamage"
+                                                                    }),
+                                                                    "    ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. Poojani Fernando"
+                                                                    }),
+                                                                    " "
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                                                children: [
+                                                                    "  ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Nuwan Perera"
+                                                                    }),
+                                                                    "     ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: " Assit Lec. Gunarathna Fernando"
+                                                                    }),
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Miran Perera"
+                                                                    }),
+                                                                    "    ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: " Assit Lec. Ruwan Fernando"
+                                                                    })
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                                                children: [
+                                                                    "  ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Lakshika Perera"
+                                                                    }),
+                                                                    "    ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. Jayaweera Fernando"
+                                                                    }),
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Nuwani Perera"
+                                                                    }),
+                                                                    "    ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. Disni Fernando"
+                                                                    }),
+                                                                    "  "
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                                                children: [
+                                                                    " Assit Lec. Gunarathna Fernando    ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. Nirmani Fernando"
+                                                                    }),
+                                                                    "Assit Lec. Waruni Fernando    ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. Randimal Fernando"
+                                                                    }),
+                                                                    " "
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                                                children: [
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Nimalee Perera"
+                                                                    }),
+                                                                    "    ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. Wihara Fernando"
+                                                                    }),
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Rasika Perera"
+                                                                    }),
+                                                                    "    ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. Wihara Fernando"
+                                                                    }),
+                                                                    " "
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                                                children: [
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Awan Perera"
+                                                                    }),
+                                                                    "  ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. Jayaweera Silva"
+                                                                    }),
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Malee Perera"
+                                                                    }),
+                                                                    "  ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. Jayaweera Silva"
+                                                                    })
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                                                children: [
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Assit Lec. Warun Perera"
+                                                                    }),
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. madanayaka Fernando"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Assit Lec. Anjalee Perera"
+                                                                    }),
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. madanayaka Fernando"
+                                                                    })
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                                                children: [
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Sauri Fernando"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: " Assit Lec. Anuni Fernando"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Supipi Fernando"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: " Assit Lec. Anuni Fernando"
+                                                                    }),
+                                                                    " "
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                                                children: [
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("u", {
+                                                                            children: "Supervisors for DS Specialization"
+                                                                        })
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("u", {
+                                                                            children: "Co-Supervisors for DS Specialization"
+                                                                        })
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("u", {
+                                                                            children: "Supervisors for IM Specialization"
+                                                                        })
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("u", {
+                                                                            children: "Co-Supervisors for IM Specialization"
+                                                                        })
+                                                                    }),
+                                                                    " "
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                                                children: [
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Malan Gamage"
+                                                                    }),
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. Ruwan Silva"
+                                                                    }),
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Malan Gamage"
+                                                                    }),
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. Ruwan Silva"
+                                                                    })
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                                                children: [
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Arun Perera"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Olu Perera"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Arun Perera"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Olu Perera"
+                                                                    })
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                                                children: [
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Jayaweera Fernando"
+                                                                    }),
+                                                                    "  ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. Ayesh Silava"
+                                                                    }),
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Jayaweera Fernando"
+                                                                    }),
+                                                                    "  ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. Ayesh Silava"
+                                                                    })
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                                                children: [
+                                                                    "  ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Kamlee Gamage"
+                                                                    }),
+                                                                    "    ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. Poojani Fernando"
+                                                                    }),
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Kamlee Gamage"
+                                                                    }),
+                                                                    "    ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. Poojani Fernando"
+                                                                    })
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                                                children: [
+                                                                    "  ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Miran Perera"
+                                                                    }),
+                                                                    "     ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: " Assit Lec. Ruwan Fernando"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Miran Perera"
+                                                                    }),
+                                                                    "     ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: " Assit Lec. Ruwan Fernando"
+                                                                    })
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                                                children: [
+                                                                    "  ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Nuwani Perera"
+                                                                    }),
+                                                                    "    ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. Disni Fernando"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Nuwani Perera"
+                                                                    }),
+                                                                    "    ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. Disni Fernando"
+                                                                    }),
+                                                                    " "
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                                                children: [
+                                                                    " Assit Lec. Waruni Fernando    ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. Randimal Fernando"
+                                                                    }),
+                                                                    "Assit Lec. Waruni Fernando    ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. Randimal Fernando"
+                                                                    }),
+                                                                    " "
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                                                children: [
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Rasika Perera"
+                                                                    }),
+                                                                    "    ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. Wihara Fernando"
+                                                                    }),
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Rasika Perera"
+                                                                    }),
+                                                                    "    ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. Wihara Fernando"
+                                                                    }),
+                                                                    " "
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                                                children: [
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Malee Perera"
+                                                                    }),
+                                                                    "  ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. Jayaweera Silva"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Malee Perera"
+                                                                    }),
+                                                                    "  ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. Jayaweera Silva"
+                                                                    })
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                                                children: [
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Assit Lec. Anjalee Perera"
+                                                                    }),
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. madanayaka Fernando"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Assit Lec. Anjalee Perera"
+                                                                    }),
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "inst. madanayaka Fernando"
+                                                                    })
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                                                children: [
+                                                                    " ",
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Supipi Fernando"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: " Assit Lec. Anuni Fernando"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: "Lec. Supipi Fernando"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                                        children: " Assit Lec. Anuni Fernando"
+                                                                    }),
+                                                                    " "
+                                                                ]
+                                                            })
+                                                        ]
+                                                    })
+                                                ]
+                                            })
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                            className: "form-group",
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                    for: "inputAddress2",
+                                                    className: "form-label",
+                                                    children: "Supervisor state : "
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                    type: "text",
+                                                    className: "form-control",
+                                                    name: "SState",
+                                                    value: this.state.SState,
+                                                    list: "SStates",
+                                                    placeholder: "Select the response as pending until the supervisor confrims",
+                                                    onChange: this.handleChange
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("datalist", {
+                                            id: "SStates",
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("option", {
+                                                value: "Supervisor response - pending"
+                                            })
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                            className: "form-group",
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                    for: "inputAddress2",
+                                                    className: "form-label",
+                                                    children: "Co-Supervisor State : "
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                    type: "text",
+                                                    className: "form-control",
+                                                    name: "CState",
+                                                    value: this.state.CState,
+                                                    list: "CStates",
+                                                    placeholder: "Select the response as pending until the supervisor confrims",
+                                                    onChange: this.handleChange
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("datalist", {
+                                            id: "CStates",
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("option", {
+                                                value: "Co-Supervisor response - pending"
+                                            })
                                         }),
                                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
                                             className: "form-group",
@@ -6916,72 +7550,6 @@ class $378695bfd0e51975$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                                                     value: this.state.Leader,
                                                     placeholder: "IT number of the leader",
                                                     onChange: this.handleChange
-                                                })
-                                            ]
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                                            className: "form-group",
-                                            children: [
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
-                                                    for: "inputAddress2",
-                                                    className: "form-label",
-                                                    children: "Supervisor state : "
-                                                }),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
-                                                    type: "text",
-                                                    className: "form-control",
-                                                    name: "SState",
-                                                    value: this.state.SState,
-                                                    list: "SStates",
-                                                    placeholder: "Response of the Supervisor",
-                                                    onChange: this.handleChange
-                                                })
-                                            ]
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("datalist", {
-                                            id: "SStates",
-                                            children: [
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("option", {
-                                                    value: "Supervisor response - pending"
-                                                }),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("option", {
-                                                    value: "Supervisor response - accepted"
-                                                }),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("option", {
-                                                    value: "Supervisor response - rejected"
-                                                })
-                                            ]
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                                            className: "form-group",
-                                            children: [
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
-                                                    for: "inputAddress2",
-                                                    className: "form-label",
-                                                    children: "Co-Supervisor State : "
-                                                }),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
-                                                    type: "text",
-                                                    className: "form-control",
-                                                    name: "CState",
-                                                    value: this.state.CState,
-                                                    list: "CStates",
-                                                    placeholder: "Response of the Co-Supervisor",
-                                                    onChange: this.handleChange
-                                                })
-                                            ]
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("datalist", {
-                                            id: "CStates",
-                                            children: [
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("option", {
-                                                    value: "Co-Supervisor response - pending"
-                                                }),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("option", {
-                                                    value: "Co-Supervisor response - accepted"
-                                                }),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("option", {
-                                                    value: "Co-Supervisor response - rejected"
                                                 })
                                             ]
                                         }),
@@ -7039,6 +7607,10 @@ class $378695bfd0e51975$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
 
 
 
+
+
+var $248620cc75e96012$exports = {};
+$248620cc75e96012$exports = new URL("grp.82f70c55.jpg", "file:" + __filename).toString();
 
 
 function $00f8db41d718b992$export$2e2bcd8739ae039() {
@@ -7152,12 +7724,12 @@ function $00f8db41d718b992$export$2e2bcd8739ae039() {
                                             className: "nav-item",
                                             children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
                                                 className: "nav-link",
-                                                href: "/topicReg",
+                                                href: "/groups",
                                                 style: {
                                                     fontsize: '15px',
                                                     color: 'rgb(255,255,255)'
                                                 },
-                                                children: "Topic Registration"
+                                                children: "Registered Groups"
                                             })
                                         }),
                                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
@@ -7176,24 +7748,36 @@ function $00f8db41d718b992$export$2e2bcd8739ae039() {
                                             className: "nav-item",
                                             children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
                                                 className: "nav-link",
-                                                href: "#",
+                                                href: "/EvaluationResult",
                                                 style: {
                                                     fontsize: '15px',
                                                     color: 'rgb(255,255,255)'
                                                 },
-                                                children: "Panel Evaluations"
+                                                children: "Panel Evaluations Results"
                                             })
                                         }),
                                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
                                             className: "nav-item",
                                             children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
                                                 className: "nav-link",
-                                                href: "#",
+                                                href: "/STDdownloads",
                                                 style: {
                                                     fontsize: '15px',
                                                     color: 'rgb(255,255,255)'
                                                 },
                                                 children: "Documents and templates"
+                                            })
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                            className: "nav-item",
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                className: "nav-link",
+                                                href: "/SubmitNavbar",
+                                                style: {
+                                                    fontsize: '15px',
+                                                    color: 'rgb(255,255,255)'
+                                                },
+                                                children: "Documents Submission page"
                                             })
                                         }),
                                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
@@ -7204,7 +7788,7 @@ function $00f8db41d718b992$export$2e2bcd8739ae039() {
                                                     height: "40px",
                                                     width: "100px",
                                                     marginTop: "8px",
-                                                    marginLeft: "900px"
+                                                    marginLeft: "800px"
                                                 },
                                                 children: "Log Out"
                                             })
@@ -7225,184 +7809,199 @@ function $00f8db41d718b992$export$2e2bcd8739ae039() {
                         })
                     }),
                     /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
-                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("form", {
-                            className: "row g-3",
-                            children: [
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                                    className: "form-group",
-                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                                        style: {
-                                            marginBottom: '15px'
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
-                                                style: {
-                                                    margineBottom: '5px'
-                                                },
-                                                children: "Name of the group : "
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
-                                                type: "text",
-                                                name: "GName",
-                                                onChange: (e)=>setGName(e.target.value)
-                                                ,
-                                                value: GName,
-                                                placeholder: "Create a name for the group"
-                                            })
-                                        ]
-                                    })
-                                }),
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                                    className: "form-group",
-                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                                        style: {
-                                            marginBottom: '15px'
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
-                                                style: {
-                                                    margineBottom: '5px'
-                                                },
-                                                children: "Member 1 : "
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
-                                                type: "text",
-                                                name: "student1",
-                                                onChange: (e)=>setstudent1(e.target.value)
-                                                ,
-                                                value: student1,
-                                                placeholder: "Name of the first member"
-                                            })
-                                        ]
-                                    })
-                                }),
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                                    className: "form-group",
-                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                                        style: {
-                                            marginBottom: '15px'
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
-                                                style: {
-                                                    margineBottom: '5px'
-                                                },
-                                                children: "Member 2 : "
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
-                                                type: "text",
-                                                name: "student2",
-                                                onChange: (e)=>setstudent2(e.target.value)
-                                                ,
-                                                value: student2,
-                                                placeholder: "Name of the second member"
-                                            })
-                                        ]
-                                    })
-                                }),
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                                    className: "form-group",
-                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                                        style: {
-                                            marginBottom: '15px'
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
-                                                style: {
-                                                    margineBottom: '5px'
-                                                },
-                                                children: "Member 3 : "
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
-                                                type: "text",
-                                                name: "student3",
-                                                onChange: (e)=>setstudent3(e.target.value)
-                                                ,
-                                                value: student3,
-                                                placeholder: "Name of the third member"
-                                            })
-                                        ]
-                                    })
-                                }),
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                                    className: "form-group",
-                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                                        style: {
-                                            marginBottom: '15px'
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
-                                                style: {
-                                                    margineBottom: '5px'
-                                                },
-                                                children: "Member 4 : "
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
-                                                type: "text",
-                                                name: "student4",
-                                                onChange: (e)=>setstudent4(e.target.value)
-                                                ,
-                                                value: student4,
-                                                placeholder: "Name of the fourth member"
-                                            })
-                                        ]
-                                    })
-                                }),
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                                    className: "form-group",
-                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                                        style: {
-                                            marginBottom: '15px'
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
-                                                style: {
-                                                    margineBottom: '5px'
-                                                },
-                                                children: "Name of the Leader : "
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
-                                                type: "text",
-                                                name: "Leader",
-                                                onChange: (e)=>setdate(e.target.value)
-                                                ,
-                                                value: Leader,
-                                                placeholder: "IT number of the leader"
-                                            })
-                                        ]
-                                    })
-                                }),
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("center", {
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("center", {
+                        children: [
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
+                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("b", {
+                                    children: "Step 3 : You can update your group details here. If you want to proceed, refer the research areas and related topics to select a topic for the group. "
+                                })
+                            }),
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("table", {
+                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
                                     children: [
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
-                                            type: "submit",
-                                            onClick: (e)=>changeOnClick(e)
-                                            ,
-                                            children: "Update and Confirm Group Details"
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                className: "col-md-8 mt-4 mx-auto",
+                                                children: [
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("form", {
+                                                        className: "row g-3",
+                                                        style: {
+                                                            backgroundColor: "#ebecf0"
+                                                        },
+                                                        children: [
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                                className: "form-group",
+                                                                children: [
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h4", {
+                                                                        children: "Name of the Group :"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                                        className: "form-label"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                                        type: "text",
+                                                                        className: "form-control",
+                                                                        name: "GName",
+                                                                        onChange: (e)=>setGName(e.target.value)
+                                                                        ,
+                                                                        value: GName
+                                                                    })
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                                className: "form-group",
+                                                                children: [
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h4", {
+                                                                        children: "Name of Member 1 :"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                                        className: "form-label"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                                        type: "text",
+                                                                        className: "form-control",
+                                                                        name: "student1",
+                                                                        onChange: (e)=>setstudent1(e.target.value)
+                                                                        ,
+                                                                        value: student1
+                                                                    })
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                                className: "form-group",
+                                                                children: [
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h4", {
+                                                                        children: "Name of Member 2 :"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                                        className: "form-label"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                                        type: "text",
+                                                                        className: "form-control",
+                                                                        name: "student2",
+                                                                        onChange: (e)=>setstudent2(e.target.value)
+                                                                        ,
+                                                                        value: student2
+                                                                    })
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                                className: "form-group",
+                                                                children: [
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h4", {
+                                                                        children: "Name of Member 3 :"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                                        className: "form-label"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                                        type: "text",
+                                                                        className: "form-control",
+                                                                        name: "student3",
+                                                                        onChange: (e)=>setstudent3(e.target.value)
+                                                                        ,
+                                                                        value: student3
+                                                                    })
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                                className: "form-group",
+                                                                children: [
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h4", {
+                                                                        children: "Name of Member 4 :"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                                        className: "form-label"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                                        type: "text",
+                                                                        className: "form-control",
+                                                                        name: "student4",
+                                                                        onChange: (e)=>setstudent4(e.target.value)
+                                                                        ,
+                                                                        value: student4
+                                                                    })
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                                className: "form-group",
+                                                                children: [
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h4", {
+                                                                        children: "IT number of the Leader :"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                                        className: "form-label"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                                        type: "text",
+                                                                        className: "form-control",
+                                                                        name: "Leader",
+                                                                        onChange: (e)=>setLeader(e.target.value)
+                                                                        ,
+                                                                        value: Leader
+                                                                    })
+                                                                ]
+                                                            })
+                                                        ]
+                                                    }),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                                        className: "btn btn-success",
+                                                        type: "submit",
+                                                        style: {
+                                                            marginTop: '15px',
+                                                            width: "250px",
+                                                            marginLeft: "150px",
+                                                            backgroundColor: "#0147ab"
+                                                        },
+                                                        onClick: (e)=>changeOnClick(e)
+                                                        ,
+                                                        children: [
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("i", {
+                                                                className: "far fa-check-square"
+                                                            }),
+                                                            "\xa0 Update and confirm group details"
+                                                        ]
+                                                    })
+                                                ]
+                                            })
                                         }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                            className: "btn btn-primary",
-                                            href: "/",
-                                            style: {
-                                                textDecoration: 'none'
-                                            },
-                                            children: "Request Supervisors"
-                                        }),
-                                        "\xa0\xa0\xa0",
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                            className: "btn btn-danger btn-block",
-                                            href: "#",
-                                            onClick: ()=>this.onDelete(groups._id)
-                                            ,
-                                            children: "\xa0Delete Group"
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("center", {
+                                                children: [
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
+                                                        src: (/*@__PURE__*/$parcel$interopDefault($248620cc75e96012$exports)),
+                                                        class: "img-fluid",
+                                                        alt: "",
+                                                        width: "1500",
+                                                        height: "1000",
+                                                        "margin-left": "100px"
+                                                    }),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                        className: "btn btn-primary",
+                                                        href: "/ViewAreas",
+                                                        style: {
+                                                            textDecoration: 'none'
+                                                        },
+                                                        children: "Select a topic"
+                                                    }),
+                                                    "\xa0\xa0\xa0",
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                        className: "btn btn-danger btn-block",
+                                                        href: "#",
+                                                        onClick: ()=>this.onDelete(groups._id)
+                                                        ,
+                                                        children: "\xa0Delete Group"
+                                                    })
+                                                ]
+                                            })
                                         })
                                     ]
                                 })
-                            ]
-                        })
+                            })
+                        ]
                     })
                 ]
             })
@@ -7741,12 +8340,12 @@ class $9e60e4b88b4afc2e$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                                                 className: "nav-item",
                                                 children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
                                                     className: "nav-link",
-                                                    href: "/topicReg",
+                                                    href: "/groups",
                                                     style: {
                                                         fontsize: '15px',
                                                         color: 'rgb(255,255,255)'
                                                     },
-                                                    children: "Topic Registration"
+                                                    children: "Registered Groups"
                                                 })
                                             }),
                                             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
@@ -7759,6 +8358,18 @@ class $9e60e4b88b4afc2e$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                                                         color: 'rgb(255,255,255)'
                                                     },
                                                     children: "Research Areas and Topics"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                                className: "nav-item",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    className: "nav-link",
+                                                    href: "/Confirm",
+                                                    style: {
+                                                        fontsize: '15px',
+                                                        color: 'rgb(255,255,255)'
+                                                    },
+                                                    children: "Supervisor Allocations"
                                                 })
                                             }),
                                             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
@@ -8317,6 +8928,7 @@ class $e4260391fe60b1df$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
 
 
 
+
 class $d3cb88d203803a06$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
     constructor(props){
         super(props);
@@ -8462,8 +9074,33 @@ class $d3cb88d203803a06$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                     className: "container",
                     children: [
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
-                            children: "Registered Groups"
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                            style: {
+                                height: '140px',
+                                width: '100%',
+                                backgroundColor: "#080523",
+                                marginTop: '-20px'
+                            },
+                            children: [
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("h2", {
+                                    style: {
+                                        color: 'white',
+                                        textAlign: 'center'
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
+                                            src: (/*@__PURE__*/$parcel$interopDefault($67ddde14cdecaf6d$exports)),
+                                            class: "mx-auto",
+                                            alt: "",
+                                            width: "150",
+                                            height: "100"
+                                        }),
+                                        "\xa0Registered Groups"
+                                    ]
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
+                            ]
                         }),
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
@@ -8905,6 +9542,10 @@ class $2b21758ba59fa2af$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
 
 
 
+var $5564ec1549d158cc$exports = {};
+$5564ec1549d158cc$exports = new URL("res.da1ea184.png", "file:" + __filename).toString();
+
+
 class $a5b667f78926e161$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
     constructor(props){
         super(props);
@@ -8982,12 +9623,12 @@ class $a5b667f78926e161$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                                                 className: "nav-item",
                                                 children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
                                                     className: "nav-link",
-                                                    href: "/topicReg",
+                                                    href: "/groups",
                                                     style: {
                                                         fontsize: '15px',
                                                         color: 'rgb(255,255,255)'
                                                     },
-                                                    children: "Topic Registration"
+                                                    children: "Registered Groups"
                                                 })
                                             }),
                                             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
@@ -9006,24 +9647,36 @@ class $a5b667f78926e161$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                                                 className: "nav-item",
                                                 children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
                                                     className: "nav-link",
-                                                    href: "#",
+                                                    href: "/EvaluationResult",
                                                     style: {
                                                         fontsize: '15px',
                                                         color: 'rgb(255,255,255)'
                                                     },
-                                                    children: "Panel Evaluations"
+                                                    children: "Panel Evaluations Results"
                                                 })
                                             }),
                                             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
                                                 className: "nav-item",
                                                 children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
                                                     className: "nav-link",
-                                                    href: "#",
+                                                    href: "/STDdownloads",
                                                     style: {
                                                         fontsize: '15px',
                                                         color: 'rgb(255,255,255)'
                                                     },
                                                     children: "Documents and templates"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                                className: "nav-item",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    className: "nav-link",
+                                                    href: "/SubmitNavbar",
+                                                    style: {
+                                                        fontsize: '15px',
+                                                        color: 'rgb(255,255,255)'
+                                                    },
+                                                    children: "Documents Submission page"
                                                 })
                                             }),
                                             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
@@ -9034,7 +9687,7 @@ class $a5b667f78926e161$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                                                         height: "40px",
                                                         width: "100px",
                                                         marginTop: "8px",
-                                                        marginLeft: "900px"
+                                                        marginLeft: "800px"
                                                     },
                                                     children: "Log Out"
                                                 })
@@ -9050,21 +9703,72 @@ class $a5b667f78926e161$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                     className: "container",
                     children: [
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
-                            children: "Research Areas and related Topics"
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                            style: {
+                                height: '130px',
+                                width: '100%',
+                                backgroundColor: "#080523",
+                                marginTop: '-20px'
+                            },
+                            children: [
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("h2", {
+                                    style: {
+                                        color: 'white',
+                                        textAlign: 'center'
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
+                                            src: (/*@__PURE__*/$parcel$interopDefault($5564ec1549d158cc$exports)),
+                                            class: "mx-auto",
+                                            alt: "",
+                                            width: "130",
+                                            height: "100"
+                                        }),
+                                        "Research Areas and related topics"
+                                    ]
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
+                            ]
                         }),
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                            className: "col-lg-9 mt-2 mb-2",
-                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
-                                className: "form-control",
-                                type: "search",
-                                placeholder: "Search for research areas and find topics",
-                                name: "searchQuery",
-                                onChange: this.handleSearchArea
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
+                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("b", {
+                                children: "Step 4 : You can search for the research areas you wish to do the project here. Once you select a topic for your project you can select supervisors for the project or you can proceed by registering your topic."
                             })
+                        }),
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                            className: "col-lg-9 mt-2 mb-2",
+                            children: [
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                    className: "form-control",
+                                    type: "search",
+                                    placeholder: "Search for research areas and find topics",
+                                    name: "searchQuery",
+                                    onChange: this.handleSearchArea
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                    className: "btn btn-primary",
+                                    href: "/SupervisorList",
+                                    style: {
+                                        textDecoration: 'none'
+                                    },
+                                    children: "View supervisors List"
+                                }),
+                                "\xa0\xa0\xa0",
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                    className: "btn btn-secondary",
+                                    href: "/topicReg",
+                                    style: {
+                                        textDecoration: 'none'
+                                    },
+                                    children: "Register Topic"
+                                }),
+                                "\xa0\xa0\xa0"
+                            ]
                         }),
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("table", {
                             className: "table",
@@ -9116,6 +9820,10 @@ class $a5b667f78926e161$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
 
 
 
+
+
+var $0739f423bc2ff9f8$exports = {};
+$0739f423bc2ff9f8$exports = new URL("sup.3312c150.jpg", "file:" + __filename).toString();
 
 
 class $33d23507225b5ef0$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
@@ -9263,8 +9971,33 @@ class $33d23507225b5ef0$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                     className: "container",
                     children: [
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
-                            children: "Supervisor Selections"
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                            style: {
+                                height: '150px',
+                                width: '100%',
+                                backgroundColor: "#080523",
+                                marginTop: '-20px'
+                            },
+                            children: [
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("h2", {
+                                    style: {
+                                        color: 'white',
+                                        textAlign: 'center'
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
+                                            src: (/*@__PURE__*/$parcel$interopDefault($0739f423bc2ff9f8$exports)),
+                                            class: "mx-auto",
+                                            alt: "",
+                                            width: "150",
+                                            height: "120"
+                                        }),
+                                        "\xa0\xa0Supervisor Allocations"
+                                    ]
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
+                            ]
                         }),
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
@@ -9274,7 +10007,7 @@ class $33d23507225b5ef0$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                             children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
                                 className: "form-control",
                                 type: "search",
-                                placeholder: "search fby your name",
+                                placeholder: "search by your name",
                                 name: "searchQuery",
                                 onChange: this.handleSearchArea
                             })
@@ -9304,6 +10037,14 @@ class $33d23507225b5ef0$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                                             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
                                                 scope: "col",
                                                 children: "GroupName"
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                scope: "col",
+                                                children: "Supervisor Response"
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                scope: "col",
+                                                children: "Co-Supervisor Response"
                                             })
                                         ]
                                     })
@@ -9315,14 +10056,17 @@ class $33d23507225b5ef0$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                                                     scope: "row",
                                                     children: index + 1
                                                 }),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
-                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                        href: `/Response/${topics._id}`,
-                                                        style: {
-                                                            textDecoration: 'none'
-                                                        },
-                                                        children: topics.Topic
-                                                    })
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("td", {
+                                                    children: [
+                                                        " ",
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                            href: `/Response/${topics._id}`,
+                                                            style: {
+                                                                textDecoration: 'none'
+                                                            },
+                                                            children: topics.Topic
+                                                        })
+                                                    ]
                                                 }),
                                                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
                                                     children: topics.Supervisors
@@ -9332,6 +10076,42 @@ class $33d23507225b5ef0$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                                                 }),
                                                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
                                                     children: topics.GroupName
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("td", {
+                                                    children: [
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("a", {
+                                                            className: "btn btn btn-outline-dark",
+                                                            href: `/SReply/${topics._id}`,
+                                                            style: {
+                                                                textDecoration: 'none'
+                                                            },
+                                                            children: [
+                                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("i", {
+                                                                    className: "fas fa-edit"
+                                                                }),
+                                                                "\xa0Respond"
+                                                            ]
+                                                        }),
+                                                        "\xa0"
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("td", {
+                                                    children: [
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("a", {
+                                                            className: "btn btn btn-outline-dark",
+                                                            href: `/CReply/${topics._id}`,
+                                                            style: {
+                                                                textDecoration: 'none'
+                                                            },
+                                                            children: [
+                                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("i", {
+                                                                    className: "fas fa-edit"
+                                                                }),
+                                                                "\xa0Respond"
+                                                            ]
+                                                        }),
+                                                        "\xa0"
+                                                    ]
                                                 })
                                             ]
                                         })
@@ -9345,6 +10125,7 @@ class $33d23507225b5ef0$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
         });
     }
 }
+
 
 
 
@@ -9544,186 +10325,182 @@ function $df8d3d3f875c458a$export$2e2bcd8739ae039() {
                     /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
                     /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
                         children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h1", {
-                            children: "Confirmation of the availability of the Supervisors"
+                            children: "Details of the Group"
                         })
                     }),
                     /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
-                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("form", {
-                            className: "row g-3",
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("table", {
+                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
                             children: [
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                                    className: "form-group",
-                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                                        style: {
-                                            marginBottom: '15px'
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
-                                                style: {
-                                                    margineBottom: '5px'
-                                                },
-                                                children: "Selected Research area : "
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
-                                                type: "text",
-                                                name: "Area",
-                                                onChange: (e)=>setArea(e.target.value)
-                                                ,
-                                                value: Area
-                                            })
-                                        ]
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                                        className: "col-md-8 mt-4 mx-auto",
+                                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("form", {
+                                            className: "row g-3",
+                                            style: {
+                                                backgroundColor: "#ebecf0"
+                                            },
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                    className: "form-group",
+                                                    children: [
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h4", {
+                                                            children: "Name of the Group"
+                                                        }),
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                            className: "form-label"
+                                                        }),
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                            type: "text",
+                                                            className: "form-control",
+                                                            name: "GroupName",
+                                                            // onChange={e => setGroupName(e.target.value)}
+                                                            value: GroupName
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                    className: "form-group",
+                                                    children: [
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h4", {
+                                                            children: "Group Leader's details "
+                                                        }),
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                            className: "form-label"
+                                                        }),
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                            type: "text",
+                                                            className: "form-control",
+                                                            name: "Leader",
+                                                            // onChange={e => setLeader(e.target.value)}
+                                                            value: Leader
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                    className: "form-group",
+                                                    children: [
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h4", {
+                                                            children: "Area of Research "
+                                                        }),
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                            className: "form-label"
+                                                        }),
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                            type: "text",
+                                                            className: "form-control",
+                                                            name: "Area",
+                                                            // onChange={e => setArea(e.target.value)}
+                                                            value: Area
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                    className: "form-group",
+                                                    children: [
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h4", {
+                                                            children: "Selected Topic "
+                                                        }),
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                            className: "form-label"
+                                                        }),
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                            type: "text",
+                                                            className: "form-control",
+                                                            name: "Topic",
+                                                            // onChange={e => setTopic(e.target.value)}
+                                                            value: Topic
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                    className: "form-group",
+                                                    children: [
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h4", {
+                                                            children: "Selected Supervisor"
+                                                        }),
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                            className: "form-label"
+                                                        }),
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                            type: "text",
+                                                            className: "form-control",
+                                                            name: "Supervisors",
+                                                            // onChange={e => setSupervisors(e.target.value)}
+                                                            value: Supervisors
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                    className: "form-group",
+                                                    children: [
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h4", {
+                                                            children: "Availability of the Supervisor "
+                                                        }),
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                            className: "form-label"
+                                                        }),
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                            type: "text",
+                                                            className: "form-control",
+                                                            name: "SState",
+                                                            // onChange={e => setSState(e.target.value)}
+                                                            value: SState
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                    className: "form-group",
+                                                    children: [
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h4", {
+                                                            children: "Selected Co-Supervisor "
+                                                        }),
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                            className: "form-label"
+                                                        }),
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                            type: "text",
+                                                            className: "form-control",
+                                                            name: "CoSupervisors",
+                                                            // onChange={e => setCoSupervisors(e.target.value)}
+                                                            value: CoSupervisors
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                    className: "form-group",
+                                                    children: [
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h4", {
+                                                            children: "Availability of the Co-Supervisor "
+                                                        }),
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                            className: "form-label"
+                                                        }),
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                            type: "text",
+                                                            className: "form-control",
+                                                            name: "CState",
+                                                            // onChange={e => setCState(e.target.value)}
+                                                            value: CState
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
+                                            ]
+                                        })
                                     })
                                 }),
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                                    className: "form-group",
-                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                                        style: {
-                                            marginBottom: '15px'
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
-                                                style: {
-                                                    margineBottom: '5px'
-                                                },
-                                                children: "Selected topic : "
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
-                                                type: "text",
-                                                name: "Topic",
-                                                onChange: (e)=>setTopic(e.target.value)
-                                                ,
-                                                value: Topic
-                                            })
-                                        ]
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
+                                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
+                                            src: (/*@__PURE__*/$parcel$interopDefault($248620cc75e96012$exports)),
+                                            class: "img-fluid",
+                                            alt: "",
+                                            width: "1500",
+                                            height: "1000",
+                                            "margin-left": "100px"
+                                        })
                                     })
-                                }),
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                                    className: "form-group",
-                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                                        style: {
-                                            marginBottom: '15px'
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
-                                                style: {
-                                                    margineBottom: '5px'
-                                                },
-                                                children: "Name of the selected Supervisor : "
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
-                                                type: "text",
-                                                name: "Supervisors",
-                                                onChange: (e)=>setSupervisors(e.target.value)
-                                                ,
-                                                value: Supervisors
-                                            })
-                                        ]
-                                    })
-                                }),
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                                    className: "form-group",
-                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                                        style: {
-                                            marginBottom: '15px'
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
-                                                style: {
-                                                    margineBottom: '5px'
-                                                },
-                                                children: "Name of the selected Co-Supervisor : "
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
-                                                type: "text",
-                                                name: "CoSupervisors",
-                                                onChange: (e)=>setCoSupervisors(e.target.value)
-                                                ,
-                                                value: CoSupervisors
-                                            })
-                                        ]
-                                    })
-                                }),
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                                    className: "form-group",
-                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                                        style: {
-                                            marginBottom: '15px'
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
-                                                style: {
-                                                    margineBottom: '5px'
-                                                },
-                                                children: "Name of the group : "
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
-                                                type: "text",
-                                                name: "GroupName",
-                                                onChange: (e)=>setGroupName(e.target.value)
-                                                ,
-                                                value: GroupName
-                                            })
-                                        ]
-                                    })
-                                }),
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                                    className: "form-group",
-                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                                        style: {
-                                            marginBottom: '15px'
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
-                                                style: {
-                                                    margineBottom: '5px'
-                                                },
-                                                children: "Response from the Supervisor : "
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
-                                                type: "text",
-                                                name: "SState",
-                                                onChange: (e)=>setSState(e.target.value)
-                                                ,
-                                                value: SState
-                                            })
-                                        ]
-                                    })
-                                }),
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                                    className: "form-group",
-                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                                        style: {
-                                            marginBottom: '15px'
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
-                                                style: {
-                                                    margineBottom: '5px'
-                                                },
-                                                children: "Response from the Co-Supervisor : "
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
-                                                type: "text",
-                                                name: "CState",
-                                                onChange: (e)=>setCState(e.target.value)
-                                                ,
-                                                value: CState
-                                            })
-                                        ]
-                                    })
-                                }),
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("center", {
-                                    children: [
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
-                                            type: "submit",
-                                            onClick: (e)=>changeOnClick(e)
-                                            ,
-                                            children: "Submit Response"
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
-                                    ]
                                 })
                             ]
                         })
@@ -9737,198 +10514,1984 @@ function $df8d3d3f875c458a$export$2e2bcd8739ae039() {
 
 
 
-class $a75f642b815fc93f$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
-    render() {
-        return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("center", {
+
+
+
+var $da481ae70e0bd8f8$exports = {};
+$da481ae70e0bd8f8$exports = new URL("sss.f1ce0ca9.jpg", "file:" + __filename).toString();
+
+
+function $5c8c4a1fa0f58f92$export$2e2bcd8739ae039() {
+    const [Area, setArea] = $ltMAx$react.useState("");
+    const [Topic, setTopic] = $ltMAx$react.useState("");
+    const [Supervisors, setSupervisors] = $ltMAx$react.useState("");
+    const [CoSupervisors, setCoSupervisors] = $ltMAx$react.useState("");
+    const [GroupName, setGroupName] = $ltMAx$react.useState("");
+    const [Leader, setLeader] = $ltMAx$react.useState("");
+    const [SState, setSState] = $ltMAx$react.useState("");
+    const [CState, setCState] = $ltMAx$react.useState("");
+    const [Comments, setComments] = $ltMAx$react.useState("");
+    const id = $ltMAx$reactrouterdom.useParams();
+    const [topic] = $ltMAx$react.useState({
+        Area: "",
+        Topic: "",
+        Supervisors: "",
+        CoSupervisors: "",
+        GroupName: "",
+        Leader: "",
+        SState: "",
+        CState: "",
+        Comments: ""
+    });
+    const changeOnClick = async (e)=>{
+        e.preventDefault();
+        console.log("execute onclick");
+        const formData = new FormData();
+        formData.append("Area", Area);
+        formData.append("Topic", Topic);
+        formData.append("Supervisors", Supervisors);
+        formData.append("CoSupervisors", CoSupervisors);
+        formData.append("GroupName", GroupName);
+        formData.append("Leader", Leader);
+        formData.append("SState", SState);
+        formData.append("CState", CState);
+        formData.append("Comments", Comments);
+        setArea("");
+        setTopic("");
+        setSupervisors("");
+        setCoSupervisors("");
+        setGroupName("");
+        setLeader("");
+        setSState("");
+        setCState("");
+        setComments("");
+        console.log(formData.get('Area'));
+        topic.Area = formData.get('Area');
+        topic.Topic = formData.get('Topic');
+        topic.Supervisors = formData.get('Supervisors');
+        topic.CoSupervisors = formData.get('CoSupervisors');
+        topic.GroupName = formData.get('GroupName');
+        topic.Leader = formData.get('Leader');
+        topic.SState = formData.get('SState');
+        topic.CState = formData.get('CState');
+        topic.Comments = formData.get('Comments');
+        console.log(topic);
+        console.log(id);
+        await ($parcel$interopDefault($ltMAx$axios)).put(`https://afsliitproject.herokuapp.com/topic/update/${id?.id}`, topic).then((res)=>{
+            console.log("return data", res);
+            alert("Response sent successfully!!");
+        }).catch((err)=>{
+            alert("Failed to send response..!!");
+            console.log(err);
+        });
+    };
+    $ltMAx$react.useEffect(function effectFunction() {
+        console.log("get ID", id);
+        ($parcel$interopDefault($ltMAx$axios)).get(`https://afsliitproject.herokuapp.com/topic/${id?.id}`).then((res)=>{
+            console.log("data", res);
+            setArea(res.data.topic.Area);
+            setTopic(res.data.topic.Topic);
+            setSupervisors(res.data.topic.Supervisors);
+            setCoSupervisors(res.data.topic.CoSupervisors);
+            setGroupName(res.data.topic.GroupName);
+            setLeader(res.data.topic.Leader);
+            setSState(res.data.topic.SState);
+            setCState(res.data.topic.CState);
+            setComments(res.data.topic.Comments);
+        }).catch((err)=>console.log(err)
+        );
+    }, []);
+    return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+        children: [
+            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("nav", {
+                    className: "navbar navbar-light navbar-expand-md bg-dark navigation-clean-search",
+                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                        children: [
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                "data-bs-toggle": "collapse",
+                                className: "navbar-toggler",
+                                "data-bs-target": "#navcol-1",
+                                children: [
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                        className: "visually-hidden",
+                                        children: "Toggle navigation"
+                                    }),
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                        className: "navbar-toggler-icon"
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                                className: "collapse navbar-collapse",
+                                id: "navcol-1",
+                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("ul", {
+                                    className: "navbar-nav",
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                            className: "nav-item",
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                className: "nav-link ",
+                                                href: "/groupreg",
+                                                style: {
+                                                    fontsize: '15px',
+                                                    color: 'rgb(255,255,255)'
+                                                },
+                                                children: "Group Registration"
+                                            })
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                            className: "nav-item",
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                className: "nav-link",
+                                                href: "/topicReg",
+                                                style: {
+                                                    fontsize: '15px',
+                                                    color: 'rgb(255,255,255)'
+                                                },
+                                                children: "Topic Registration"
+                                            })
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                            className: "nav-item",
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                className: "nav-link",
+                                                href: "/ViewAreas",
+                                                style: {
+                                                    fontsize: '15px',
+                                                    color: 'rgb(255,255,255)'
+                                                },
+                                                children: "Research Areas and Topics"
+                                            })
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                            className: "nav-item",
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                className: "nav-link",
+                                                href: "#",
+                                                style: {
+                                                    fontsize: '15px',
+                                                    color: 'rgb(255,255,255)'
+                                                },
+                                                children: "Panel Evaluations"
+                                            })
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                            className: "nav-item",
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                className: "nav-link",
+                                                href: "#",
+                                                style: {
+                                                    fontsize: '15px',
+                                                    color: 'rgb(255,255,255)'
+                                                },
+                                                children: "Documents and templates"
+                                            })
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                className: "btn btn-warning",
+                                                href: "/",
+                                                style: {
+                                                    height: "40px",
+                                                    width: "100px",
+                                                    marginTop: "8px",
+                                                    marginLeft: "900px"
+                                                },
+                                                children: "Log Out"
+                                            })
+                                        })
+                                    ]
+                                })
+                            })
+                        ]
+                    })
+                })
+            }),
+            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
                 children: [
-                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h1", {
-                        children: " Home "
-                    }),
-                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
-                        className: "btn btn-warning",
-                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                            href: "/Registration",
-                            style: {
-                                textDecoration: 'none',
-                                color: 'white',
-                                marginTop: '15px'
-                            },
-                            children: "registration"
-                        })
-                    }),
-                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("i", {
-                        className: "far fa-check-square"
-                    }),
-                    "\xa0",
                     /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
+                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h1", {
+                            children: "Co-Supervisor Response"
+                        })
+                    }),
                     /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
-                        className: "btn btn-warning",
-                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                            href: "/AddTopisPanels",
-                            style: {
-                                textDecoration: 'none',
-                                color: 'white',
-                                marginTop: '15px'
-                            },
-                            children: "Topic panel"
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
+                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("table", {
+                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                children: [
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                                            className: "col-md-8 mt-4 mx-auto",
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("form", {
+                                                className: "row g-3",
+                                                style: {
+                                                    backgroundColor: "#ebecf0"
+                                                },
+                                                children: [
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                        className: "form-group",
+                                                        children: [
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h4", {
+                                                                children: "Area of Research:"
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                                className: "form-label"
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                                type: "text",
+                                                                className: "form-control",
+                                                                name: "Area",
+                                                                //  onChange={e => setArea(e.target.value)}
+                                                                value: Area
+                                                            })
+                                                        ]
+                                                    }),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                        className: "form-group",
+                                                        children: [
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h4", {
+                                                                children: "Selected Topic for the Research :"
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                                className: "form-label"
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                                type: "text",
+                                                                className: "form-control",
+                                                                name: "Topic",
+                                                                //  onChange={e => setTopic(e.target.value)}
+                                                                value: Topic
+                                                            })
+                                                        ]
+                                                    }),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                        className: "form-group",
+                                                        children: [
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h4", {
+                                                                children: "Selected Supervisor's Name :"
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                                className: "form-label"
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                                type: "text",
+                                                                className: "form-control",
+                                                                name: "Supervisors",
+                                                                // onChange={e => setSupervisors(e.target.value)}
+                                                                value: Supervisors
+                                                            })
+                                                        ]
+                                                    }),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                        className: "form-group",
+                                                        children: [
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h4", {
+                                                                children: "Supervisor's Response:"
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                                className: "form-label"
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                                type: "text",
+                                                                className: "form-control",
+                                                                name: "SState",
+                                                                onChange: (e)=>setSState(e.target.value)
+                                                                ,
+                                                                value: SState,
+                                                                list: "SStates"
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("datalist", {
+                                                                id: "SStates",
+                                                                children: [
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("option", {
+                                                                        value: "Rejected"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("option", {
+                                                                        value: "Accepted"
+                                                                    })
+                                                                ]
+                                                            })
+                                                        ]
+                                                    }),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("center", {
+                                                        children: [
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                                                className: "btn btn-success",
+                                                                type: "submit",
+                                                                onClick: (e)=>changeOnClick(e)
+                                                                ,
+                                                                children: [
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("i", {
+                                                                        className: "far fa-check-square"
+                                                                    }),
+                                                                    "\xa0Submit Response"
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
+                                                        ]
+                                                    })
+                                                ]
+                                            })
+                                        })
+                                    }),
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
+                                                src: (/*@__PURE__*/$parcel$interopDefault($da481ae70e0bd8f8$exports)),
+                                                class: "img-fluid",
+                                                alt: "",
+                                                width: "1400",
+                                                height: "1000",
+                                                "margin-left": "100px"
+                                            })
+                                        })
+                                    })
+                                ]
+                            })
                         })
-                    }),
-                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("i", {
-                        className: "far fa-check-square"
-                    }),
-                    "\xa0",
-                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
-                        className: "btn btn-warning",
-                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                            href: "/AddPresentationPanels",
-                            style: {
-                                textDecoration: 'none',
-                                color: 'white',
-                                marginTop: '15px'
-                            },
-                            children: "Presentation panel"
-                        })
-                    }),
-                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("i", {
-                        className: "far fa-check-square"
-                    }),
-                    "\xa0",
-                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
-                        className: "btn btn-warning",
-                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                            href: "/AddThesisPanels",
-                            style: {
-                                textDecoration: 'none',
-                                color: 'white',
-                                marginTop: '15px'
-                            },
-                            children: "Thesis panel"
-                        })
-                    }),
-                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("i", {
-                        className: "far fa-check-square"
-                    }),
-                    "\xa0",
-                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
-                        className: "btn btn-warning",
-                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                            href: "/Groupids",
-                            style: {
-                                textDecoration: 'none',
-                                color: 'white',
-                                marginTop: '15px'
-                            },
-                            children: "groups"
-                        })
-                    }),
-                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("i", {
-                        className: "far fa-check-square"
-                    }),
-                    "\xa0",
-                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
-                        className: "btn btn-warning",
-                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                            href: "/AdminLogin",
-                            style: {
-                                textDecoration: 'none',
-                                color: 'white',
-                                marginTop: '15px'
-                            },
-                            children: "Admin Login"
-                        })
-                    }),
-                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("i", {
-                        className: "far fa-check-square"
-                    }),
-                    "\xa0",
-                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
-                        className: "btn btn-warning",
-                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                            href: "/StaffLogin",
-                            style: {
-                                textDecoration: 'none',
-                                color: 'white',
-                                marginTop: '15px'
-                            },
-                            children: "staff Login"
-                        })
-                    }),
-                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("i", {
-                        className: "far fa-check-square"
-                    }),
-                    "\xa0",
-                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
-                        className: "btn btn-warning",
-                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                            href: "/Viewallusers",
-                            style: {
-                                textDecoration: 'none',
-                                color: 'white',
-                                marginTop: '15px'
-                            },
-                            children: "view all users"
-                        })
-                    }),
-                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("i", {
-                        className: "far fa-check-square"
-                    }),
-                    "\xa0",
-                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h4", {
-                        children: "student side panel members "
-                    }),
-                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
-                        className: "btn btn-warning",
-                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                            href: "/S_ViewTopis",
-                            style: {
-                                textDecoration: 'none',
-                                color: 'white',
-                                marginTop: '15px'
-                            },
-                            children: "view topic panel-stu side"
-                        })
-                    }),
-                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("i", {
-                        className: "far fa-check-square"
-                    }),
-                    "\xa0",
-                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
-                        className: "btn btn-warning",
-                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                            href: "/S_ViewPresentation",
-                            style: {
-                                textDecoration: 'none',
-                                color: 'white',
-                                marginTop: '15px'
-                            },
-                            children: "view presenatation panel-stu side"
-                        })
-                    }),
-                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("i", {
-                        className: "far fa-check-square"
-                    }),
-                    "\xa0",
-                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
-                        className: "btn btn-warning",
-                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                            href: "/S_ViewThesis",
-                            style: {
-                                textDecoration: 'none',
-                                color: 'white',
-                                marginTop: '15px'
-                            },
-                            children: "view thesis panel-stu side"
-                        })
-                    }),
-                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("i", {
-                        className: "far fa-check-square"
-                    }),
-                    "\xa0"
+                    })
                 ]
             })
+        ]
+    });
+}
+
+
+
+
+
+
+
+var $e81d256cd4679a7e$exports = {};
+$e81d256cd4679a7e$exports = new URL("ccc.ce71bc08.png", "file:" + __filename).toString();
+
+
+function $53e227c83bea1ebd$export$2e2bcd8739ae039() {
+    const [Area, setArea] = $ltMAx$react.useState("");
+    const [Topic, setTopic] = $ltMAx$react.useState("");
+    const [Supervisors, setSupervisors] = $ltMAx$react.useState("");
+    const [CoSupervisors, setCoSupervisors] = $ltMAx$react.useState("");
+    const [GroupName, setGroupName] = $ltMAx$react.useState("");
+    const [Leader, setLeader] = $ltMAx$react.useState("");
+    const [SState, setSState] = $ltMAx$react.useState("");
+    const [CState, setCState] = $ltMAx$react.useState("");
+    const [Comments, setComments] = $ltMAx$react.useState("");
+    const id = $ltMAx$reactrouterdom.useParams();
+    const [topic] = $ltMAx$react.useState({
+        Area: "",
+        Topic: "",
+        Supervisors: "",
+        CoSupervisors: "",
+        GroupName: "",
+        Leader: "",
+        SState: "",
+        CState: "",
+        Comments: ""
+    });
+    const changeOnClick = async (e)=>{
+        e.preventDefault();
+        console.log("execute onclick");
+        const formData = new FormData();
+        formData.append("Area", Area);
+        formData.append("Topic", Topic);
+        formData.append("Supervisors", Supervisors);
+        formData.append("CoSupervisors", CoSupervisors);
+        formData.append("GroupName", GroupName);
+        formData.append("Leader", Leader);
+        formData.append("SState", SState);
+        formData.append("CState", CState);
+        formData.append("Comments", Comments);
+        setArea("");
+        setTopic("");
+        setSupervisors("");
+        setCoSupervisors("");
+        setGroupName("");
+        setLeader("");
+        setSState("");
+        setCState("");
+        setComments("");
+        console.log(formData.get('Area'));
+        topic.Area = formData.get('Area');
+        topic.Topic = formData.get('Topic');
+        topic.Supervisors = formData.get('Supervisors');
+        topic.CoSupervisors = formData.get('CoSupervisors');
+        topic.GroupName = formData.get('GroupName');
+        topic.Leader = formData.get('Leader');
+        topic.SState = formData.get('SState');
+        topic.CState = formData.get('CState');
+        topic.Comments = formData.get('Comments');
+        console.log(topic);
+        console.log(id);
+        await ($parcel$interopDefault($ltMAx$axios)).put(`https://afsliitproject.herokuapp.com/topic/update/${id?.id}`, topic).then((res)=>{
+            console.log("return data", res);
+            alert("Response sent successfully!!");
+        }).catch((err)=>{
+            alert("Failed to send response..!!");
+            console.log(err);
+        });
+    };
+    $ltMAx$react.useEffect(function effectFunction() {
+        console.log("get ID", id);
+        ($parcel$interopDefault($ltMAx$axios)).get(`https://afsliitproject.herokuapp.com/topic/${id?.id}`).then((res)=>{
+            console.log("data", res);
+            setArea(res.data.topic.Area);
+            setTopic(res.data.topic.Topic);
+            setSupervisors(res.data.topic.Supervisors);
+            setCoSupervisors(res.data.topic.CoSupervisors);
+            setGroupName(res.data.topic.GroupName);
+            setLeader(res.data.topic.Leader);
+            setSState(res.data.topic.SState);
+            setCState(res.data.topic.CState);
+            setComments(res.data.topic.Comments);
+        }).catch((err)=>console.log(err)
+        );
+    }, []);
+    return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+        children: [
+            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("nav", {
+                    className: "navbar navbar-light navbar-expand-md bg-dark navigation-clean-search",
+                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                        children: [
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                "data-bs-toggle": "collapse",
+                                className: "navbar-toggler",
+                                "data-bs-target": "#navcol-1",
+                                children: [
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                        className: "visually-hidden",
+                                        children: "Toggle navigation"
+                                    }),
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                        className: "navbar-toggler-icon"
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                                className: "collapse navbar-collapse",
+                                id: "navcol-1",
+                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("ul", {
+                                    className: "navbar-nav",
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                            className: "nav-item",
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                className: "nav-link ",
+                                                href: "/groupreg",
+                                                style: {
+                                                    fontsize: '15px',
+                                                    color: 'rgb(255,255,255)'
+                                                },
+                                                children: "Group Registration"
+                                            })
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                            className: "nav-item",
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                className: "nav-link",
+                                                href: "/topicReg",
+                                                style: {
+                                                    fontsize: '15px',
+                                                    color: 'rgb(255,255,255)'
+                                                },
+                                                children: "Topic Registration"
+                                            })
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                            className: "nav-item",
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                className: "nav-link",
+                                                href: "/ViewAreas",
+                                                style: {
+                                                    fontsize: '15px',
+                                                    color: 'rgb(255,255,255)'
+                                                },
+                                                children: "Research Areas and Topics"
+                                            })
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                            className: "nav-item",
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                className: "nav-link",
+                                                href: "#",
+                                                style: {
+                                                    fontsize: '15px',
+                                                    color: 'rgb(255,255,255)'
+                                                },
+                                                children: "Panel Evaluations"
+                                            })
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                            className: "nav-item",
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                className: "nav-link",
+                                                href: "#",
+                                                style: {
+                                                    fontsize: '15px',
+                                                    color: 'rgb(255,255,255)'
+                                                },
+                                                children: "Documents and templates"
+                                            })
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                className: "btn btn-warning",
+                                                href: "/",
+                                                style: {
+                                                    height: "40px",
+                                                    width: "100px",
+                                                    marginTop: "8px",
+                                                    marginLeft: "900px"
+                                                },
+                                                children: "Log Out"
+                                            })
+                                        })
+                                    ]
+                                })
+                            })
+                        ]
+                    })
+                })
+            }),
+            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                children: [
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
+                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h1", {
+                            children: "Co-Supervisor Response"
+                        })
+                    }),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
+                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("table", {
+                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                children: [
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                                            className: "col-md-8 mt-4 mx-auto",
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("form", {
+                                                className: "row g-3",
+                                                style: {
+                                                    backgroundColor: "#ebecf0"
+                                                },
+                                                children: [
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                        className: "form-group",
+                                                        children: [
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h4", {
+                                                                children: "Area of Research:"
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                                className: "form-label"
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                                type: "text",
+                                                                className: "form-control",
+                                                                name: "Area",
+                                                                //  onChange={e => setArea(e.target.value)}
+                                                                value: Area
+                                                            })
+                                                        ]
+                                                    }),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                        className: "form-group",
+                                                        children: [
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h4", {
+                                                                children: "Selected Topic for the Research :"
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                                className: "form-label"
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                                type: "text",
+                                                                className: "form-control",
+                                                                name: "Topic",
+                                                                //  onChange={e => setTopic(e.target.value)}
+                                                                value: Topic
+                                                            })
+                                                        ]
+                                                    }),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                        className: "form-group",
+                                                        children: [
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h4", {
+                                                                children: "Selected Supervisor's Name :"
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                                className: "form-label"
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                                type: "text",
+                                                                className: "form-control",
+                                                                name: "Supervisors",
+                                                                // onChange={e => setSupervisors(e.target.value)}
+                                                                value: Supervisors
+                                                            })
+                                                        ]
+                                                    }),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                        className: "form-group",
+                                                        children: [
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h4", {
+                                                                children: "Selected Co-Supervisor's Name :"
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                                className: "form-label"
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                                type: "text",
+                                                                className: "form-control",
+                                                                name: "CoSupervisors",
+                                                                //  onChange={e => setCoSupervisors(e.target.value)}
+                                                                value: CoSupervisors
+                                                            })
+                                                        ]
+                                                    }),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                        className: "form-group",
+                                                        children: [
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h4", {
+                                                                children: "Co-Supervisor's Response:"
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                                className: "form-label"
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                                type: "text",
+                                                                className: "form-control",
+                                                                name: "CState",
+                                                                onChange: (e)=>setCState(e.target.value)
+                                                                ,
+                                                                value: CState,
+                                                                list: "CStates"
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("datalist", {
+                                                                id: "CStates",
+                                                                children: [
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("option", {
+                                                                        value: "Rejected"
+                                                                    }),
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("option", {
+                                                                        value: "Accepted"
+                                                                    })
+                                                                ]
+                                                            })
+                                                        ]
+                                                    }),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("center", {
+                                                        children: [
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                                                className: "btn btn-success",
+                                                                type: "submit",
+                                                                onClick: (e)=>changeOnClick(e)
+                                                                ,
+                                                                children: [
+                                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("i", {
+                                                                        className: "far fa-check-square"
+                                                                    }),
+                                                                    "\xa0Submit Response"
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
+                                                        ]
+                                                    })
+                                                ]
+                                            })
+                                        })
+                                    }),
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
+                                                src: (/*@__PURE__*/$parcel$interopDefault($e81d256cd4679a7e$exports)),
+                                                class: "img-fluid",
+                                                alt: "",
+                                                width: "1400",
+                                                height: "1000",
+                                                "margin-left": "100px"
+                                            })
+                                        })
+                                    })
+                                ]
+                            })
+                        })
+                    })
+                ]
+            })
+        ]
+    });
+}
+
+
+
+
+
+class $311b7eea41c8bef7$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            topics: []
+        };
+    }
+    componentDidMount() {
+        this.retriveTopics();
+    }
+    retriveTopics() {
+        ($parcel$interopDefault($ltMAx$axios)).get("https://afsliitproject.herokuapp.com/topics").then((res)=>{
+            if (res.data.success) {
+                this.setState({
+                    topics: res.data.existingTopics
+                });
+                console.log(this.state.topics);
+            }
+        });
+    }
+    filterData(topics, searchKey) {
+        const result = topics.filter((topic)=>topic.GroupName.toLowerCase().includes(searchKey)
+        );
+        this.setState({
+            topics: result
+        });
+    }
+    handleSearchArea = (e)=>{
+        const searchKey = e.currentTarget.value;
+        ($parcel$interopDefault($ltMAx$axios)).get("https://afsliitproject.herokuapp.com/topics").then((res)=>{
+            if (res.data.success) this.filterData(res.data.existingTopics, searchKey);
+        });
+    };
+    render() {
+        return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+            children: [
+                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("nav", {
+                        className: "navbar navbar-light navbar-expand-md bg-dark navigation-clean-search",
+                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                            children: [
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                    "data-bs-toggle": "collapse",
+                                    className: "navbar-toggler",
+                                    "data-bs-target": "#navcol-1",
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                            className: "visually-hidden",
+                                            children: "Toggle navigation"
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                            className: "navbar-toggler-icon"
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                                    className: "collapse navbar-collapse",
+                                    id: "navcol-1",
+                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("ul", {
+                                        className: "navbar-nav",
+                                        children: [
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                                className: "nav-item",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    className: "nav-link ",
+                                                    href: "/groupreg",
+                                                    style: {
+                                                        fontsize: '15px',
+                                                        color: 'rgb(255,255,255)'
+                                                    },
+                                                    children: "Group Registration"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                                className: "nav-item",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    className: "nav-link",
+                                                    href: "/groups",
+                                                    style: {
+                                                        fontsize: '15px',
+                                                        color: 'rgb(255,255,255)'
+                                                    },
+                                                    children: "Registered Groups"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                                className: "nav-item",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    className: "nav-link",
+                                                    href: "/ViewAreas",
+                                                    style: {
+                                                        fontsize: '15px',
+                                                        color: 'rgb(255,255,255)'
+                                                    },
+                                                    children: "Research Areas and Topics"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                                className: "nav-item",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    className: "nav-link",
+                                                    href: "/EvaluationResult",
+                                                    style: {
+                                                        fontsize: '15px',
+                                                        color: 'rgb(255,255,255)'
+                                                    },
+                                                    children: "Panel Evaluations Results"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                                className: "nav-item",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    className: "nav-link",
+                                                    href: "/STDdownloads",
+                                                    style: {
+                                                        fontsize: '15px',
+                                                        color: 'rgb(255,255,255)'
+                                                    },
+                                                    children: "Documents and templates"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                                className: "nav-item",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    className: "nav-link",
+                                                    href: "/SubmitNavbar",
+                                                    style: {
+                                                        fontsize: '15px',
+                                                        color: 'rgb(255,255,255)'
+                                                    },
+                                                    children: "Documents Submission page"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    className: "btn btn-warning",
+                                                    href: "/",
+                                                    style: {
+                                                        height: "40px",
+                                                        width: "100px",
+                                                        marginTop: "8px",
+                                                        marginLeft: "800px"
+                                                    },
+                                                    children: "Log Out"
+                                                })
+                                            })
+                                        ]
+                                    })
+                                })
+                            ]
+                        })
+                    })
+                }),
+                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                    className: "container",
+                    children: [
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                            style: {
+                                height: '80px',
+                                width: '100%',
+                                backgroundColor: "#080523",
+                                marginTop: '-20px'
+                            },
+                            children: [
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h2", {
+                                    style: {
+                                        color: 'white',
+                                        textAlign: 'center'
+                                    },
+                                    children: "Responses of the Supervisors"
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
+                            ]
+                        }),
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                            className: "col-lg-9 mt-2 mb-2",
+                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                className: "form-control",
+                                type: "search",
+                                placeholder: "search by group name",
+                                name: "searchQuery",
+                                onChange: this.handleSearchArea
+                            })
+                        }),
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("table", {
+                            className: "table",
+                            children: [
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("thead", {
+                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                        children: [
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                scope: "col",
+                                                children: "No."
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                scope: "col",
+                                                children: "GroupName"
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                scope: "col",
+                                                children: "Project Topic"
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                scope: "col",
+                                                children: "Selected Supervisor"
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                scope: "col",
+                                                children: "Supervisor Response"
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                scope: "col",
+                                                children: "Selected Co-Supervisor"
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                scope: "col",
+                                                children: "Co-Supervisor Response"
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                scope: "col",
+                                                children: "Change Supervisors if rejected"
+                                            })
+                                        ]
+                                    })
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("tbody", {
+                                    children: this.state.topics.map((topics, index)=>/*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                    scope: "row",
+                                                    children: index + 1
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: topics.GroupName
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: topics.Topic
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: topics.Supervisors
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: topics.SState
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: topics.CoSupervisors
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: topics.CState
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("td", {
+                                                    children: [
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("a", {
+                                                            className: "btn btn btn-outline-dark",
+                                                            href: `/Change/${topics._id}`,
+                                                            style: {
+                                                                textDecoration: 'none'
+                                                            },
+                                                            children: [
+                                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("i", {
+                                                                    className: "fas fa-edit"
+                                                                }),
+                                                                "\xa0Request another supervisor"
+                                                            ]
+                                                        }),
+                                                        "\xa0"
+                                                    ]
+                                                })
+                                            ]
+                                        })
+                                    )
+                                })
+                            ]
+                        })
+                    ]
+                })
+            ]
+        });
+    }
+}
+
+
+
+
+
+
+
+function $696412dc8b0e129a$export$2e2bcd8739ae039() {
+    const [Area, setArea] = $ltMAx$react.useState("");
+    const [Topic, setTopic] = $ltMAx$react.useState("");
+    const [Supervisors, setSupervisors] = $ltMAx$react.useState("");
+    const [CoSupervisors, setCoSupervisors] = $ltMAx$react.useState("");
+    const [GroupName, setGroupName] = $ltMAx$react.useState("");
+    const [Leader, setLeader] = $ltMAx$react.useState("");
+    const [SState, setSState] = $ltMAx$react.useState("");
+    const [CState, setCState] = $ltMAx$react.useState("");
+    const [Comments, setComments] = $ltMAx$react.useState("");
+    const id = $ltMAx$reactrouterdom.useParams();
+    const [topic] = $ltMAx$react.useState({
+        Area: "",
+        Topic: "",
+        Supervisors: "",
+        CoSupervisors: "",
+        GroupName: "",
+        Leader: "",
+        SState: "",
+        CState: "",
+        Comments: ""
+    });
+    const changeOnClick = async (e)=>{
+        e.preventDefault();
+        console.log("execute onclick");
+        const formData = new FormData();
+        formData.append("Area", Area);
+        formData.append("Topic", Topic);
+        formData.append("Supervisors", Supervisors);
+        formData.append("CoSupervisors", CoSupervisors);
+        formData.append("GroupName", GroupName);
+        formData.append("Leader", Leader);
+        formData.append("SState", SState);
+        formData.append("CState", CState);
+        formData.append("Comments", Comments);
+        setArea("");
+        setTopic("");
+        setSupervisors("");
+        setCoSupervisors("");
+        setGroupName("");
+        setLeader("");
+        setSState("");
+        setCState("");
+        setComments("");
+        console.log(formData.get('Area'));
+        topic.Area = formData.get('Area');
+        topic.Topic = formData.get('Topic');
+        topic.Supervisors = formData.get('Supervisors');
+        topic.CoSupervisors = formData.get('CoSupervisors');
+        topic.GroupName = formData.get('GroupName');
+        topic.Leader = formData.get('Leader');
+        topic.SState = formData.get('SState');
+        topic.CState = formData.get('CState');
+        topic.Comments = formData.get('Comments');
+        console.log(topic);
+        console.log(id);
+        await ($parcel$interopDefault($ltMAx$axios)).put(`https://afsliitproject.herokuapp.com/topic/update/${id?.id}`, topic).then((res)=>{
+            console.log("return data", res);
+            alert("Response sent successfully!!");
+        }).catch((err)=>{
+            alert("Failed to send response..!!");
+            console.log(err);
+        });
+    };
+    $ltMAx$react.useEffect(function effectFunction() {
+        console.log("get ID", id);
+        ($parcel$interopDefault($ltMAx$axios)).get(`https://afsliitproject.herokuapp.com/topic/${id?.id}`).then((res)=>{
+            console.log("data", res);
+            setArea(res.data.topic.Area);
+            setTopic(res.data.topic.Topic);
+            setSupervisors(res.data.topic.Supervisors);
+            setCoSupervisors(res.data.topic.CoSupervisors);
+            setGroupName(res.data.topic.GroupName);
+            setLeader(res.data.topic.Leader);
+            setSState(res.data.topic.SState);
+            setCState(res.data.topic.CState);
+            setComments(res.data.topic.Comments);
+        }).catch((err)=>console.log(err)
+        );
+    }, []);
+    return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+        children: [
+            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("nav", {
+                    className: "navbar navbar-light navbar-expand-md bg-dark navigation-clean-search",
+                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                        children: [
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                "data-bs-toggle": "collapse",
+                                className: "navbar-toggler",
+                                "data-bs-target": "#navcol-1",
+                                children: [
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                        className: "visually-hidden",
+                                        children: "Toggle navigation"
+                                    }),
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                        className: "navbar-toggler-icon"
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                                className: "collapse navbar-collapse",
+                                id: "navcol-1",
+                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("ul", {
+                                    className: "navbar-nav",
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                            className: "nav-item",
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                className: "nav-link ",
+                                                href: "/groupreg",
+                                                style: {
+                                                    fontsize: '15px',
+                                                    color: 'rgb(255,255,255)'
+                                                },
+                                                children: "Group Registration"
+                                            })
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                            className: "nav-item",
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                className: "nav-link",
+                                                href: "/groups",
+                                                style: {
+                                                    fontsize: '15px',
+                                                    color: 'rgb(255,255,255)'
+                                                },
+                                                children: "Registered Groups"
+                                            })
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                            className: "nav-item",
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                className: "nav-link",
+                                                href: "/ViewAreas",
+                                                style: {
+                                                    fontsize: '15px',
+                                                    color: 'rgb(255,255,255)'
+                                                },
+                                                children: "Research Areas and Topics"
+                                            })
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                            className: "nav-item",
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                className: "nav-link",
+                                                href: "/EvaluationResult",
+                                                style: {
+                                                    fontsize: '15px',
+                                                    color: 'rgb(255,255,255)'
+                                                },
+                                                children: "Panel Evaluations Results"
+                                            })
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                            className: "nav-item",
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                className: "nav-link",
+                                                href: "/STDdownloads",
+                                                style: {
+                                                    fontsize: '15px',
+                                                    color: 'rgb(255,255,255)'
+                                                },
+                                                children: "Documents and templates"
+                                            })
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                            className: "nav-item",
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                className: "nav-link",
+                                                href: "/SubmitNavbar",
+                                                style: {
+                                                    fontsize: '15px',
+                                                    color: 'rgb(255,255,255)'
+                                                },
+                                                children: "Documents Submission page"
+                                            })
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                className: "btn btn-warning",
+                                                href: "/",
+                                                style: {
+                                                    height: "40px",
+                                                    width: "100px",
+                                                    marginTop: "8px",
+                                                    marginLeft: "800px"
+                                                },
+                                                children: "Log Out"
+                                            })
+                                        })
+                                    ]
+                                })
+                            })
+                        ]
+                    })
+                })
+            }),
+            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                children: [
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
+                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h1", {
+                            children: "Allocation of Supervisors"
+                        })
+                    }),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
+                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("table", {
+                            width: "1000px",
+                            style: {
+                                fontFamily: "-moz-initial"
+                            },
+                            children: [
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("thead", {
+                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                        children: [
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                children: "Supervisors for IT Specialization"
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                children: "Co-Supervisors for IT Specialization"
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                children: "Supervisors for SE Specialization"
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                children: "Co-Supervisors for SE Specialization"
+                                            }),
+                                            " "
+                                        ]
+                                    })
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tbody", {
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Kamal Gamage"
+                                                }),
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Nimal Silva"
+                                                }),
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Malan Gamage"
+                                                }),
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Ruwan Silva"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Warun Perera"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Anura Perera"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Arun Perera"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Olu Perera"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Jayaweera Fernando"
+                                                }),
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Adithaya Silava"
+                                                }),
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Jayaweera Fernando"
+                                                }),
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Ayesh Silava"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Nimal Gamage"
+                                                }),
+                                                "    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Jayaweera Fernando"
+                                                }),
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Kamlee Gamage"
+                                                }),
+                                                "    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Poojani Fernando"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Nuwan Perera"
+                                                }),
+                                                "     ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: " Assit Lec. Gunarathna Fernando"
+                                                }),
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Miran Perera"
+                                                }),
+                                                "    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: " Assit Lec. Ruwan Fernando"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Lakshika Perera"
+                                                }),
+                                                "    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Jayaweera Fernando"
+                                                }),
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Nuwani Perera"
+                                                }),
+                                                "    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Disni Fernando"
+                                                }),
+                                                "  "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " Assit Lec. Gunarathna Fernando    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Nirmani Fernando"
+                                                }),
+                                                "Assit Lec. Waruni Fernando    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Randimal Fernando"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Nimalee Perera"
+                                                }),
+                                                "    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Wihara Fernando"
+                                                }),
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Rasika Perera"
+                                                }),
+                                                "    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Wihara Fernando"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Awan Perera"
+                                                }),
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Jayaweera Silva"
+                                                }),
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Malee Perera"
+                                                }),
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Jayaweera Silva"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Assit Lec. Warun Perera"
+                                                }),
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. madanayaka Fernando"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Assit Lec. Anjalee Perera"
+                                                }),
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. madanayaka Fernando"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Sauri Fernando"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: " Assit Lec. Anuni Fernando"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Supipi Fernando"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: " Assit Lec. Anuni Fernando"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                    children: "Supervisors for DS Specialization"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                    children: "Co-Supervisors for DS Specialization"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                    children: "Supervisors for IM Specialization"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                    children: "Co-Supervisors for IM Specialization"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Malan Gamage"
+                                                }),
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Ruwan Silva"
+                                                }),
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Malan Gamage"
+                                                }),
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Ruwan Silva"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Arun Perera"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Olu Perera"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Arun Perera"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Olu Perera"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Jayaweera Fernando"
+                                                }),
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Ayesh Silava"
+                                                }),
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Jayaweera Fernando"
+                                                }),
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Ayesh Silava"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Kamlee Gamage"
+                                                }),
+                                                "    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Poojani Fernando"
+                                                }),
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Kamlee Gamage"
+                                                }),
+                                                "    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Poojani Fernando"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Miran Perera"
+                                                }),
+                                                "     ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: " Assit Lec. Ruwan Fernando"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Miran Perera"
+                                                }),
+                                                "     ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: " Assit Lec. Ruwan Fernando"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Nuwani Perera"
+                                                }),
+                                                "    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Disni Fernando"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Nuwani Perera"
+                                                }),
+                                                "    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Disni Fernando"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " Assit Lec. Waruni Fernando    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Randimal Fernando"
+                                                }),
+                                                "Assit Lec. Waruni Fernando    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Randimal Fernando"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Rasika Perera"
+                                                }),
+                                                "    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Wihara Fernando"
+                                                }),
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Rasika Perera"
+                                                }),
+                                                "    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Wihara Fernando"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Malee Perera"
+                                                }),
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Jayaweera Silva"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Malee Perera"
+                                                }),
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Jayaweera Silva"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Assit Lec. Anjalee Perera"
+                                                }),
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. madanayaka Fernando"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Assit Lec. Anjalee Perera"
+                                                }),
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. madanayaka Fernando"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Supipi Fernando"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: " Assit Lec. Anuni Fernando"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Supipi Fernando"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: " Assit Lec. Anuni Fernando"
+                                                }),
+                                                " "
+                                            ]
+                                        })
+                                    ]
+                                })
+                            ]
+                        })
+                    }),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
+                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                            className: "col-md-8 mt-4 mx-auto",
+                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("form", {
+                                className: "row g-3",
+                                style: {
+                                    backgroundColor: "#ebecf0"
+                                },
+                                children: [
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("b", {
+                                            children: " Please select the Supervisors according to your specializations. Do not change the Supervisor or the Co-Supervisor after the request is accepted by them"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                        className: "form-group",
+                                        children: [
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                className: "form-label",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h5", {
+                                                    children: "Selected Supervisor: "
+                                                })
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                type: "text",
+                                                name: "Supervisors",
+                                                onChange: (e)=>setSupervisors(e.target.value)
+                                                ,
+                                                value: Supervisors,
+                                                placeholder: "Select a name"
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                        className: "form-group",
+                                        children: [
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                className: "form-label",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h5", {
+                                                    children: "Supervisor's Response: "
+                                                })
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                type: "text",
+                                                name: "SState",
+                                                onChange: (e)=>setSState(e.target.value)
+                                                ,
+                                                value: SState,
+                                                list: "SStates"
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("datalist", {
+                                                id: "SStates",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("option", {
+                                                    value: "Supervisor response - pending"
+                                                })
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                        className: "form-group",
+                                        children: [
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                className: "form-label",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h5", {
+                                                    children: "Selected Co-Supervisor: "
+                                                })
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                type: "text",
+                                                name: "CoSupervisors",
+                                                onChange: (e)=>setCoSupervisors(e.target.value)
+                                                ,
+                                                value: CoSupervisors
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                        className: "form-group",
+                                        children: [
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                className: "form-label",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h5", {
+                                                    children: "Co-Supervisor's Response: "
+                                                })
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                type: "text",
+                                                name: "CState",
+                                                onChange: (e)=>setCState(e.target.value)
+                                                ,
+                                                value: CState,
+                                                list: "CStates"
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("datalist", {
+                                                id: "CStates",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("option", {
+                                                    value: "Supervisor response - pending"
+                                                })
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("center", {
+                                        children: [
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
+                                                className: "btn btn-success",
+                                                type: "submit",
+                                                onClick: (e)=>changeOnClick(e)
+                                                ,
+                                                children: "Submit Response"
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
+                                        ]
+                                    })
+                                ]
+                            })
+                        })
+                    })
+                ]
+            })
+        ]
+    });
+}
+
+
+
+
+var $48e20f129468ec18$exports = {};
+$48e20f129468ec18$exports = new URL("Homefirst.1166848c.png", "file:" + __filename).toString();
+
+
+class $a75f642b815fc93f$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
+    render() {
+        return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+            children: [
+                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("center", {
+                        children: [
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h1", {
+                                style: {
+                                    background: '#000080',
+                                    color: 'white',
+                                    fontSize: '50px'
+                                },
+                                children: " WELCOME TO SLIIT "
+                            }),
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                            "  ",
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
+                                className: "btn btn-success",
+                                style: {
+                                    backgroundColor: '#3895d3',
+                                    width: '180px',
+                                    height: '50px',
+                                    fontSize: '20px'
+                                },
+                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                    href: "/AdminLogin",
+                                    style: {
+                                        textDecoration: 'none',
+                                        backgroundColor: '#3895d3',
+                                        color: 'white'
+                                    },
+                                    children: "Admin Login"
+                                })
+                            }),
+                            "\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0",
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
+                                className: "btn btn-success",
+                                style: {
+                                    backgroundColor: '#3895d3',
+                                    width: '180px',
+                                    height: '50px',
+                                    fontSize: '20px'
+                                },
+                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                    href: "/StaffLogin",
+                                    style: {
+                                        textDecoration: 'none',
+                                        backgroundColor: '#3895d3',
+                                        color: 'white'
+                                    },
+                                    children: "\xa0Staff Login"
+                                })
+                            }),
+                            "\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0",
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
+                                className: "btn btn-success",
+                                style: {
+                                    backgroundColor: '#3895d3',
+                                    width: '180px',
+                                    height: '50px',
+                                    fontSize: '20px'
+                                },
+                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                    href: "/Login",
+                                    style: {
+                                        textDecoration: 'none',
+                                        backgroundColor: '#3895d3',
+                                        color: 'white'
+                                    },
+                                    children: "\xa0Student Login"
+                                })
+                            }),
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                            "  ",
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                            "  ",
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("b", {
+                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
+                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h1", {
+                                        style: {
+                                            fontSize: "50px"
+                                        },
+                                        children: "RESEARCH MANAGEMENT"
+                                    })
+                                })
+                            }),
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                            "  ",
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                                style: {
+                                    marginLeft: '50px'
+                                },
+                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
+                                    src: (/*@__PURE__*/$parcel$interopDefault($48e20f129468ec18$exports)),
+                                    class: "mx-auto",
+                                    alt: "evaluation",
+                                    width: "900",
+                                    height: "300"
+                                })
+                            }),
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
+                        ]
+                    })
+                }),
+                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                        children: [
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("link", {
+                                rel: "stylesheet",
+                                href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+                            }),
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                                style: {
+                                    backgroundColor: "#080523"
+                                },
+                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                    id: "contact",
+                                    style: {
+                                        backgroundColor: "#080523",
+                                        color: "white"
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("center", {
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h1", {
+                                                    children: " Discover Your Future"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                                            className: "row",
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                className: "col-md-4",
+                                                style: {
+                                                    marginLeft: "650px"
+                                                },
+                                                children: [
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
+                                                        children: "Colombo, Sri Lanka"
+                                                    }),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
+                                                        children: "Phone: +00 1515151515"
+                                                    }),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
+                                                        children: "Email: SLIIT@mail.com"
+                                                    })
+                                                ]
+                                            })
+                                        })
+                                    ]
+                                })
+                            })
+                        ]
+                    })
+                })
+            ]
         });
     }
 }
@@ -10393,22 +12956,17 @@ const $41f71f5a6f8b36cf$var$Login = ()=>{
         if (data.data.token) {
             localStorage.setItem("token", data.data.token);
             localStorage.setItem("userRole", data.data.userRole);
-            navigate("/");
+            navigate("/UHome");
         } else alert("Error occured !  Login credentials wrong...");
     };
     return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
         children: [
-            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
                 children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                    style: {
-                        marginTop: "30px"
-                    },
                     children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
                         children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h1", {
                             style: {
-                                color: "purple"
+                                color: "#000080"
                             },
                             children: "WELCOME TO SLIIT RESEARCH PROJECT MANAGEMENT"
                         })
@@ -10422,11 +12980,17 @@ const $41f71f5a6f8b36cf$var$Login = ()=>{
                     children: [
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
                             className: "navbar-brand",
+                            style: {
+                                marginLeft: '300px'
+                            },
                             href: "/",
                             children: "Home"
                         }),
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
                             className: "navbar-brand",
+                            style: {
+                                marginLeft: '800px'
+                            },
                             href: "/Login",
                             children: "Student Login"
                         }),
@@ -10445,118 +13009,8 @@ const $41f71f5a6f8b36cf$var$Login = ()=>{
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
                             className: "collapse navbar-collapse",
                             id: "navbarNavAltMarkup",
-                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                                className: "navbar-nav",
-                                children: [
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        style: {
-                                            display: localStorage.getItem("userRole") == "user" ? "flex" : "none"
-                                        },
-                                        className: "nav-link active",
-                                        href: "/",
-                                        "aria-current": "page",
-                                        children: "student"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        style: {
-                                            display: localStorage.getItem("userRole") == "user" ? "flex" : "none"
-                                        },
-                                        className: "nav-link active",
-                                        href: "/",
-                                        "aria-current": "page",
-                                        children: "student"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        style: {
-                                            display: localStorage.getItem("userRole") == "user" ? "flex" : "none"
-                                        },
-                                        className: "nav-link active",
-                                        href: "/",
-                                        "aria-current": "page",
-                                        children: " student"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        style: {
-                                            display: localStorage.getItem("userRole") == "user" ? "flex" : "none"
-                                        },
-                                        className: "nav-link active",
-                                        href: "/",
-                                        "aria-current": "page",
-                                        children: "student"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        style: {
-                                            display: localStorage.getItem("userRole") == "staff" ? "flex" : "none"
-                                        },
-                                        className: "nav-link active",
-                                        href: "/",
-                                        "aria-current": "page",
-                                        children: "staff"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        style: {
-                                            display: localStorage.getItem("userRole") == "staff" ? "flex" : "none"
-                                        },
-                                        className: "nav-link active",
-                                        href: "/",
-                                        "aria-current": "page",
-                                        children: "staff"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        style: {
-                                            display: localStorage.getItem("userRole") == "staff" ? "flex" : "none"
-                                        },
-                                        className: "nav-link active",
-                                        href: "/",
-                                        "aria-current": "page",
-                                        children: "staff"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        style: {
-                                            display: localStorage.getItem("userRole") == "staff" ? "flex" : "none"
-                                        },
-                                        className: "nav-link active",
-                                        href: "/",
-                                        "aria-current": "page",
-                                        children: "staff"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        style: {
-                                            display: localStorage.getItem("userRole") == "admin" ? "flex" : "none"
-                                        },
-                                        className: "nav-link active",
-                                        href: "/",
-                                        "aria-current": "page",
-                                        children: "admin"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        style: {
-                                            display: localStorage.getItem("userRole") == "admin" ? "flex" : "none"
-                                        },
-                                        className: "nav-link active",
-                                        href: "/",
-                                        "aria-current": "page",
-                                        children: "admin"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        style: {
-                                            display: localStorage.getItem("userRole") == "admin" ? "flex" : "none"
-                                        },
-                                        className: "nav-link active",
-                                        href: "/",
-                                        "aria-current": "page",
-                                        children: "admin"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        style: {
-                                            display: localStorage.getItem("userRole") == "admin" ? "flex" : "none"
-                                        },
-                                        className: "nav-link active",
-                                        href: "/",
-                                        "aria-current": "page",
-                                        children: "admin"
-                                    })
-                                ]
+                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                                className: "navbar-nav"
                             })
                         })
                     ]
@@ -10565,6 +13019,12 @@ const $41f71f5a6f8b36cf$var$Login = ()=>{
             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
                 className: "login-form",
+                style: {
+                    backgroundColor: '#b3e5fc',
+                    width: '500px',
+                    marginLeft: '500px',
+                    marginTop: '100px'
+                },
                 children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("center", {
                     children: [
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h1", {
@@ -10659,7 +13119,7 @@ const $41f71f5a6f8b36cf$var$Login = ()=>{
                             children: [
                                 "Don't have an account? ",
                                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($ltMAx$reactrouterdom.Link, {
-                                    to: "/",
+                                    to: "/Registration",
                                     children: "Sign Up"
                                 })
                             ]
@@ -10697,24 +13157,21 @@ const $40c9d7c3d9ae3a5c$var$Login = ()=>{
         if (data.data.token) {
             localStorage.setItem("token", data.data.token);
             localStorage.setItem("userRole", data.data.userRole);
-            navigate("/");
+            navigate("/adminHome");
         } else alert("Error occured !  Login credentials wrong...");
     };
     return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
         children: [
-            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
                 children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                    style: {
-                        marginTop: "30px"
-                    },
-                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
-                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h1", {
-                            style: {
-                                color: "purple"
-                            },
-                            children: "WELCOME TO SLIIT RESEARCH PROJECT MANAGEMENT"
+                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("b", {
+                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
+                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h1", {
+                                style: {
+                                    color: "#000080"
+                                },
+                                children: "WELCOME TO SLIIT RESEARCH PROJECT MANAGEMENT"
+                            })
                         })
                     })
                 })
@@ -10726,11 +13183,17 @@ const $40c9d7c3d9ae3a5c$var$Login = ()=>{
                     children: [
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
                             className: "navbar-brand",
-                            href: "/Hotel",
+                            style: {
+                                marginLeft: '300px'
+                            },
+                            href: "/",
                             children: "Home"
                         }),
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
                             className: "navbar-brand",
+                            style: {
+                                marginLeft: '800px'
+                            },
                             href: "/AdminLogin",
                             children: "Admin Login"
                         }),
@@ -10752,78 +13215,6 @@ const $40c9d7c3d9ae3a5c$var$Login = ()=>{
                             children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
                                 className: "navbar-nav",
                                 children: [
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        style: {
-                                            display: localStorage.getItem("userRole") == "user" ? "flex" : "none"
-                                        },
-                                        className: "nav-link active",
-                                        href: "/",
-                                        "aria-current": "page",
-                                        children: "student"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        style: {
-                                            display: localStorage.getItem("userRole") == "user" ? "flex" : "none"
-                                        },
-                                        className: "nav-link active",
-                                        href: "/",
-                                        "aria-current": "page",
-                                        children: "student"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        style: {
-                                            display: localStorage.getItem("userRole") == "user" ? "flex" : "none"
-                                        },
-                                        className: "nav-link active",
-                                        href: "/",
-                                        "aria-current": "page",
-                                        children: " student"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        style: {
-                                            display: localStorage.getItem("userRole") == "user" ? "flex" : "none"
-                                        },
-                                        className: "nav-link active",
-                                        href: "/",
-                                        "aria-current": "page",
-                                        children: "student"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        style: {
-                                            display: localStorage.getItem("userRole") == "staff" ? "flex" : "none"
-                                        },
-                                        className: "nav-link active",
-                                        href: "/",
-                                        "aria-current": "page",
-                                        children: "staff"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        style: {
-                                            display: localStorage.getItem("userRole") == "staff" ? "flex" : "none"
-                                        },
-                                        className: "nav-link active",
-                                        href: "/",
-                                        "aria-current": "page",
-                                        children: "staff"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        style: {
-                                            display: localStorage.getItem("userRole") == "staff" ? "flex" : "none"
-                                        },
-                                        className: "nav-link active",
-                                        href: "/",
-                                        "aria-current": "page",
-                                        children: "staff"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        style: {
-                                            display: localStorage.getItem("userRole") == "staff" ? "flex" : "none"
-                                        },
-                                        className: "nav-link active",
-                                        href: "/",
-                                        "aria-current": "page",
-                                        children: "staff"
-                                    }),
                                     /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
                                         style: {
                                             display: localStorage.getItem("userRole") == "admin" ? "flex" : "none"
@@ -10869,6 +13260,12 @@ const $40c9d7c3d9ae3a5c$var$Login = ()=>{
             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
                 className: "login-form",
+                style: {
+                    backgroundColor: '#b3e5fc',
+                    width: '500px',
+                    marginLeft: '500px',
+                    marginTop: '100px'
+                },
                 children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("center", {
                     children: [
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h1", {
@@ -10957,16 +13354,6 @@ const $40c9d7c3d9ae3a5c$var$Login = ()=>{
                                     ]
                                 })
                             })
-                        }),
-                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("p", {
-                            className: "link",
-                            children: [
-                                "Don't have an account? ",
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($ltMAx$reactrouterdom.Link, {
-                                    to: "/",
-                                    children: "Sign Up"
-                                })
-                            ]
                         })
                     ]
                 })
@@ -11001,18 +13388,13 @@ const $007307e82316f5c7$var$Login = ()=>{
         if (data.data.token) {
             localStorage.setItem("token", data.data.token);
             localStorage.setItem("userRole", data.data.userRole);
-            navigate("/");
+            navigate("/StaffHome");
         } else alert("Error occured !  Login credentials wrong...");
     };
     return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
         children: [
-            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
                 children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                    style: {
-                        marginTop: "30px"
-                    },
                     children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
                         children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h1", {
                             style: {
@@ -11023,6 +13405,7 @@ const $007307e82316f5c7$var$Login = ()=>{
                     })
                 })
             }),
+            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("nav", {
                 className: "navbar navbar-expand-lg navbar-dark bg-dark",
                 children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
@@ -11030,11 +13413,17 @@ const $007307e82316f5c7$var$Login = ()=>{
                     children: [
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
                             className: "navbar-brand",
-                            href: "/Hotel",
+                            style: {
+                                marginLeft: '300px'
+                            },
+                            href: "/",
                             children: "Home"
                         }),
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
                             className: "navbar-brand",
+                            style: {
+                                marginLeft: '800px'
+                            },
                             href: "/StaffLogin",
                             children: "Staff Login"
                         }),
@@ -11058,42 +13447,6 @@ const $007307e82316f5c7$var$Login = ()=>{
                                 children: [
                                     /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
                                         style: {
-                                            display: localStorage.getItem("userRole") == "user" ? "flex" : "none"
-                                        },
-                                        className: "nav-link active",
-                                        href: "/",
-                                        "aria-current": "page",
-                                        children: "student"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        style: {
-                                            display: localStorage.getItem("userRole") == "user" ? "flex" : "none"
-                                        },
-                                        className: "nav-link active",
-                                        href: "/",
-                                        "aria-current": "page",
-                                        children: "student"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        style: {
-                                            display: localStorage.getItem("userRole") == "user" ? "flex" : "none"
-                                        },
-                                        className: "nav-link active",
-                                        href: "/",
-                                        "aria-current": "page",
-                                        children: " student"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        style: {
-                                            display: localStorage.getItem("userRole") == "user" ? "flex" : "none"
-                                        },
-                                        className: "nav-link active",
-                                        href: "/",
-                                        "aria-current": "page",
-                                        children: "student"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        style: {
                                             display: localStorage.getItem("userRole") == "staff" ? "flex" : "none"
                                         },
                                         className: "nav-link active",
@@ -11127,42 +13480,6 @@ const $007307e82316f5c7$var$Login = ()=>{
                                         href: "/",
                                         "aria-current": "page",
                                         children: "staff"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        style: {
-                                            display: localStorage.getItem("userRole") == "admin" ? "flex" : "none"
-                                        },
-                                        className: "nav-link active",
-                                        href: "/",
-                                        "aria-current": "page",
-                                        children: "admin"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        style: {
-                                            display: localStorage.getItem("userRole") == "admin" ? "flex" : "none"
-                                        },
-                                        className: "nav-link active",
-                                        href: "/",
-                                        "aria-current": "page",
-                                        children: "admin"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        style: {
-                                            display: localStorage.getItem("userRole") == "admin" ? "flex" : "none"
-                                        },
-                                        className: "nav-link active",
-                                        href: "/",
-                                        "aria-current": "page",
-                                        children: "admin"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        style: {
-                                            display: localStorage.getItem("userRole") == "admin" ? "flex" : "none"
-                                        },
-                                        className: "nav-link active",
-                                        href: "/",
-                                        "aria-current": "page",
-                                        children: "admin"
                                     })
                                 ]
                             })
@@ -11173,6 +13490,12 @@ const $007307e82316f5c7$var$Login = ()=>{
             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
                 className: "login-form",
+                style: {
+                    backgroundColor: '#b3e5fc',
+                    width: '500px',
+                    marginLeft: '500px',
+                    marginTop: '100px'
+                },
                 children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("center", {
                     children: [
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h1", {
@@ -11267,7 +13590,7 @@ const $007307e82316f5c7$var$Login = ()=>{
                             children: [
                                 "Don't have an account? ",
                                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($ltMAx$reactrouterdom.Link, {
-                                    to: "/",
+                                    to: "/StaffRegistration",
                                     children: "Sign Up"
                                 })
                             ]
@@ -11560,6 +13883,11 @@ class $47564792bf847415$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                     /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
                         children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h1", {
                             children: " PRESENTATION PANEL FORMATION "
+                        })
+                    }),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
+                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h3", {
+                            children: "  ADD PRESENTATION PANEL MEMBERS "
                         })
                     }),
                     /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
@@ -14389,6 +16717,1364 @@ class $3ef86e9e5ca9d6f6$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
 }
 
 
+
+
+function $65b541d9bc4f8abd$export$2e2bcd8739ae039() {
+    return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                style: {
+                    backgroundColor: "#85C1E9"
+                },
+                children: [
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
+                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h1", {
+                            style: {
+                                fontFamily: "cursive"
+                            },
+                            children: "Supervisors and Co-supervisors List Based on the Specialization"
+                        })
+                    }),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                    "\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 ",
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                        className: "btn btn-primary",
+                        href: "/ViewAreas",
+                        style: {
+                            textDecoration: 'none'
+                        },
+                        children: "Back"
+                    }),
+                    "\xa0\xa0\xa0",
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
+                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("table", {
+                            width: "1000px",
+                            style: {
+                                fontFamily: "-moz-initial"
+                            },
+                            children: [
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("thead", {
+                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                        children: [
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                children: "Supervisors for IT Specialization"
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                children: "Co-Supervisors for IT Specialization"
+                                            }),
+                                            " "
+                                        ]
+                                    })
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tbody", {
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Kamal Gamage"
+                                                }),
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Nimal Silva"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Warun Perera"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Anura Perera"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Jayaweera Fernando"
+                                                }),
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Adithaya Silava"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Nimal Gamage"
+                                                }),
+                                                "    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Jayaweera Fernando"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Nuwan Perera"
+                                                }),
+                                                "     ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: " Assit Lec. Gunarathna Fernando"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Lakshika Perera"
+                                                }),
+                                                "    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Jayaweera Fernando"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " Assit Lec. Gunarathna Fernando    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Nirmani Fernando"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Nimalee Perera"
+                                                }),
+                                                "    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Wihara Fernando"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Awan Perera"
+                                                }),
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Jayaweera Silva"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Assit Lec. Warun Perera"
+                                                }),
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. madanayaka Fernando"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Sauri Fernando"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: " Assit Lec. Anuni Fernando"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                    children: "Supervisors for SE Specialization"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                    children: "Supervisors for SE Specialization"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Malan Gamage"
+                                                }),
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Ruwan Silva"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Arun Perera"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Olu Perera"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Jayaweera Fernando"
+                                                }),
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Ayesh Silava"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Kamlee Gamage"
+                                                }),
+                                                "    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Poojani Fernando"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Miran Perera"
+                                                }),
+                                                "     ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: " Assit Lec. Ruwan Fernando"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Nuwani Perera"
+                                                }),
+                                                "    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Disni Fernando"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " Assit Lec. Waruni Fernando    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Randimal Fernando"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Rasika Perera"
+                                                }),
+                                                "    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Wihara Fernando"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Malee Perera"
+                                                }),
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Jayaweera Silva"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Assit Lec. Anjalee Perera"
+                                                }),
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. madanayaka Fernando"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Supipi Fernando"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: " Assit Lec. Anuni Fernando"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                    children: "Supervisors for DS Specialization"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                    children: "Supervisors for DS Specialization"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Malan Gamage"
+                                                }),
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Ruwan Silva"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Arun Perera"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Olu Perera"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Jayaweera Fernando"
+                                                }),
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Ayesh Silava"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Kamlee Gamage"
+                                                }),
+                                                "    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Poojani Fernando"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Miran Perera"
+                                                }),
+                                                "     ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: " Assit Lec. Ruwan Fernando"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Nuwani Perera"
+                                                }),
+                                                "    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Disni Fernando"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " Assit Lec. Waruni Fernando    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Randimal Fernando"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Rasika Perera"
+                                                }),
+                                                "    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Wihara Fernando"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Malee Perera"
+                                                }),
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Jayaweera Silva"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Assit Lec. Anjalee Perera"
+                                                }),
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. madanayaka Fernando"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Supipi Fernando"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: " Assit Lec. Anuni Fernando"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                    children: "Supervisors for IM Specialization"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                    children: "Supervisors for IM Specialization"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Malan Gamage"
+                                                }),
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Ruwan Silva"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Arun Perera"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Olu Perera"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Jayaweera Fernando"
+                                                }),
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Ayesh Silava"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Kamlee Gamage"
+                                                }),
+                                                "    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Poojani Fernando"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Miran Perera"
+                                                }),
+                                                "     ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: " Assit Lec. Ruwan Fernando"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Nuwani Perera"
+                                                }),
+                                                "    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Disni Fernando"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " Assit Lec. Waruni Fernando    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Randimal Fernando"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Rasika Perera"
+                                                }),
+                                                "    ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Wihara Fernando"
+                                                }),
+                                                " "
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Malee Perera"
+                                                }),
+                                                "  ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. Jayaweera Silva"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Assit Lec. Anjalee Perera"
+                                                }),
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "inst. madanayaka Fernando"
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: "Lec. Supipi Fernando"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: " Assit Lec. Anuni Fernando"
+                                                }),
+                                                " "
+                                            ]
+                                        })
+                                    ]
+                                })
+                            ]
+                        })
+                    })
+                ]
+            })
+        })
+    });
+}
+
+
+
+
+
+var $109783536bdd9cba$exports = {};
+$109783536bdd9cba$exports = new URL("presentation.1e549ec5.jpg", "file:" + __filename).toString();
+
+
+var $90e206f0fe1420cc$exports = {};
+$90e206f0fe1420cc$exports = new URL("thesis.7f5f398e.jpg", "file:" + __filename).toString();
+
+
+var $f52075e0055afba2$exports = {};
+$f52075e0055afba2$exports = new URL("document.b6118f3a.jpg", "file:" + __filename).toString();
+
+
+var $dbeace7e9b049af2$exports = {};
+$dbeace7e9b049af2$exports = new URL("communication.ede2d0a3.jpeg", "file:" + __filename).toString();
+
+
+var $014e573752dc1b8e$exports = {};
+$014e573752dc1b8e$exports = new URL("marking.34c9705f.jpeg", "file:" + __filename).toString();
+
+
+class $22b7a625ff9b923a$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
+    render() {
+        return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+            children: [
+                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("nav", {
+                    className: "navbar navbar-light navbar-expand-md bg-dark navigation-clean-search",
+                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                        className: "container",
+                        children: [
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                className: "navbar-brand",
+                                href: "#",
+                                style: {
+                                    fontsize: '19px',
+                                    color: 'rgb(255,255,255)'
+                                },
+                                children: "Staff Home"
+                            }),
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                "data-bs-toggle": "collapse",
+                                className: "navbar-toggler",
+                                "data-bs-target": "#navcol-1",
+                                children: [
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                        className: "visually-hidden",
+                                        children: "Toggle navigation"
+                                    }),
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                        className: "navbar-toggler-icon"
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                className: "collapse navbar-collapse",
+                                id: "navcol-1",
+                                children: [
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("ul", {
+                                        className: "navbar-nav",
+                                        children: [
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                                className: "nav-item",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    className: "nav-link ",
+                                                    href: "#",
+                                                    style: {
+                                                        fontsize: '15px',
+                                                        color: 'rgb(255,255,255)'
+                                                    },
+                                                    children: "staff"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                                className: "nav-item",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    className: "nav-link",
+                                                    href: "#",
+                                                    style: {
+                                                        fontsize: '15px',
+                                                        color: 'rgb(255,255,255)'
+                                                    },
+                                                    children: "staff"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                                className: "nav-item",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    className: "nav-link",
+                                                    href: "#",
+                                                    style: {
+                                                        fontsize: '15px',
+                                                        color: 'rgb(255,255,255)'
+                                                    },
+                                                    children: "staff"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                                className: "nav-item",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    className: "nav-link",
+                                                    href: "#",
+                                                    style: {
+                                                        fontsize: '15px',
+                                                        color: 'rgb(255,255,255)'
+                                                    },
+                                                    children: "staff"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                                className: "nav-item",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    className: "nav-link",
+                                                    href: "#",
+                                                    style: {
+                                                        fontsize: '15px',
+                                                        color: 'rgb(255,255,255)'
+                                                    },
+                                                    children: "staff"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                                className: "nav-item",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    className: "nav-link",
+                                                    href: "#",
+                                                    style: {
+                                                        fontsize: '15px',
+                                                        color: 'rgb(255,255,255)'
+                                                    },
+                                                    children: "staff "
+                                                })
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                                className: "nav-item",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    className: "nav-link",
+                                                    href: "/",
+                                                    style: {
+                                                        fontsize: '15px',
+                                                        color: 'rgb(255,255,255)'
+                                                    },
+                                                    children: "staff "
+                                                })
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                                className: "nav-item",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    className: "nav-link",
+                                                    href: "/",
+                                                    style: {
+                                                        fontsize: '15px',
+                                                        color: 'rgb(255,255,255)'
+                                                    },
+                                                    children: "staff"
+                                                })
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                        className: "btn btn-light action-button",
+                                        role: "button",
+                                        href: "#",
+                                        style: {
+                                            fontsize: '15px',
+                                            background: 'rgb(69,27,158)',
+                                            color: 'rgb(255,255,255)'
+                                        },
+                                        children: "Logout"
+                                    })
+                                ]
+                            })
+                        ]
+                    })
+                }),
+                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("center", {
+                    children: [
+                        " ",
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h1", {
+                            children: " WELCOME TO RESRAECH PROJECT MANAGEMENT SYSTEM"
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
+                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                        style: {
+                            backgroundColor: "white"
+                        },
+                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                            id: "band",
+                            className: "container text-center",
+                            style: {
+                                backgroundColor: "white"
+                            },
+                            children: [
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                    className: "row",
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                            className: "col-sm-4",
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
+                                                    className: "text-center",
+                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("strong", {
+                                                        children: "Topic Evaluation"
+                                                    })
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    href: "#demo",
+                                                    "data-toggle": "collapse",
+                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
+                                                        src: (/*@__PURE__*/$parcel$interopDefault($cbe5f43fa61f963a$exports)),
+                                                        className: "img-circle person",
+                                                        alt: "topic",
+                                                        width: "300",
+                                                        height: "300"
+                                                    })
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                            className: "col-sm-4",
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
+                                                    className: "text-center",
+                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("strong", {
+                                                        children: "Presentation Evaluation"
+                                                    })
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    href: "#demo2",
+                                                    "data-toggle": "collapse",
+                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
+                                                        src: (/*@__PURE__*/$parcel$interopDefault($109783536bdd9cba$exports)),
+                                                        className: "img-circle person",
+                                                        alt: "presentation",
+                                                        width: "300",
+                                                        height: "300"
+                                                    })
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                            className: "col-sm-4",
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
+                                                    className: "text-center",
+                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("strong", {
+                                                        children: "Final Thesis Evaluation"
+                                                    })
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    href: "#demo3",
+                                                    "data-toggle": "collapse",
+                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
+                                                        src: (/*@__PURE__*/$parcel$interopDefault($90e206f0fe1420cc$exports)),
+                                                        className: "img-circle person",
+                                                        alt: "thesis",
+                                                        width: "300",
+                                                        height: "300"
+                                                    })
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
+                                            ]
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                    className: "row",
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                            className: "col-sm-4",
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
+                                                    className: "text-center",
+                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("strong", {
+                                                        children: "Document Evaluation"
+                                                    })
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    href: "#demo3",
+                                                    "data-toggle": "collapse",
+                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
+                                                        src: (/*@__PURE__*/$parcel$interopDefault($f52075e0055afba2$exports)),
+                                                        className: "img-circle person",
+                                                        alt: "document",
+                                                        width: "300",
+                                                        height: "300"
+                                                    })
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                            className: "col-sm-4",
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
+                                                    className: "text-center",
+                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("strong", {
+                                                        children: "Group Communication"
+                                                    })
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    href: "#demo2",
+                                                    "data-toggle": "collapse",
+                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
+                                                        src: (/*@__PURE__*/$parcel$interopDefault($dbeace7e9b049af2$exports)),
+                                                        className: "img-circle person",
+                                                        alt: "communication",
+                                                        width: "300",
+                                                        height: "300"
+                                                    })
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                            className: "col-sm-4",
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
+                                                    className: "text-center",
+                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("strong", {
+                                                        children: " Marking scheme"
+                                                    })
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    href: "#demo2",
+                                                    "data-toggle": "collapse",
+                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
+                                                        src: (/*@__PURE__*/$parcel$interopDefault($014e573752dc1b8e$exports)),
+                                                        className: "img-circle person",
+                                                        alt: "marking",
+                                                        width: "300",
+                                                        height: "300"
+                                                    })
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
+                                            ]
+                                        })
+                                    ]
+                                })
+                            ]
+                        })
+                    })
+                }),
+                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                            style: {
+                                backgroundColor: "#080523"
+                            },
+                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                id: "contact",
+                                style: {
+                                    backgroundColor: "#080523",
+                                    color: "white"
+                                },
+                                children: [
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("center", {
+                                        children: [
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h1", {
+                                                children: " Discover Your Future"
+                                            }),
+                                            " "
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                                        className: "row",
+                                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                            className: "col-md-4",
+                                            style: {
+                                                marginLeft: "650px"
+                                            },
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
+                                                    children: "Colombo, Sri Lanka"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
+                                                    children: "Phone: +00 1515151515"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
+                                                    children: "Email: SLIIT@mail.com"
+                                                })
+                                            ]
+                                        })
+                                    })
+                                ]
+                            })
+                        })
+                    })
+                })
+            ]
+        });
+    }
+}
+
+
+
+
+
+
+const $c04888a1e361d578$var$Register = ()=>{
+    const navigate = $ltMAx$reactrouterdom.useNavigate();
+    const [Name, setName] = $ltMAx$react.useState('');
+    const [ID, setID] = $ltMAx$react.useState('');
+    const [Email, setEmail] = $ltMAx$react.useState('');
+    const [PhoneNumber, setPhoneNumber] = $ltMAx$react.useState('');
+    const [Password, setPassword] = $ltMAx$react.useState('');
+    const handleName = (e)=>{
+        setName(e.target.value);
+    };
+    const handleID = (e)=>{
+        setID(e.target.value);
+    };
+    const handleEmail = (e)=>{
+        setEmail(e.target.value);
+    };
+    const handlePhoneNumber = (e)=>{
+        setPhoneNumber(e.target.value);
+    };
+    const handlePassword = (e)=>{
+        setPassword(e.target.value);
+    };
+    const handleSubmit = async (e)=>{
+        e.preventDefault();
+        if (Name === '' || ID === '' || Email === '' || PhoneNumber === '' || Password === '') alert("Fill all the data");
+        else {
+            let newdata = {
+                Name: Name,
+                ID: ID,
+                Email: Email,
+                PhoneNumber: PhoneNumber,
+                Password: Password
+            };
+            let cusdata = await $9df5b5eebe1b3e66$export$be6bf124df73f3b6(newdata);
+            console.log("return data", cusdata);
+            localStorage.setItem("token", cusdata.data.token);
+            localStorage.setItem("userRole", cusdata.data.userRole);
+            navigate('/StaffLogin');
+        }
+    };
+    return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+        children: [
+            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("center", {
+                children: [
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                        style: {
+                            marginTop: "30px"
+                        },
+                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
+                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h1", {
+                                style: {
+                                    color: "purple"
+                                },
+                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("b", {
+                                    children: "WELCOME TO SLIIT RESEAECH PROJECT MANAGEMENT"
+                                })
+                            })
+                        })
+                    }),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
+                ]
+            }),
+            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("nav", {
+                className: "navbar navbar-expand-lg navbar-dark bg-dark",
+                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                    className: "container-fluid",
+                    children: [
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                            className: "navbar-brand",
+                            href: "/Home",
+                            children: "Home"
+                        }),
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                            className: "navbar-brand",
+                            href: "/AdminLogin",
+                            children: "Admin Login"
+                        }),
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                            className: "navbar-brand",
+                            href: "/StaffLogin",
+                            children: "Staff Login"
+                        }),
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                            className: "navbar-brand",
+                            href: "/Login",
+                            children: "Student Login"
+                        }),
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
+                            className: "navbar-toggler",
+                            type: "button",
+                            "data-bs-toggle": "collapse",
+                            "data-bs-target": "#navbarNavAltMarkup",
+                            "aria-controls": "navbarNavAltMarkup",
+                            "aria-expanded": "false",
+                            "aria-label": "Toggle navigation",
+                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                className: "navbar-toggler-icon"
+                            })
+                        }),
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                            className: "collapse navbar-collapse",
+                            id: "navbarNavAltMarkup",
+                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                className: "navbar-nav",
+                                children: [
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                        style: {
+                                            display: localStorage.getItem("userRole") == "staff" ? "flex" : "none"
+                                        },
+                                        className: "nav-link active",
+                                        href: "/",
+                                        "aria-current": "page",
+                                        children: "staff"
+                                    }),
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                        style: {
+                                            display: localStorage.getItem("userRole") == "staff" ? "flex" : "none"
+                                        },
+                                        className: "nav-link active",
+                                        href: "/",
+                                        "aria-current": "page",
+                                        children: "staff"
+                                    }),
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                        style: {
+                                            display: localStorage.getItem("userRole") == "staff" ? "flex" : "none"
+                                        },
+                                        className: "nav-link active",
+                                        href: "/",
+                                        "aria-current": "page",
+                                        children: "staff"
+                                    }),
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                        style: {
+                                            display: localStorage.getItem("userRole") == "staff" ? "flex" : "none"
+                                        },
+                                        className: "nav-link active",
+                                        href: "/",
+                                        "aria-current": "page",
+                                        children: "staff"
+                                    })
+                                ]
+                            })
+                        })
+                    ]
+                })
+            }),
+            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                children: [
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
+                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("table", {
+                            width: "500",
+                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("tr", {
+                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("th", {
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
+                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h1", {
+                                                style: {
+                                                    color: ""
+                                                },
+                                                children: " Staff Registration"
+                                            })
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("form", {
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                    className: "form-group",
+                                                    style: {
+                                                        marginBottom: '15px'
+                                                    },
+                                                    children: [
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                            style: {
+                                                                margineBottom: '5px'
+                                                            },
+                                                            children: "Name: "
+                                                        }),
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                            type: "text",
+                                                            className: "form-control",
+                                                            value: Name,
+                                                            onChange: handleName,
+                                                            placeholder: "enter name as in sliit id"
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                    className: "form-group",
+                                                    style: {
+                                                        marginBottom: '15px'
+                                                    },
+                                                    children: [
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                            style: {
+                                                                margineBottom: '5px'
+                                                            },
+                                                            children: "Sliit ID: "
+                                                        }),
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                            type: "text",
+                                                            className: "form-control",
+                                                            value: ID,
+                                                            onChange: handleID,
+                                                            placeholder: "enter sliit id"
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                    className: "form-group",
+                                                    style: {
+                                                        marginBottom: '15px'
+                                                    },
+                                                    children: [
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                            style: {
+                                                                margineBottom: '5px'
+                                                            },
+                                                            children: "  Email Address: "
+                                                        }),
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                            type: "text",
+                                                            className: "form-control",
+                                                            value: Email,
+                                                            onChange: handleEmail,
+                                                            placeholder: "enter sliit id"
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                    className: "form-group",
+                                                    style: {
+                                                        marginBottom: '15px'
+                                                    },
+                                                    children: [
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                            style: {
+                                                                margineBottom: '5px'
+                                                            },
+                                                            children: "  Contact Number: "
+                                                        }),
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                            type: "text",
+                                                            className: "form-control",
+                                                            value: PhoneNumber,
+                                                            onChange: handlePhoneNumber,
+                                                            placeholder: "enter a contact number"
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                    className: "form-group",
+                                                    style: {
+                                                        marginBottom: '15px'
+                                                    },
+                                                    children: [
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                            style: {
+                                                                margineBottom: '5px'
+                                                            },
+                                                            children: "  Password: "
+                                                        }),
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                            type: "text",
+                                                            className: "form-control",
+                                                            value: Password,
+                                                            onChange: handlePassword,
+                                                            placeholder: "create a password(should be at least 6 charactors)"
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
+                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
+                                                        onClick: handleSubmit,
+                                                        className: "btn btn-primary btn-lg active",
+                                                        type: "submit",
+                                                        children: "Register"
+                                                    })
+                                                })
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("p", {
+                                            className: "link",
+                                            children: [
+                                                "Already have an account? ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($ltMAx$reactrouterdom.Link, {
+                                                    to: "/StaffLogin",
+                                                    children: "Sign Up"
+                                                })
+                                            ]
+                                        })
+                                    ]
+                                })
+                            })
+                        })
+                    })
+                ]
+            })
+        ]
+    });
+};
+var $c04888a1e361d578$export$2e2bcd8739ae039 = $c04888a1e361d578$var$Register;
+
+
 function $da11a1101b2a894a$export$2e2bcd8739ae039() {
     return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
         className: "App",
@@ -14504,7 +18190,7 @@ function $da11a1101b2a894a$export$2e2bcd8739ae039() {
                         element: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($59177492ce9c1b4e$export$2e2bcd8739ae039, {})
                     }),
                     /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($ltMAx$reactrouterdom.Route, {
-                        path: "/",
+                        path: "/UHome",
                         element: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($9e60e4b88b4afc2e$export$2e2bcd8739ae039, {})
                     }),
                     /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($ltMAx$reactrouterdom.Route, {
@@ -14552,7 +18238,23 @@ function $da11a1101b2a894a$export$2e2bcd8739ae039() {
                         element: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($df8d3d3f875c458a$export$2e2bcd8739ae039, {})
                     }),
                     /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($ltMAx$reactrouterdom.Route, {
-                        path: "/HomeAnodya",
+                        path: "/SReply/:id",
+                        element: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($5c8c4a1fa0f58f92$export$2e2bcd8739ae039, {})
+                    }),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($ltMAx$reactrouterdom.Route, {
+                        path: "/CReply/:id",
+                        element: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($53e227c83bea1ebd$export$2e2bcd8739ae039, {})
+                    }),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($ltMAx$reactrouterdom.Route, {
+                        path: "/Confirm",
+                        element: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($311b7eea41c8bef7$export$2e2bcd8739ae039, {})
+                    }),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($ltMAx$reactrouterdom.Route, {
+                        path: "/Change/:id",
+                        element: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($696412dc8b0e129a$export$2e2bcd8739ae039, {})
+                    }),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($ltMAx$reactrouterdom.Route, {
+                        path: "/",
                         element: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($a75f642b815fc93f$export$2e2bcd8739ae039, {})
                     }),
                     /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($ltMAx$reactrouterdom.Route, {
@@ -14626,6 +18328,18 @@ function $da11a1101b2a894a$export$2e2bcd8739ae039() {
                     /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($ltMAx$reactrouterdom.Route, {
                         path: "/S_ViewThesis",
                         element: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($3ef86e9e5ca9d6f6$export$2e2bcd8739ae039, {})
+                    }),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($ltMAx$reactrouterdom.Route, {
+                        path: "/SupervisorList",
+                        element: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($65b541d9bc4f8abd$export$2e2bcd8739ae039, {})
+                    }),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($ltMAx$reactrouterdom.Route, {
+                        path: "/StaffHome",
+                        element: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($22b7a625ff9b923a$export$2e2bcd8739ae039, {})
+                    }),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($ltMAx$reactrouterdom.Route, {
+                        path: "/StaffRegistration",
+                        element: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($c04888a1e361d578$export$2e2bcd8739ae039, {})
                     })
                 ]
             })
