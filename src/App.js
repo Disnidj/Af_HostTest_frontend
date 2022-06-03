@@ -116,7 +116,7 @@ export default function App() {
 
 
 {/* Ramona */}
-        <Route path="/" element={<UHome/>}></Route>
+        <Route path="/UHome" element={<UHome/>}></Route>
         <Route path="/groupReg" element={<GroupReg/>}></Route>
         <Route path="/groups" element={<Groups/>}></Route>
         <Route path="/topicReg" element={<TopicReg/>}></Route>
@@ -133,7 +133,7 @@ export default function App() {
 
 {/* Anodya */}
 
-                <Route    path = "/HomeAnodya" element = {<HomeAnodya/>}/>  
+                <Route    path = "/" element = {<HomeAnodya/>}/>  
                 <Route    path = "/Registration" element = {<Registration/>}/>
                 <Route    path = "/Login" element = {<Login/>}/>  
                 <Route    path = "/AdminLogin" element = {<AdminLogin/>}/>  
