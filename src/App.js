@@ -48,6 +48,11 @@ import Areas from './components/A_Areas';
 import ViewAreas from './components/U_Areas';
 import Supervisors from './components/A_Supervisors';
 import Response from './components/A_Response';
+import SReply from './components/SupReply';
+import CReply from './components/CSupReply';
+import Confirm from './components/U_Confirmations';
+import Change from './components/U_ChangeSup';
+
 
 
 //Anodya
@@ -71,6 +76,9 @@ import Groupids from './components/Groupids';
 import S_ViewTopis from './components/S_ViewTopis';  
 import S_ViewPresentation from './components/S_ViewPresentation';  
 import S_ViewThesis from './components/S_ViewThesis';
+import SupervisorList from './components/SupervisorList';
+import StaffHome from './components/StaffHome';
+
 
 
 export default function App() {
@@ -128,6 +136,10 @@ export default function App() {
         <Route path="/ViewAreas" element={<ViewAreas/>}></Route>
         <Route path="/Supervisors" element={<Supervisors/>}></Route>
         <Route path="/Response/:id" element={<Response/>}></Route>
+        <Route path="/SReply/:id" element={<SReply/>}></Route>
+        <Route path="/CReply/:id" element={<CReply/>}></Route>
+        <Route path="/Confirm" element={<Confirm/>}></Route>
+        <Route path="/Change/:id" element={<Change/>}></Route>
 
 
 
@@ -152,6 +164,8 @@ export default function App() {
                 <Route     path = "/S_ViewTopis" element = {<S_ViewTopis/>}/>  
                 <Route     path = "/S_ViewPresentation" element = {<S_ViewPresentation/>}/>  
                 <Route     path = "/S_ViewThesis" element = {<S_ViewThesis/>}/>
+                <Route     path = "/SupervisorList" element = {<SupervisorList/>}/>
+                <Route     path = "/StaffHome" element = {<StaffHome/>}/>
 
 
    </Routes>

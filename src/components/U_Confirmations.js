@@ -1,27 +1,26 @@
 import React, { Component } from 'react'
 import axios from 'axios';
-import group from '../../public/group.png';
 
 export default class Home extends Component {
   constructor(props){
     super(props);
 
     this.state={
-      groups:[]
+      topics:[]
     };
   }
 
   componentDidMount(){
-    this.retriveGroups();
+    this.retriveTopics();
   }
 
-retriveGroups(){
-  axios.get("https://afsliitproject.herokuapp.com/groups").then(res=>{
+retriveTopics(){
+  axios.get("http://localhost:8000/topics").then(res=>{
     if(res.data.success){
       this.setState({
-        groups:res.data.existingGroups
+        topics:res.data.existingTopics
       });
-      console.log(this.state.groups)
+      console.log(this.state.topics)
     }
   });
 }
@@ -29,21 +28,20 @@ retriveGroups(){
 
 
 
-filterData(groups,searchKey){
-  const result = groups.filter((group) =>
-  group.GName.toLowerCase().includes(searchKey)||
-  group.Leader.toLowerCase().includes(searchKey)
+filterData(topics,searchKey){
+  const result = topics.filter((topic) =>
+  topic.GroupName.toLowerCase().includes(searchKey)
   )
 
-  this.setState({groups:result})
+  this.setState({topics:result})
 }
 
 handleSearchArea = (e) =>{
   const searchKey = e.currentTarget.value;
 
-  axios.get("https://afsliitproject.herokuapp.com/groups").then(res=>{
+  axios.get("http://localhost:8000/topics").then(res=>{
     if(res.data.success){
-      this.filterData(res.data.existingGroups,searchKey)
+      this.filterData(res.data.existingTopics,searchKey)
     }
   });
 }
@@ -86,9 +84,9 @@ handleSearchArea = (e) =>{
         <div className='container'>
           <br/>
         
-          <div style={{height:'140px', width:'100%', backgroundColor:"#080523", marginTop:'-20px'}}>
+          <div style={{height:'80px', width:'100%', backgroundColor:"#080523", marginTop:'-20px'}}>
                     <br/>
-                    <h2 style={{color:'white', textAlign:'center'}}><img src={group} class="mx-auto" alt="" width="150" height="100"/>&nbsp;Registered Groups</h2>
+                    <h2 style={{color:'white', textAlign:'center'}}>Responses of the Supervisors</h2>
                    <br/>
           </div>
 
@@ -106,53 +104,54 @@ handleSearchArea = (e) =>{
               </div>
           ))} */}
           <br/>
-          
-
-            <p><b>Step 2 : You can search for your group by the name you gave to the group and see the details you have entered. If you wish to change any information or delete the registered group you can click on the group name and continue.</b></p>
-            <div className="col-lg-9 mt-2 mb-2">
+           <div className="col-lg-9 mt-2 mb-2">
               <input
               className="form-control"
               type="search"
-              placeholder="search for your group"
+              placeholder="search by group name"
               name="searchQuery"
               onChange={this.handleSearchArea}>
               </input>
             </div>
-      
       <table className='table'>
 
           <thead>
           <tr>
           <th scope='col'>No.</th>
-          <th scope='col'>Name of the group</th>
-          <th scope='col'>Student 1</th>
-          <th scope='col'>Student 2</th>
-          <th scope='col'>Student 3</th>
-          <th scope='col'>Student 4</th>
-          <th scope='col'>Group Leader</th>
-          
+          <th scope='col'>GroupName</th> 
+          <th scope='col'>Project Topic</th>
+          <th scope='col'>Selected Supervisor</th>
+          <th scope='col'>Supervisor Response</th>
+          <th scope='col'>Selected Co-Supervisor</th>
+          <th scope='col'>Co-Supervisor Response</th>
+          <th scope='col'>Change Supervisors if rejected</th>
+       
 
           </tr>
 
           </thead>
           <tbody>
 
-          {this.state.groups.map((groups,index)=>(
+          {this.state.topics.map((topics,index)=>(
             <tr>
               <th scope='row'>{index+1}</th>
+              <td>{topics.GroupName}</td>
+              <td>{topics.Topic}</td>
+              <td>{topics.Supervisors}</td>
+              <td>{topics.SState}</td>
+              <td>{topics.CoSupervisors}</td>
+              <td>{topics.CState}</td>
+              
               <td>
-              <a href={`/details/${groups._id}`} style={{textDecoration:'none'}}>{groups.GName}</a></td>
-              <td>{groups.student1}</td>
-              <td>{groups.student2}</td>
-              <td>{groups.student3}</td>
-              <td>{groups.student4}</td>
-              <td>{groups.Leader}</td>
-              <td>
+
+            <a className = "btn btn btn-outline-dark" href={`/Change/${topics._id}`} style={{textDecoration:'none'}}>
+                <i className ="fas fa-edit"></i>&nbsp;Request another supervisor
+            </a>
+            &nbsp;
+          
+            </td>
+         
              
-
-              </td>
-
-
             </tr>
           ))}
 
