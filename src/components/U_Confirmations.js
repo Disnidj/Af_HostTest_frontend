@@ -15,7 +15,7 @@ export default class Home extends Component {
   }
 
 retriveTopics(){
-  axios.get("http://localhost:8000/topics").then(res=>{
+  axios.get("https://afsliitproject.herokuapp.com/topics").then(res=>{
     if(res.data.success){
       this.setState({
         topics:res.data.existingTopics
@@ -39,7 +39,7 @@ filterData(topics,searchKey){
 handleSearchArea = (e) =>{
   const searchKey = e.currentTarget.value;
 
-  axios.get("http://localhost:8000/topics").then(res=>{
+  axios.get("https://afsliitproject.herokuapp.com/topics").then(res=>{
     if(res.data.success){
       this.filterData(res.data.existingTopics,searchKey)
     }

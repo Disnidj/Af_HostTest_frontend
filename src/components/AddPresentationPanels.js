@@ -76,6 +76,8 @@ render(){
 
         <br/>
             <center><h1> PRESENTATION PANEL FORMATION </h1></center> 
+            <center><h3>  ADD PRESENTATION PANEL MEMBERS </h3></center> 
+      
         <br/>
           
         <br/>
