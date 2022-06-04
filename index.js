@@ -16,6 +16,376 @@ function $parcel$interopDefault(a) {
 
 
 
+class $a0c0ecf59f5749de$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            thesis: ""
+        };
+    }
+    handleChange = ({ target: { value: value , name: name  }  })=>this.setState({
+            [name]: value
+        })
+    ;
+    onSubmit = (e)=>{
+        e.preventDefault();
+        const { thesis: thesis  } = this.state;
+        const data = {
+            thesis: thesis
+        };
+        console.log(data);
+        ($parcel$interopDefault($ltMAx$axios)).post("http://localhost:8000/thesis/save", data).then((res)=>{
+            if (res.data.success) this.setState({
+                thesis: ""
+            });
+        });
+    };
+    render() {
+        return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+            className: "edit",
+            children: [
+                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("nav", {
+                        className: "navbar navbar-light navbar-expand-md bg-dark navigation-clean-search",
+                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                            children: [
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                    "data-bs-toggle": "collapse",
+                                    className: "navbar-toggler",
+                                    "data-bs-target": "#navcol-1",
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                            className: "visually-hidden",
+                                            children: "Toggle navigation"
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                            className: "navbar-toggler-icon"
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                                    className: "collapse navbar-collapse",
+                                    id: "navcol-1",
+                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("ul", {
+                                        className: "navbar-nav",
+                                        children: [
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                                className: "nav-item",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    className: "nav-link ",
+                                                    href: "/groupreg",
+                                                    style: {
+                                                        fontsize: '15px',
+                                                        color: 'rgb(255,255,255)'
+                                                    },
+                                                    children: "Group Registration"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                                className: "nav-item",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    className: "nav-link",
+                                                    href: "/topicReg",
+                                                    style: {
+                                                        fontsize: '15px',
+                                                        color: 'rgb(255,255,255)'
+                                                    },
+                                                    children: "Topic Registration"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                                className: "nav-item",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    className: "nav-link",
+                                                    href: "/ViewAreas",
+                                                    style: {
+                                                        fontsize: '15px',
+                                                        color: 'rgb(255,255,255)'
+                                                    },
+                                                    children: "Research Areas and Topics"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                                className: "nav-item",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    className: "nav-link",
+                                                    href: "#",
+                                                    style: {
+                                                        fontsize: '15px',
+                                                        color: 'rgb(255,255,255)'
+                                                    },
+                                                    children: "Panel Evaluations"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                                className: "nav-item",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    className: "nav-link",
+                                                    href: "#",
+                                                    style: {
+                                                        fontsize: '15px',
+                                                        color: 'rgb(255,255,255)'
+                                                    },
+                                                    children: "Documents and templates"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                                className: "nav-item",
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    className: "nav-link",
+                                                    href: "/SubmitThesis",
+                                                    style: {
+                                                        fontsize: '15px',
+                                                        color: 'rgb(255,255,255)'
+                                                    },
+                                                    children: "Thesis Submission page"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
+                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                    className: "btn btn-warning",
+                                                    href: "/",
+                                                    style: {
+                                                        height: "40px",
+                                                        width: "100px",
+                                                        marginTop: "8px",
+                                                        marginLeft: "900px"
+                                                    },
+                                                    children: "Log Out"
+                                                })
+                                            })
+                                        ]
+                                    })
+                                })
+                            ]
+                        })
+                    })
+                }),
+                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                    className: "col-md-8 mt-4 mx-auto",
+                    children: [
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                            style: {
+                                height: '80px',
+                                width: '100%',
+                                backgroundColor: "#080523",
+                                marginTop: '-20px'
+                            },
+                            children: [
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h2", {
+                                    style: {
+                                        color: 'white',
+                                        textAlign: 'center'
+                                    },
+                                    children: "Thesis Submission"
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
+                            ]
+                        }),
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                            children: [
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("form", {
+                                    className: "row g-3",
+                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                        className: "form-group",
+                                        children: [
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("label", {
+                                                className: "form-label",
+                                                children: "Add your thesis"
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                                type: "text",
+                                                className: "form-control",
+                                                name: "thesis",
+                                                value: this.state.thesis,
+                                                placeholder: "type something....",
+                                                onChange: this.handleChange,
+                                                required: true
+                                            })
+                                        ]
+                                    })
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("hr", {}),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("center", {
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
+                                                    className: "btn btn btn-dark btn-lg",
+                                                    onClick: this.onSubmit,
+                                                    children: "Save"
+                                                }),
+                                                "\xa0"
+                                            ]
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
+                                    ]
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                            children: [
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("hr", {}),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
+                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                        href: "/Thesis",
+                                        children: "View thesis"
+                                    })
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
+                            ]
+                        })
+                    ]
+                })
+            ]
+        });
+    }
+}
+
+
+
+
+
+class $7cd8ac6f066d1d5b$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            thesis: []
+        };
+    }
+    componentDidMount() {
+        this.retrieveThesis();
+    }
+    retrieveThesis() {
+        ($parcel$interopDefault($ltMAx$axios)).get("http://localhost:8000/thesis").then((res)=>{
+            if (res.data.success) {
+                this.setState({
+                    thesis: res.data.existingThesis
+                });
+                console.log(this.state.thesis);
+            }
+        });
+    }
+    onDelete = (id)=>{
+        ($parcel$interopDefault($ltMAx$axios)).delete(`http://localhost:8000/thesis/delete/${id}`).then((res)=>{
+            alert("Delete successfully");
+            this.retrieveThesis();
+        });
+    };
+    //to serch specific data
+    filterData(thesis1, searchKey) {
+        const result = thesis1.filter((thesis)=>thesis.GroupId.toLowerCase().includes(searchKey)
+        );
+        this.setState({
+            thesis: result
+        });
+    }
+    handleSearchArea = (e)=>{
+        const searchKey = e.currentTarget.value;
+        ($parcel$interopDefault($ltMAx$axios)).get("http://localhost:8000/thesis").then((res)=>{
+            if (res.data.success) this.filterData(res.data.existingThesis, searchKey);
+        });
+    };
+    render() {
+        return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                children: [
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                        className: "col-md-8 mt-4 mx-auto",
+                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                            style: {
+                                height: '80px',
+                                width: '100%',
+                                backgroundColor: "#000080",
+                                marginTop: '-20px'
+                            },
+                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
+                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h1", {
+                                    style: {
+                                        color: 'white'
+                                    },
+                                    children: "THESIS SUBMISSION PAGE"
+                                })
+                            })
+                        })
+                    }),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("hr", {}),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
+                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                            className: "col-lg-9 mt-2 mb-2",
+                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("input", {
+                                className: "form-control",
+                                type: "search",
+                                placeholder: "search group id",
+                                name: "searchQuery",
+                                onChange: this.handleSearchArea
+                            })
+                        })
+                    }),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
+                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("table", {
+                            className: "table",
+                            children: [
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("thead", {
+                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("tr", {
+                                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                            scope: "col",
+                                            children: "Thesis"
+                                        })
+                                    })
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("tbody", {
+                                    children: this.state.thesis.map((thesis, index)=>/*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("th", {
+                                                    scope: "row",
+                                                    children: index + 1
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
+                                                    children: thesis.thesis
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("td", {
+                                                    children: [
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                        "\xa0",
+                                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                            className: "btn btn-primary",
+                                                            style: {
+                                                                textDecoration: 'none',
+                                                                color: 'white'
+                                                            },
+                                                            href: "/",
+                                                            onClick: ()=>this.onDelete(thesis._id)
+                                                            ,
+                                                            children: "\xa0Delete"
+                                                        })
+                                                    ]
+                                                })
+                                            ]
+                                        }, index)
+                                    )
+                                })
+                            ]
+                        })
+                    }),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
+                ]
+            })
+        });
+    }
+}
+
+
+
+
+
 class $1af2306d0f141a54$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
     //initialize constructor to pass the props
     constructor(props){
@@ -1838,7 +2208,7 @@ class $04a304321dd7eef7$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                         width: '200px'
                     },
                     children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("a", {
-                        href: "/adminHome",
+                        href: "/StaffHome",
                         style: {
                             textDecoration: 'none',
                             backgroundColor: '#3895d3',
@@ -1871,75 +2241,50 @@ class $04a304321dd7eef7$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
                 "  ",
                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("table", {
-                    children: [
-                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
-                            children: [
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("td", {
-                                    children: [
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
-                                            className: "btn btn-success",
-                                            style: {
-                                                marginLeft: '250px',
-                                                backgroundColor: "#0147ab",
-                                                width: '350px'
-                                            },
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                href: "/supervEveHome",
-                                                style: {
-                                                    textDecoration: 'none',
-                                                    color: 'white',
-                                                    fontSize: "16px"
-                                                },
-                                                children: " Supervisor Evaluation "
-                                            })
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                                        " ",
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
-                                    ]
-                                }),
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("td", {
-                                    children: [
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
-                                            className: "btn btn-success",
-                                            style: {
-                                                marginLeft: '450px',
-                                                backgroundColor: "#0147ab",
-                                                width: '350px'
-                                            },
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                href: "/panelEveHome",
-                                                style: {
-                                                    textDecoration: 'none',
-                                                    color: 'white',
-                                                    fontSize: "16px"
-                                                },
-                                                children: " Panel Evaaluation "
-                                            })
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                                        " ",
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
-                                    ]
-                                })
-                            ]
-                        }),
-                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("tr", {
-                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("td", {
+                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("table", {
+                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                        children: [
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("td", {
                                 children: [
                                     /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
                                         className: "btn btn-success",
                                         style: {
-                                            marginLeft: '250px'
+                                            marginLeft: '250px',
+                                            backgroundColor: "#0147ab",
+                                            width: '350px'
                                         },
                                         children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                            href: "/UploadNaviAdmin",
+                                            href: "/supervEveHome",
                                             style: {
                                                 textDecoration: 'none',
-                                                color: 'white'
+                                                color: 'white',
+                                                fontSize: "16px"
                                             },
-                                            children: " Admin Document Upload  "
+                                            children: " Supervisor Evaluation "
+                                        })
+                                    }),
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                    " ",
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
+                                ]
+                            }),
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("td", {
+                                children: [
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
+                                        className: "btn btn-success",
+                                        style: {
+                                            marginLeft: '450px',
+                                            backgroundColor: "#0147ab",
+                                            width: '350px'
+                                        },
+                                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                            href: "/panelEveHome",
+                                            style: {
+                                                textDecoration: 'none',
+                                                color: 'white',
+                                                fontSize: "16px"
+                                            },
+                                            children: " Panel Evaaluation "
                                         })
                                     }),
                                     /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
@@ -1947,29 +2292,8 @@ class $04a304321dd7eef7$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                                     /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
                                 ]
                             })
-                        }),
-                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
-                            children: [
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
-                                    className: "btn btn-success",
-                                    style: {
-                                        marginLeft: '250px'
-                                    },
-                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        href: "/TempNavbar",
-                                        style: {
-                                            textDecoration: 'none',
-                                            color: 'white'
-                                        },
-                                        children: " Templates Submittions  "
-                                    })
-                                }),
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                                " ",
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
-                            ]
-                        })
-                    ]
+                        ]
+                    })
                 })
             ]
         });
@@ -3921,7 +4245,7 @@ class $382ddaa29abfe9f9$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                             backgroundColor: '#3895d3'
                         },
                         children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("a", {
-                            href: "/",
+                            href: "/UHome",
                             style: {
                                 textDecoration: 'none',
                                 backgroundColor: '#3895d3',
@@ -4571,7 +4895,7 @@ class $7c7b6d280fac5ffe$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                         width: '200px'
                     },
                     children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("a", {
-                        href: "/",
+                        href: "/UHome",
                         style: {
                             textDecoration: 'none',
                             backgroundColor: '#3895d3',
@@ -4860,7 +5184,7 @@ class $af85ff5559db8900$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                         width: '200px'
                     },
                     children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("a", {
-                        href: "/",
+                        href: "/UHome",
                         style: {
                             textDecoration: 'none',
                             backgroundColor: '#3895d3',
@@ -6079,123 +6403,7 @@ class $89b2533ccfee3b3f$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
         return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
             className: "edit",
             children: [
-                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("nav", {
-                        className: "navbar navbar-light navbar-expand-md bg-dark navigation-clean-search",
-                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                            children: [
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
-                                    "data-bs-toggle": "collapse",
-                                    className: "navbar-toggler",
-                                    "data-bs-target": "#navcol-1",
-                                    children: [
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                            className: "visually-hidden",
-                                            children: "Toggle navigation"
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                            className: "navbar-toggler-icon"
-                                        })
-                                    ]
-                                }),
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                                    className: "collapse navbar-collapse",
-                                    id: "navcol-1",
-                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("ul", {
-                                        className: "navbar-nav",
-                                        children: [
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link ",
-                                                    href: "/groupreg",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Group Registration"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/groups",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Registered Groups"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/ViewAreas",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Research Areas and Topics"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/EvaluationResult",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Panel Evaluations Results"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/STDdownloads",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Documents and templates"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/SubmitNavbar",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Documents Submission page"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "btn btn-warning",
-                                                    href: "/",
-                                                    style: {
-                                                        height: "40px",
-                                                        width: "100px",
-                                                        marginTop: "8px",
-                                                        marginLeft: "800px"
-                                                    },
-                                                    children: "Log Out"
-                                                })
-                                            })
-                                        ]
-                                    })
-                                })
-                            ]
-                        })
-                    })
-                }),
+                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {}),
                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
                     className: "col-md-8 mt-4 mx-auto",
                     children: [
@@ -6430,123 +6638,7 @@ class $739a5b9bddd5848e$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
     render() {
         return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
             children: [
-                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("nav", {
-                        className: "navbar navbar-light navbar-expand-md bg-dark navigation-clean-search",
-                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                            children: [
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
-                                    "data-bs-toggle": "collapse",
-                                    className: "navbar-toggler",
-                                    "data-bs-target": "#navcol-1",
-                                    children: [
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                            className: "visually-hidden",
-                                            children: "Toggle navigation"
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                            className: "navbar-toggler-icon"
-                                        })
-                                    ]
-                                }),
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                                    className: "collapse navbar-collapse",
-                                    id: "navcol-1",
-                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("ul", {
-                                        className: "navbar-nav",
-                                        children: [
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link ",
-                                                    href: "/groupreg",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Group Registration"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/groups",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Registered Groups"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/ViewAreas",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Research Areas and Topics"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/EvaluationResult",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Panel Evaluations Results"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/STDdownloads",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Documents and templates"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/SubmitNavbar",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Documents Submission page"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "btn btn-warning",
-                                                    href: "/",
-                                                    style: {
-                                                        height: "40px",
-                                                        width: "100px",
-                                                        marginTop: "8px",
-                                                        marginLeft: "800px"
-                                                    },
-                                                    children: "Log Out"
-                                                })
-                                            })
-                                        ]
-                                    })
-                                })
-                            ]
-                        })
-                    })
-                }),
+                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {}),
                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
                     className: "container",
                     children: [
@@ -6739,123 +6831,7 @@ class $378695bfd0e51975$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
         return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
             className: "edit",
             children: [
-                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("nav", {
-                        className: "navbar navbar-light navbar-expand-md bg-dark navigation-clean-search",
-                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                            children: [
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
-                                    "data-bs-toggle": "collapse",
-                                    className: "navbar-toggler",
-                                    "data-bs-target": "#navcol-1",
-                                    children: [
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                            className: "visually-hidden",
-                                            children: "Toggle navigation"
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                            className: "navbar-toggler-icon"
-                                        })
-                                    ]
-                                }),
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                                    className: "collapse navbar-collapse",
-                                    id: "navcol-1",
-                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("ul", {
-                                        className: "navbar-nav",
-                                        children: [
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link ",
-                                                    href: "/groupreg",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Group Registration"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/groups",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Registered Groups"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/ViewAreas",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Research Areas and Topics"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/EvaluationResult",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Panel Evaluations Results"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/STDdownloads",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Documents and templates"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/SubmitNavbar",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Documents Submission page"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "btn btn-warning",
-                                                    href: "/",
-                                                    style: {
-                                                        height: "40px",
-                                                        width: "100px",
-                                                        marginTop: "8px",
-                                                        marginLeft: "800px"
-                                                    },
-                                                    children: "Log Out"
-                                                })
-                                            })
-                                        ]
-                                    })
-                                })
-                            ]
-                        })
-                    })
-                }),
+                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {}),
                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
                     className: "col-md-8 mt-4 mx-auto",
                     children: [
@@ -7683,123 +7659,7 @@ function $00f8db41d718b992$export$2e2bcd8739ae039() {
     }, []);
     return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
         children: [
-            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("nav", {
-                    className: "navbar navbar-light navbar-expand-md bg-dark navigation-clean-search",
-                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                        children: [
-                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
-                                "data-bs-toggle": "collapse",
-                                className: "navbar-toggler",
-                                "data-bs-target": "#navcol-1",
-                                children: [
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                        className: "visually-hidden",
-                                        children: "Toggle navigation"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                        className: "navbar-toggler-icon"
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                                className: "collapse navbar-collapse",
-                                id: "navcol-1",
-                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("ul", {
-                                    className: "navbar-nav",
-                                    children: [
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            className: "nav-item",
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "nav-link ",
-                                                href: "/groupreg",
-                                                style: {
-                                                    fontsize: '15px',
-                                                    color: 'rgb(255,255,255)'
-                                                },
-                                                children: "Group Registration"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            className: "nav-item",
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "nav-link",
-                                                href: "/groups",
-                                                style: {
-                                                    fontsize: '15px',
-                                                    color: 'rgb(255,255,255)'
-                                                },
-                                                children: "Registered Groups"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            className: "nav-item",
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "nav-link",
-                                                href: "/ViewAreas",
-                                                style: {
-                                                    fontsize: '15px',
-                                                    color: 'rgb(255,255,255)'
-                                                },
-                                                children: "Research Areas and Topics"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            className: "nav-item",
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "nav-link",
-                                                href: "/EvaluationResult",
-                                                style: {
-                                                    fontsize: '15px',
-                                                    color: 'rgb(255,255,255)'
-                                                },
-                                                children: "Panel Evaluations Results"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            className: "nav-item",
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "nav-link",
-                                                href: "/STDdownloads",
-                                                style: {
-                                                    fontsize: '15px',
-                                                    color: 'rgb(255,255,255)'
-                                                },
-                                                children: "Documents and templates"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            className: "nav-item",
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "nav-link",
-                                                href: "/SubmitNavbar",
-                                                style: {
-                                                    fontsize: '15px',
-                                                    color: 'rgb(255,255,255)'
-                                                },
-                                                children: "Documents Submission page"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "btn btn-warning",
-                                                href: "/",
-                                                style: {
-                                                    height: "40px",
-                                                    width: "100px",
-                                                    marginTop: "8px",
-                                                    marginLeft: "800px"
-                                                },
-                                                children: "Log Out"
-                                            })
-                                        })
-                                    ]
-                                })
-                            })
-                        ]
-                    })
-                })
-            }),
+            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {}),
             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
                 children: [
                     /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
@@ -8269,8 +8129,8 @@ var $a6f38b2c38d65cf4$exports = {};
 $a6f38b2c38d65cf4$exports = new URL("3.e3f5c2ce.jpg", "file:" + __filename).toString();
 
 
-var $d6518e443c072b9d$exports = {};
-$d6518e443c072b9d$exports = new URL("main.fab2bb5d.webp", "file:" + __filename).toString();
+var $4c067d0636aabd00$exports = {};
+$4c067d0636aabd00$exports = new URL("studenthome.fcd0c0a0.jpeg", "file:" + __filename).toString();
 
 
 class $9e60e4b88b4afc2e$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
@@ -8278,7 +8138,6 @@ class $9e60e4b88b4afc2e$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
         return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
             style: {
                 height: '150px',
-                width: '100%',
                 backgroundColor: "#260248",
                 marginTop: '-20px'
             },
@@ -8294,139 +8153,351 @@ class $9e60e4b88b4afc2e$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                 }),
                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                    className: "container",
                     style: {
                         marginLeft: "28%"
                     }
                 }),
-                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("nav", {
-                        className: "navbar navbar-light navbar-expand-md bg-dark navigation-clean-search",
-                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                    children: [
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("nav", {
+                            className: "navbar navbar-light navbar-expand-md bg-dark navigation-clean-search",
                             children: [
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
-                                    "data-bs-toggle": "collapse",
-                                    className: "navbar-toggler",
-                                    "data-bs-target": "#navcol-1",
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                    className: "container",
                                     children: [
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                            className: "visually-hidden",
-                                            children: "Toggle navigation"
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                            className: "navbar-brand",
+                                            href: "/",
+                                            style: {
+                                                fontSize: '15px',
+                                                color: 'rgb(255,255,255)'
+                                            },
+                                            children: "Home"
                                         }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                            className: "navbar-toggler-icon"
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                            "data-bs-toggle": "collapse",
+                                            className: "navbar-toggler",
+                                            "data-bs-target": "#navcol-1",
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                    className: "visually-hidden",
+                                                    children: "Toggle navigation"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                    className: "navbar-toggler-icon"
+                                                })
+                                            ]
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                    className: "container",
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                            className: "navbar-brand",
+                                            href: "/S_ViewTopis",
+                                            style: {
+                                                fontSize: '15px',
+                                                color: 'rgb(255,255,255)'
+                                            },
+                                            children: "Topic Panel"
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                            "data-bs-toggle": "collapse",
+                                            className: "navbar-toggler",
+                                            "data-bs-target": "#navcol-1",
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                    className: "visually-hidden",
+                                                    children: "Toggle navigation"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                    className: "navbar-toggler-icon"
+                                                })
+                                            ]
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                    className: "container",
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                            className: "navbar-brand",
+                                            href: "/S_ViewThesis",
+                                            style: {
+                                                fontSize: '15px',
+                                                color: 'rgb(255,255,255)'
+                                            },
+                                            children: "Thesis Panel"
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                            "data-bs-toggle": "collapse",
+                                            className: "navbar-toggler",
+                                            "data-bs-target": "#navcol-1",
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                    className: "visually-hidden",
+                                                    children: "Toggle navigation"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                    className: "navbar-toggler-icon"
+                                                })
+                                            ]
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                    className: "container",
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                            className: "navbar-brand",
+                                            href: "/S_ViewPresentation",
+                                            style: {
+                                                fontSize: '15px',
+                                                color: 'rgb(255,255,255)'
+                                            },
+                                            children: "Presentation Panel"
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                            "data-bs-toggle": "collapse",
+                                            className: "navbar-toggler",
+                                            "data-bs-target": "#navcol-1",
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                    className: "visually-hidden",
+                                                    children: "Toggle navigation"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                    className: "navbar-toggler-icon"
+                                                })
+                                            ]
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                    className: "container",
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                            className: "navbar-brand",
+                                            href: "/groupreg",
+                                            style: {
+                                                fontSize: '15px',
+                                                color: 'rgb(255,255,255)'
+                                            },
+                                            children: "Group Registration"
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                            "data-bs-toggle": "collapse",
+                                            className: "navbar-toggler",
+                                            "data-bs-target": "#navcol-1",
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                    className: "visually-hidden",
+                                                    children: "Toggle navigation"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                    className: "navbar-toggler-icon"
+                                                })
+                                            ]
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                    className: "container",
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                            className: "navbar-brand",
+                                            href: "/groups",
+                                            style: {
+                                                fontSize: '15px',
+                                                color: 'rgb(255,255,255)'
+                                            },
+                                            children: "Registered Groups"
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                            "data-bs-toggle": "collapse",
+                                            className: "navbar-toggler",
+                                            "data-bs-target": "#navcol-1",
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                    className: "visually-hidden",
+                                                    children: "Toggle navigation"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                    className: "navbar-toggler-icon"
+                                                })
+                                            ]
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                    className: "container",
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                            className: "navbar-brand",
+                                            href: "/ViewAreas",
+                                            style: {
+                                                fontSize: '15px',
+                                                color: 'rgb(255,255,255)'
+                                            },
+                                            children: "Research Areas and Topics"
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                            "data-bs-toggle": "collapse",
+                                            className: "navbar-toggler",
+                                            "data-bs-target": "#navcol-1",
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                    className: "visually-hidden",
+                                                    children: "Toggle navigation"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                    className: "navbar-toggler-icon"
+                                                })
+                                            ]
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                    className: "container",
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                            className: "navbar-brand",
+                                            href: "/Confirm",
+                                            style: {
+                                                fontSize: '15px',
+                                                color: 'rgb(255,255,255)'
+                                            },
+                                            children: "Supervisor Allocations"
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                            "data-bs-toggle": "collapse",
+                                            className: "navbar-toggler",
+                                            "data-bs-target": "#navcol-1",
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                    className: "visually-hidden",
+                                                    children: "Toggle navigation"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                    className: "navbar-toggler-icon"
+                                                })
+                                            ]
+                                        })
+                                    ]
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                    className: "container",
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                            className: "navbar-brand",
+                                            href: "/EvaluationResult",
+                                            style: {
+                                                fontSize: '15px',
+                                                color: 'rgb(255,255,255)'
+                                            },
+                                            children: "Panel Evaluations Results"
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                            "data-bs-toggle": "collapse",
+                                            className: "navbar-toggler",
+                                            "data-bs-target": "#navcol-1",
+                                            children: [
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                    className: "visually-hidden",
+                                                    children: "Toggle navigation"
+                                                }),
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                    className: "navbar-toggler-icon"
+                                                })
+                                            ]
                                         })
                                     ]
                                 }),
                                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
                                     className: "collapse navbar-collapse",
-                                    id: "navcol-1",
-                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("ul", {
-                                        className: "navbar-nav",
-                                        children: [
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link ",
-                                                    href: "/groupreg",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Group Registration"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/groups",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Registered Groups"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/ViewAreas",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Research Areas and Topics"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/Confirm",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Supervisor Allocations"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/EvaluationResult",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Panel Evaluations Results"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/STDdownloads",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Documents and templates"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/SubmitNavbar",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Documents Submission page"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "btn btn-warning",
-                                                    href: "/",
-                                                    style: {
-                                                        height: "40px",
-                                                        width: "100px",
-                                                        marginTop: "8px",
-                                                        marginLeft: "800px"
-                                                    },
-                                                    children: "Log Out"
-                                                })
-                                            })
-                                        ]
-                                    })
+                                    id: "navcol-1"
                                 })
                             ]
+                        }),
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
+                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("table", {
+                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("td", {
+                                            children: [
+                                                " \xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
+                                                    className: "btn btn-success",
+                                                    style: {
+                                                        padding: '8px 8px',
+                                                        backgroundColor: '#3895d3'
+                                                    },
+                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                        href: "/STDdownloads",
+                                                        style: {
+                                                            textDecoration: 'none',
+                                                            backgroundColor: '#3895d3',
+                                                            color: 'white',
+                                                            fontSize: '16px'
+                                                        },
+                                                        children: "\xa0Documents and templates"
+                                                    })
+                                                })
+                                            ]
+                                        }),
+                                        "\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0",
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("td", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
+                                                    className: "btn btn-success",
+                                                    style: {
+                                                        padding: '8px 8px',
+                                                        backgroundColor: '#3895d3'
+                                                    },
+                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                        href: "/SubmitNavbar",
+                                                        style: {
+                                                            textDecoration: 'none',
+                                                            backgroundColor: '#3895d3',
+                                                            color: 'white',
+                                                            fontSize: '16px'
+                                                        },
+                                                        children: "\xa0Documents Submission page"
+                                                    })
+                                                })
+                                            ]
+                                        }),
+                                        "\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0",
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("td", {
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
+                                                    className: "btn btn-success",
+                                                    style: {
+                                                        padding: '8px 8px',
+                                                        backgroundColor: '#3895d3'
+                                                    },
+                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                        href: "/#",
+                                                        style: {
+                                                            textDecoration: 'none',
+                                                            backgroundColor: '#3895d3',
+                                                            color: 'white',
+                                                            fontSize: '16px'
+                                                        },
+                                                        children: "\xa0Group Chat"
+                                                    })
+                                                })
+                                            ]
+                                        })
+                                    ]
+                                })
+                            })
                         })
-                    })
+                    ]
                 }),
                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
                     class: "container-fluid bg-3 text-center",
@@ -8443,13 +8514,14 @@ class $9e60e4b88b4afc2e$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                                         class: "carousel-item active",
                                         children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
                                             class: "d-block w-100",
-                                            src: (/*@__PURE__*/$parcel$interopDefault($d6518e443c072b9d$exports)),
+                                            src: (/*@__PURE__*/$parcel$interopDefault($4c067d0636aabd00$exports)),
                                             alt: "First slide",
                                             width: "80%",
                                             height: "500"
                                         })
                                     })
                                 }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
                                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h3", {
                                     children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("b", {
                                         children: "Benefits of this tool?"
@@ -8514,10 +8586,8 @@ class $9e60e4b88b4afc2e$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                     class: "page-footer font-small cyan darken-3",
                     style: {
                         backgroundColor: "black",
-                        marginLeft: "-120px",
                         marginTop: "0px",
                         height: "170px",
-                        marginRight: "-1000px",
                         marginBottom: "-40px"
                     },
                     children: [
@@ -8621,12 +8691,8 @@ class $9e60e4b88b4afc2e$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
 
 
 
-var $bcc882440bae94c2$exports = {};
-$bcc882440bae94c2$exports = new URL("admin.2f061cdf.png", "file:" + __filename).toString();
-
-
-var $c6853b198260a7ae$exports = {};
-$c6853b198260a7ae$exports = new URL("staff.2336dfb2.jpg", "file:" + __filename).toString();
+var $df11ddc6746c5d65$exports = {};
+$df11ddc6746c5d65$exports = new URL("adminhome.adc02e5d.jpeg", "file:" + __filename).toString();
 
 
 class $e4260391fe60b1df$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
@@ -8656,162 +8722,199 @@ class $e4260391fe60b1df$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                     }
                 }),
                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("nav", {
+                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("nav", {
                         className: "navbar navbar-light navbar-expand-md bg-dark navigation-clean-search",
-                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                            children: [
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
-                                    "data-bs-toggle": "collapse",
-                                    className: "navbar-toggler",
-                                    "data-bs-target": "#navcol-1",
-                                    children: [
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                            className: "visually-hidden",
-                                            children: "Toggle navigation"
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                            className: "navbar-toggler-icon"
-                                        })
-                                    ]
-                                }),
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                                    className: "collapse navbar-collapse",
-                                    id: "navcol-1",
-                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("ul", {
-                                        className: "navbar-nav",
+                        children: [
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                className: "container",
+                                children: [
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                        className: "navbar-brand",
+                                        href: "/",
+                                        style: {
+                                            fontsize: '19px',
+                                            color: 'rgb(255,255,255)'
+                                        },
+                                        children: "Home"
+                                    }),
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                        "data-bs-toggle": "collapse",
+                                        className: "navbar-toggler",
+                                        "data-bs-target": "#navcol-1",
                                         children: [
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link ",
-                                                    href: "/view",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Research Groups"
-                                                })
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                className: "visually-hidden",
+                                                children: "Toggle navigation"
                                             }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/Supervisors",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Supervisor allocations"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/Areas",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Research Areas and Topics"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "#",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Panel Formations"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/EveHome",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Project Evaluations"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/DocumentSubHome",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Documents / Templates Submission"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "btn btn-warning",
-                                                    href: "/",
-                                                    style: {
-                                                        height: "40px",
-                                                        width: "100px",
-                                                        marginTop: "8px",
-                                                        marginLeft: "700px"
-                                                    },
-                                                    children: "Log Out"
-                                                })
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                className: "navbar-toggler-icon"
                                             })
                                         ]
                                     })
-                                })
-                            ]
-                        })
+                                ]
+                            }),
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                className: "container",
+                                children: [
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                        className: "navbar-brand",
+                                        href: "/view",
+                                        style: {
+                                            fontsize: '19px',
+                                            color: 'rgb(255,255,255)'
+                                        },
+                                        children: "Research Groups"
+                                    }),
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                        "data-bs-toggle": "collapse",
+                                        className: "navbar-toggler",
+                                        "data-bs-target": "#navcol-1",
+                                        children: [
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                className: "visually-hidden",
+                                                children: "Toggle navigation"
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                className: "navbar-toggler-icon"
+                                            })
+                                        ]
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                className: "container",
+                                children: [
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                        className: "navbar-brand",
+                                        href: "/Areas",
+                                        style: {
+                                            fontsize: '19px',
+                                            color: 'rgb(255,255,255)'
+                                        },
+                                        children: "Research Areas and Topics"
+                                    }),
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                        "data-bs-toggle": "collapse",
+                                        className: "navbar-toggler",
+                                        "data-bs-target": "#navcol-1",
+                                        children: [
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                className: "visually-hidden",
+                                                children: "Toggle navigation"
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                className: "navbar-toggler-icon"
+                                            })
+                                        ]
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                className: "container",
+                                children: [
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                        className: "navbar-brand",
+                                        href: "/Groupids",
+                                        style: {
+                                            fontsize: '19px',
+                                            color: 'rgb(255,255,255)'
+                                        },
+                                        children: "Panel Formations"
+                                    }),
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                        "data-bs-toggle": "collapse",
+                                        className: "navbar-toggler",
+                                        "data-bs-target": "#navcol-1",
+                                        children: [
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                className: "visually-hidden",
+                                                children: "Toggle navigation"
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                className: "navbar-toggler-icon"
+                                            })
+                                        ]
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                className: "container",
+                                children: [
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                        className: "navbar-brand",
+                                        href: "/DocumentSubHome",
+                                        style: {
+                                            fontsize: '19px',
+                                            color: 'rgb(255,255,255)'
+                                        },
+                                        children: "Documents / Templates Submission"
+                                    }),
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                        "data-bs-toggle": "collapse",
+                                        className: "navbar-toggler",
+                                        "data-bs-target": "#navcol-1",
+                                        children: [
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                className: "visually-hidden",
+                                                children: "Toggle navigation"
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                className: "navbar-toggler-icon"
+                                            })
+                                        ]
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                className: "container",
+                                children: [
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                        className: "navbar-brand",
+                                        href: "/Viewallusers",
+                                        style: {
+                                            fontsize: '19px',
+                                            color: 'rgb(255,255,255)'
+                                        },
+                                        children: "All Users"
+                                    }),
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                        "data-bs-toggle": "collapse",
+                                        className: "navbar-toggler",
+                                        "data-bs-target": "#navcol-1",
+                                        children: [
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                className: "visually-hidden",
+                                                children: "Toggle navigation"
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                                className: "navbar-toggler-icon"
+                                            })
+                                        ]
+                                    })
+                                ]
+                            })
+                        ]
                     })
                 }),
                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
                     class: "container-fluid bg-2 text-center",
                     children: [
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
                             class: "row",
-                            children: [
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                                    class: "col-sm-4",
-                                    children: [
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
-                                            src: (/*@__PURE__*/$parcel$interopDefault($bcc882440bae94c2$exports)),
-                                            class: "mx-auto",
-                                            alt: "",
-                                            width: "300",
-                                            height: "300"
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                            href: "/admin",
-                                            children: "LOGIN AS ADMIN"
-                                        })
-                                    ]
-                                }),
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                                    class: "col-sm-4",
-                                    children: [
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
-                                            src: (/*@__PURE__*/$parcel$interopDefault($c6853b198260a7ae$exports)),
-                                            class: "mx-auto",
-                                            alt: "",
-                                            width: "300",
-                                            height: "300"
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                            href: "/staff",
-                                            children: "\xa0LOGIN AS STAFF"
-                                        })
-                                    ]
-                                })
-                            ]
+                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("center", {
+                                children: [
+                                    " ",
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
+                                        src: (/*@__PURE__*/$parcel$interopDefault($df11ddc6746c5d65$exports)),
+                                        class: "mx-auto",
+                                        alt: "adminhome",
+                                        width: "1400",
+                                        height: "400"
+                                    }),
+                                    " "
+                                ]
+                            })
                         })
                     ]
                 }),
@@ -8820,10 +8923,8 @@ class $e4260391fe60b1df$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                     class: "page-footer font-small cyan darken-3",
                     style: {
                         backgroundColor: "black",
-                        marginLeft: "-120px",
                         marginTop: "0px",
                         height: "170px",
-                        marginRight: "-1000px",
                         marginBottom: "-40px"
                     },
                     children: [
@@ -8965,111 +9066,7 @@ class $d3cb88d203803a06$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
     render() {
         return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
             children: [
-                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("nav", {
-                        className: "navbar navbar-light navbar-expand-md bg-dark navigation-clean-search",
-                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                            children: [
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
-                                    "data-bs-toggle": "collapse",
-                                    className: "navbar-toggler",
-                                    "data-bs-target": "#navcol-1",
-                                    children: [
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                            className: "visually-hidden",
-                                            children: "Toggle navigation"
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                            className: "navbar-toggler-icon"
-                                        })
-                                    ]
-                                }),
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                                    className: "collapse navbar-collapse",
-                                    id: "navcol-1",
-                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("ul", {
-                                        className: "navbar-nav",
-                                        children: [
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link ",
-                                                    href: "/view",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Research Groups"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "#",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Supervisor allocations"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/Areas",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Research Areas and Topics"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "#",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Panel Formations"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "#",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Project Evaluations"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "btn btn-warning",
-                                                    href: "/",
-                                                    style: {
-                                                        height: "40px",
-                                                        width: "100px",
-                                                        marginTop: "8px",
-                                                        marginLeft: "900px"
-                                                    },
-                                                    children: "Log Out"
-                                                })
-                                            })
-                                        ]
-                                    })
-                                })
-                            ]
-                        })
-                    })
-                }),
+                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {}),
                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
                     className: "container",
                     children: [
@@ -9255,111 +9252,7 @@ class $2b21758ba59fa2af$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
         return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
             className: "edit",
             children: [
-                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("nav", {
-                        className: "navbar navbar-light navbar-expand-md bg-dark navigation-clean-search",
-                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                            children: [
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
-                                    "data-bs-toggle": "collapse",
-                                    className: "navbar-toggler",
-                                    "data-bs-target": "#navcol-1",
-                                    children: [
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                            className: "visually-hidden",
-                                            children: "Toggle navigation"
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                            className: "navbar-toggler-icon"
-                                        })
-                                    ]
-                                }),
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                                    className: "collapse navbar-collapse",
-                                    id: "navcol-1",
-                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("ul", {
-                                        className: "navbar-nav",
-                                        children: [
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link ",
-                                                    href: "/view",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Research Groups"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "#",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Supervisor allocations"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/Areas",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Research Areas and Topics"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "#",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Panel Formations"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "#",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Project Evaluations"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "btn btn-warning",
-                                                    href: "/",
-                                                    style: {
-                                                        height: "40px",
-                                                        width: "100px",
-                                                        marginTop: "8px",
-                                                        marginLeft: "900px"
-                                                    },
-                                                    children: "Log Out"
-                                                })
-                                            })
-                                        ]
-                                    })
-                                })
-                            ]
-                        })
-                    })
-                }),
+                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {}),
                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
                     className: "col-md-8 mt-4 mx-auto",
                     children: [
@@ -9582,123 +9475,7 @@ class $a5b667f78926e161$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
     render() {
         return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
             children: [
-                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("nav", {
-                        className: "navbar navbar-light navbar-expand-md bg-dark navigation-clean-search",
-                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                            children: [
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
-                                    "data-bs-toggle": "collapse",
-                                    className: "navbar-toggler",
-                                    "data-bs-target": "#navcol-1",
-                                    children: [
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                            className: "visually-hidden",
-                                            children: "Toggle navigation"
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                            className: "navbar-toggler-icon"
-                                        })
-                                    ]
-                                }),
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                                    className: "collapse navbar-collapse",
-                                    id: "navcol-1",
-                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("ul", {
-                                        className: "navbar-nav",
-                                        children: [
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link ",
-                                                    href: "/groupreg",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Group Registration"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/groups",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Registered Groups"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/ViewAreas",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Research Areas and Topics"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/EvaluationResult",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Panel Evaluations Results"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/STDdownloads",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Documents and templates"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/SubmitNavbar",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Documents Submission page"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "btn btn-warning",
-                                                    href: "/",
-                                                    style: {
-                                                        height: "40px",
-                                                        width: "100px",
-                                                        marginTop: "8px",
-                                                        marginLeft: "800px"
-                                                    },
-                                                    children: "Log Out"
-                                                })
-                                            })
-                                        ]
-                                    })
-                                })
-                            ]
-                        })
-                    })
-                }),
+                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {}),
                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
                     className: "container",
                     children: [
@@ -9862,111 +9639,7 @@ class $33d23507225b5ef0$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
     render() {
         return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
             children: [
-                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("nav", {
-                        className: "navbar navbar-light navbar-expand-md bg-dark navigation-clean-search",
-                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                            children: [
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
-                                    "data-bs-toggle": "collapse",
-                                    className: "navbar-toggler",
-                                    "data-bs-target": "#navcol-1",
-                                    children: [
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                            className: "visually-hidden",
-                                            children: "Toggle navigation"
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                            className: "navbar-toggler-icon"
-                                        })
-                                    ]
-                                }),
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                                    className: "collapse navbar-collapse",
-                                    id: "navcol-1",
-                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("ul", {
-                                        className: "navbar-nav",
-                                        children: [
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link ",
-                                                    href: "/view",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Research Groups"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "#",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Supervisor allocations"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/Areas",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Research Areas and Topics"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "#",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Panel Formations"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "#",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Project Evaluations"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "btn btn-warning",
-                                                    href: "/",
-                                                    style: {
-                                                        height: "40px",
-                                                        width: "100px",
-                                                        marginTop: "8px",
-                                                        marginLeft: "900px"
-                                                    },
-                                                    children: "Log Out"
-                                                })
-                                            })
-                                        ]
-                                    })
-                                })
-                            ]
-                        })
-                    })
-                }),
+                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {}),
                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
                     className: "container",
                     children: [
@@ -10215,111 +9888,7 @@ function $df8d3d3f875c458a$export$2e2bcd8739ae039() {
     }, []);
     return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
         children: [
-            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("nav", {
-                    className: "navbar navbar-light navbar-expand-md bg-dark navigation-clean-search",
-                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                        children: [
-                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
-                                "data-bs-toggle": "collapse",
-                                className: "navbar-toggler",
-                                "data-bs-target": "#navcol-1",
-                                children: [
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                        className: "visually-hidden",
-                                        children: "Toggle navigation"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                        className: "navbar-toggler-icon"
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                                className: "collapse navbar-collapse",
-                                id: "navcol-1",
-                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("ul", {
-                                    className: "navbar-nav",
-                                    children: [
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            className: "nav-item",
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "nav-link ",
-                                                href: "/groupreg",
-                                                style: {
-                                                    fontsize: '15px',
-                                                    color: 'rgb(255,255,255)'
-                                                },
-                                                children: "Group Registration"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            className: "nav-item",
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "nav-link",
-                                                href: "/topicReg",
-                                                style: {
-                                                    fontsize: '15px',
-                                                    color: 'rgb(255,255,255)'
-                                                },
-                                                children: "Topic Registration"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            className: "nav-item",
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "nav-link",
-                                                href: "/ViewAreas",
-                                                style: {
-                                                    fontsize: '15px',
-                                                    color: 'rgb(255,255,255)'
-                                                },
-                                                children: "Research Areas and Topics"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            className: "nav-item",
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "nav-link",
-                                                href: "#",
-                                                style: {
-                                                    fontsize: '15px',
-                                                    color: 'rgb(255,255,255)'
-                                                },
-                                                children: "Panel Evaluations"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            className: "nav-item",
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "nav-link",
-                                                href: "#",
-                                                style: {
-                                                    fontsize: '15px',
-                                                    color: 'rgb(255,255,255)'
-                                                },
-                                                children: "Documents and templates"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "btn btn-warning",
-                                                href: "/",
-                                                style: {
-                                                    height: "40px",
-                                                    width: "100px",
-                                                    marginTop: "8px",
-                                                    marginLeft: "900px"
-                                                },
-                                                children: "Log Out"
-                                            })
-                                        })
-                                    ]
-                                })
-                            })
-                        ]
-                    })
-                })
-            }),
+            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {}),
             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
                 children: [
                     /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
@@ -10603,111 +10172,7 @@ function $5c8c4a1fa0f58f92$export$2e2bcd8739ae039() {
     }, []);
     return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
         children: [
-            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("nav", {
-                    className: "navbar navbar-light navbar-expand-md bg-dark navigation-clean-search",
-                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                        children: [
-                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
-                                "data-bs-toggle": "collapse",
-                                className: "navbar-toggler",
-                                "data-bs-target": "#navcol-1",
-                                children: [
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                        className: "visually-hidden",
-                                        children: "Toggle navigation"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                        className: "navbar-toggler-icon"
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                                className: "collapse navbar-collapse",
-                                id: "navcol-1",
-                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("ul", {
-                                    className: "navbar-nav",
-                                    children: [
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            className: "nav-item",
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "nav-link ",
-                                                href: "/groupreg",
-                                                style: {
-                                                    fontsize: '15px',
-                                                    color: 'rgb(255,255,255)'
-                                                },
-                                                children: "Group Registration"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            className: "nav-item",
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "nav-link",
-                                                href: "/topicReg",
-                                                style: {
-                                                    fontsize: '15px',
-                                                    color: 'rgb(255,255,255)'
-                                                },
-                                                children: "Topic Registration"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            className: "nav-item",
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "nav-link",
-                                                href: "/ViewAreas",
-                                                style: {
-                                                    fontsize: '15px',
-                                                    color: 'rgb(255,255,255)'
-                                                },
-                                                children: "Research Areas and Topics"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            className: "nav-item",
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "nav-link",
-                                                href: "#",
-                                                style: {
-                                                    fontsize: '15px',
-                                                    color: 'rgb(255,255,255)'
-                                                },
-                                                children: "Panel Evaluations"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            className: "nav-item",
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "nav-link",
-                                                href: "#",
-                                                style: {
-                                                    fontsize: '15px',
-                                                    color: 'rgb(255,255,255)'
-                                                },
-                                                children: "Documents and templates"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "btn btn-warning",
-                                                href: "/",
-                                                style: {
-                                                    height: "40px",
-                                                    width: "100px",
-                                                    marginTop: "8px",
-                                                    marginLeft: "900px"
-                                                },
-                                                children: "Log Out"
-                                            })
-                                        })
-                                    ]
-                                })
-                            })
-                        ]
-                    })
-                })
-            }),
+            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {}),
             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
                 children: [
                     /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
@@ -10951,111 +10416,7 @@ function $53e227c83bea1ebd$export$2e2bcd8739ae039() {
     }, []);
     return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
         children: [
-            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("nav", {
-                    className: "navbar navbar-light navbar-expand-md bg-dark navigation-clean-search",
-                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                        children: [
-                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
-                                "data-bs-toggle": "collapse",
-                                className: "navbar-toggler",
-                                "data-bs-target": "#navcol-1",
-                                children: [
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                        className: "visually-hidden",
-                                        children: "Toggle navigation"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                        className: "navbar-toggler-icon"
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                                className: "collapse navbar-collapse",
-                                id: "navcol-1",
-                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("ul", {
-                                    className: "navbar-nav",
-                                    children: [
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            className: "nav-item",
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "nav-link ",
-                                                href: "/groupreg",
-                                                style: {
-                                                    fontsize: '15px',
-                                                    color: 'rgb(255,255,255)'
-                                                },
-                                                children: "Group Registration"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            className: "nav-item",
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "nav-link",
-                                                href: "/topicReg",
-                                                style: {
-                                                    fontsize: '15px',
-                                                    color: 'rgb(255,255,255)'
-                                                },
-                                                children: "Topic Registration"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            className: "nav-item",
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "nav-link",
-                                                href: "/ViewAreas",
-                                                style: {
-                                                    fontsize: '15px',
-                                                    color: 'rgb(255,255,255)'
-                                                },
-                                                children: "Research Areas and Topics"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            className: "nav-item",
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "nav-link",
-                                                href: "#",
-                                                style: {
-                                                    fontsize: '15px',
-                                                    color: 'rgb(255,255,255)'
-                                                },
-                                                children: "Panel Evaluations"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            className: "nav-item",
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "nav-link",
-                                                href: "#",
-                                                style: {
-                                                    fontsize: '15px',
-                                                    color: 'rgb(255,255,255)'
-                                                },
-                                                children: "Documents and templates"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "btn btn-warning",
-                                                href: "/",
-                                                style: {
-                                                    height: "40px",
-                                                    width: "100px",
-                                                    marginTop: "8px",
-                                                    marginLeft: "900px"
-                                                },
-                                                children: "Log Out"
-                                            })
-                                        })
-                                    ]
-                                })
-                            })
-                        ]
-                    })
-                })
-            }),
+            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {}),
             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
                 children: [
                     /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
@@ -11265,123 +10626,7 @@ class $311b7eea41c8bef7$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
     render() {
         return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
             children: [
-                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("nav", {
-                        className: "navbar navbar-light navbar-expand-md bg-dark navigation-clean-search",
-                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                            children: [
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
-                                    "data-bs-toggle": "collapse",
-                                    className: "navbar-toggler",
-                                    "data-bs-target": "#navcol-1",
-                                    children: [
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                            className: "visually-hidden",
-                                            children: "Toggle navigation"
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                            className: "navbar-toggler-icon"
-                                        })
-                                    ]
-                                }),
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                                    className: "collapse navbar-collapse",
-                                    id: "navcol-1",
-                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("ul", {
-                                        className: "navbar-nav",
-                                        children: [
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link ",
-                                                    href: "/groupreg",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Group Registration"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/groups",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Registered Groups"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/ViewAreas",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Research Areas and Topics"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/EvaluationResult",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Panel Evaluations Results"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/STDdownloads",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Documents and templates"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/SubmitNavbar",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "Documents Submission page"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "btn btn-warning",
-                                                    href: "/",
-                                                    style: {
-                                                        height: "40px",
-                                                        width: "100px",
-                                                        marginTop: "8px",
-                                                        marginLeft: "800px"
-                                                    },
-                                                    children: "Log Out"
-                                                })
-                                            })
-                                        ]
-                                    })
-                                })
-                            ]
-                        })
-                    })
-                }),
+                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {}),
                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
                     className: "container",
                     children: [
@@ -11603,123 +10848,7 @@ function $696412dc8b0e129a$export$2e2bcd8739ae039() {
     }, []);
     return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
         children: [
-            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("nav", {
-                    className: "navbar navbar-light navbar-expand-md bg-dark navigation-clean-search",
-                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                        children: [
-                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
-                                "data-bs-toggle": "collapse",
-                                className: "navbar-toggler",
-                                "data-bs-target": "#navcol-1",
-                                children: [
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                        className: "visually-hidden",
-                                        children: "Toggle navigation"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                        className: "navbar-toggler-icon"
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                                className: "collapse navbar-collapse",
-                                id: "navcol-1",
-                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("ul", {
-                                    className: "navbar-nav",
-                                    children: [
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            className: "nav-item",
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "nav-link ",
-                                                href: "/groupreg",
-                                                style: {
-                                                    fontsize: '15px',
-                                                    color: 'rgb(255,255,255)'
-                                                },
-                                                children: "Group Registration"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            className: "nav-item",
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "nav-link",
-                                                href: "/groups",
-                                                style: {
-                                                    fontsize: '15px',
-                                                    color: 'rgb(255,255,255)'
-                                                },
-                                                children: "Registered Groups"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            className: "nav-item",
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "nav-link",
-                                                href: "/ViewAreas",
-                                                style: {
-                                                    fontsize: '15px',
-                                                    color: 'rgb(255,255,255)'
-                                                },
-                                                children: "Research Areas and Topics"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            className: "nav-item",
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "nav-link",
-                                                href: "/EvaluationResult",
-                                                style: {
-                                                    fontsize: '15px',
-                                                    color: 'rgb(255,255,255)'
-                                                },
-                                                children: "Panel Evaluations Results"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            className: "nav-item",
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "nav-link",
-                                                href: "/STDdownloads",
-                                                style: {
-                                                    fontsize: '15px',
-                                                    color: 'rgb(255,255,255)'
-                                                },
-                                                children: "Documents and templates"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            className: "nav-item",
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "nav-link",
-                                                href: "/SubmitNavbar",
-                                                style: {
-                                                    fontsize: '15px',
-                                                    color: 'rgb(255,255,255)'
-                                                },
-                                                children: "Documents Submission page"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                className: "btn btn-warning",
-                                                href: "/",
-                                                style: {
-                                                    height: "40px",
-                                                    width: "100px",
-                                                    marginTop: "8px",
-                                                    marginLeft: "800px"
-                                                },
-                                                children: "Log Out"
-                                            })
-                                        })
-                                    ]
-                                })
-                            })
-                        ]
-                    })
-                })
-            }),
+            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {}),
             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
                 children: [
                     /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
@@ -14916,159 +14045,6 @@ const $403313e75659f647$var$Viewallusers = ()=>{
                 }
             }),
             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("nav", {
-                className: "navbar navbar-expand-lg navbar-dark bg-dark",
-                children: [
-                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                        className: "container-fluid",
-                        children: [
-                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                className: "navbar-brand",
-                                href: "/Home",
-                                children: "Home"
-                            }),
-                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
-                                className: "navbar-toggler",
-                                type: "button",
-                                "data-bs-toggle": "collapse",
-                                "data-bs-target": "#navbarNavAltMarkup",
-                                "aria-controls": "navbarNavAltMarkup",
-                                "aria-expanded": "false",
-                                "aria-label": "Toggle navigation",
-                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                    className: "navbar-toggler-icon"
-                                })
-                            }),
-                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                                className: "collapse navbar-collapse",
-                                id: "navbarNavAltMarkup",
-                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                                    className: "navbar-nav",
-                                    children: [
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                            style: {
-                                                display: localStorage.getItem("userRole") == "user" ? "flex" : "none"
-                                            },
-                                            className: "nav-link active",
-                                            href: "/",
-                                            "aria-current": "page",
-                                            children: "student"
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                            style: {
-                                                display: localStorage.getItem("userRole") == "user" ? "flex" : "none"
-                                            },
-                                            className: "nav-link active",
-                                            href: "/",
-                                            "aria-current": "page",
-                                            children: "student"
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                            style: {
-                                                display: localStorage.getItem("userRole") == "user" ? "flex" : "none"
-                                            },
-                                            className: "nav-link active",
-                                            href: "/",
-                                            "aria-current": "page",
-                                            children: " student"
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                            style: {
-                                                display: localStorage.getItem("userRole") == "user" ? "flex" : "none"
-                                            },
-                                            className: "nav-link active",
-                                            href: "/",
-                                            "aria-current": "page",
-                                            children: "student"
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                            style: {
-                                                display: localStorage.getItem("userRole") == "staff" ? "flex" : "none"
-                                            },
-                                            className: "nav-link active",
-                                            href: "/",
-                                            "aria-current": "page",
-                                            children: "staff"
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                            style: {
-                                                display: localStorage.getItem("userRole") == "staff" ? "flex" : "none"
-                                            },
-                                            className: "nav-link active",
-                                            href: "/",
-                                            "aria-current": "page",
-                                            children: "staff"
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                            style: {
-                                                display: localStorage.getItem("userRole") == "staff" ? "flex" : "none"
-                                            },
-                                            className: "nav-link active",
-                                            href: "/",
-                                            "aria-current": "page",
-                                            children: "staff"
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                            style: {
-                                                display: localStorage.getItem("userRole") == "staff" ? "flex" : "none"
-                                            },
-                                            className: "nav-link active",
-                                            href: "/",
-                                            "aria-current": "page",
-                                            children: "staff"
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                            style: {
-                                                display: localStorage.getItem("userRole") == "admin" ? "flex" : "none"
-                                            },
-                                            className: "nav-link active",
-                                            href: "/",
-                                            "aria-current": "page",
-                                            children: "admin"
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                            style: {
-                                                display: localStorage.getItem("userRole") == "admin" ? "flex" : "none"
-                                            },
-                                            className: "nav-link active",
-                                            href: "/",
-                                            "aria-current": "page",
-                                            children: "admin"
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                            style: {
-                                                display: localStorage.getItem("userRole") == "admin" ? "flex" : "none"
-                                            },
-                                            className: "nav-link active",
-                                            href: "/",
-                                            "aria-current": "page",
-                                            children: "admin"
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                            style: {
-                                                display: localStorage.getItem("userRole") == "admin" ? "flex" : "none"
-                                            },
-                                            className: "nav-link active",
-                                            href: "/",
-                                            "aria-current": "page",
-                                            children: "admin"
-                                        })
-                                    ]
-                                })
-                            })
-                        ]
-                    }),
-                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("button", {
-                        onClick: handleSubmit,
-                        className: "btn btn-primary",
-                        type: "submit",
-                        style: {
-                            float: "right"
-                        },
-                        children: "Logout"
-                    })
-                ]
-            }),
             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
             /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
@@ -15894,12 +14870,20 @@ function $830e33d8d70cf90d$export$2e2bcd8739ae039() {
                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
                     children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h1", {
+                        style: {
+                            background: '#000080',
+                            color: 'white',
+                            fontSize: '50px'
+                        },
                         children: "Student Groups - Panel Formations"
                     })
                 }),
                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("table", {
                     className: "table",
+                    style: {
+                        backgroundColor: '#d0efff'
+                    },
                     children: [
                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("thead", {
                             children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("tr", {
@@ -15936,7 +14920,7 @@ function $830e33d8d70cf90d$export$2e2bcd8739ae039() {
                                         }),
                                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
                                             children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                href: `/students`,
+                                                href: `/view`,
                                                 children: "students"
                                             })
                                         }),
@@ -15968,7 +14952,7 @@ function $830e33d8d70cf90d$export$2e2bcd8739ae039() {
                                         }),
                                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
                                             children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                href: `/students`,
+                                                href: `/view`,
                                                 children: "students"
                                             })
                                         }),
@@ -16000,7 +14984,7 @@ function $830e33d8d70cf90d$export$2e2bcd8739ae039() {
                                         }),
                                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
                                             children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                href: `/students`,
+                                                href: `/view`,
                                                 children: "students"
                                             })
                                         }),
@@ -16032,7 +15016,7 @@ function $830e33d8d70cf90d$export$2e2bcd8739ae039() {
                                         }),
                                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
                                             children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                href: `/students`,
+                                                href: `/view`,
                                                 children: "students"
                                             })
                                         }),
@@ -16064,7 +15048,7 @@ function $830e33d8d70cf90d$export$2e2bcd8739ae039() {
                                         }),
                                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
                                             children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                href: `/students`,
+                                                href: `/view`,
                                                 children: "students"
                                             })
                                         }),
@@ -16096,7 +15080,7 @@ function $830e33d8d70cf90d$export$2e2bcd8739ae039() {
                                         }),
                                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
                                             children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                href: `/students`,
+                                                href: `/view`,
                                                 children: "students"
                                             })
                                         }),
@@ -16128,7 +15112,7 @@ function $830e33d8d70cf90d$export$2e2bcd8739ae039() {
                                         }),
                                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
                                             children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                href: `/students`,
+                                                href: `/view`,
                                                 children: "students"
                                             })
                                         }),
@@ -16160,7 +15144,7 @@ function $830e33d8d70cf90d$export$2e2bcd8739ae039() {
                                         }),
                                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
                                             children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                href: `/students`,
+                                                href: `/view`,
                                                 children: "students"
                                             })
                                         }),
@@ -16192,7 +15176,7 @@ function $830e33d8d70cf90d$export$2e2bcd8739ae039() {
                                         }),
                                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
                                             children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                href: `/students`,
+                                                href: `/view`,
                                                 children: "students"
                                             })
                                         }),
@@ -16224,7 +15208,7 @@ function $830e33d8d70cf90d$export$2e2bcd8739ae039() {
                                         }),
                                         /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("td", {
                                             children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                href: `/students`,
+                                                href: `/view`,
                                                 children: "students"
                                             })
                                         }),
@@ -17375,341 +16359,411 @@ class $22b7a625ff9b923a$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
     render() {
         return /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
             children: [
-                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("nav", {
+                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("nav", {
                     className: "navbar navbar-light navbar-expand-md bg-dark navigation-clean-search",
-                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                        className: "container",
-                        children: [
-                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                className: "navbar-brand",
-                                href: "#",
-                                style: {
-                                    fontsize: '19px',
-                                    color: 'rgb(255,255,255)'
-                                },
-                                children: "Staff Home"
-                            }),
-                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
-                                "data-bs-toggle": "collapse",
-                                className: "navbar-toggler",
-                                "data-bs-target": "#navcol-1",
-                                children: [
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                        className: "visually-hidden",
-                                        children: "Toggle navigation"
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
-                                        className: "navbar-toggler-icon"
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                                className: "collapse navbar-collapse",
-                                id: "navcol-1",
-                                children: [
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("ul", {
-                                        className: "navbar-nav",
-                                        children: [
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link ",
-                                                    href: "#",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "staff"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "#",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "staff"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "#",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "staff"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "#",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "staff"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "#",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "staff"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "#",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "staff "
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "staff "
-                                                })
-                                            }),
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("li", {
-                                                className: "nav-item",
-                                                children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    className: "nav-link",
-                                                    href: "/",
-                                                    style: {
-                                                        fontsize: '15px',
-                                                        color: 'rgb(255,255,255)'
-                                                    },
-                                                    children: "staff"
-                                                })
-                                            })
-                                        ]
-                                    }),
-                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                        className: "btn btn-light action-button",
-                                        role: "button",
-                                        href: "#",
-                                        style: {
-                                            fontsize: '15px',
-                                            background: 'rgb(69,27,158)',
-                                            color: 'rgb(255,255,255)'
-                                        },
-                                        children: "Logout"
-                                    })
-                                ]
-                            })
-                        ]
-                    })
-                }),
-                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("center", {
                     children: [
-                        " ",
-                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h1", {
-                            children: " WELCOME TO RESRAECH PROJECT MANAGEMENT SYSTEM"
-                        })
-                    ]
-                }),
-                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("center", {
-                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
-                        style: {
-                            backgroundColor: "white"
-                        },
-                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                            id: "band",
-                            className: "container text-center",
-                            style: {
-                                backgroundColor: "white"
-                            },
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                            className: "container",
                             children: [
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                                    className: "row",
-                                    children: [
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                                            className: "col-sm-4",
-                                            children: [
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
-                                                    className: "text-center",
-                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("strong", {
-                                                        children: "Topic Evaluation"
-                                                    })
-                                                }),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    href: "#demo",
-                                                    "data-toggle": "collapse",
-                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
-                                                        src: (/*@__PURE__*/$parcel$interopDefault($cbe5f43fa61f963a$exports)),
-                                                        className: "img-circle person",
-                                                        alt: "topic",
-                                                        width: "300",
-                                                        height: "300"
-                                                    })
-                                                }),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
-                                            ]
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                                            className: "col-sm-4",
-                                            children: [
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
-                                                    className: "text-center",
-                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("strong", {
-                                                        children: "Presentation Evaluation"
-                                                    })
-                                                }),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    href: "#demo2",
-                                                    "data-toggle": "collapse",
-                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
-                                                        src: (/*@__PURE__*/$parcel$interopDefault($109783536bdd9cba$exports)),
-                                                        className: "img-circle person",
-                                                        alt: "presentation",
-                                                        width: "300",
-                                                        height: "300"
-                                                    })
-                                                }),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
-                                            ]
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                                            className: "col-sm-4",
-                                            children: [
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
-                                                    className: "text-center",
-                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("strong", {
-                                                        children: "Final Thesis Evaluation"
-                                                    })
-                                                }),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    href: "#demo3",
-                                                    "data-toggle": "collapse",
-                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
-                                                        src: (/*@__PURE__*/$parcel$interopDefault($90e206f0fe1420cc$exports)),
-                                                        className: "img-circle person",
-                                                        alt: "thesis",
-                                                        width: "300",
-                                                        height: "300"
-                                                    })
-                                                }),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
-                                            ]
-                                        })
-                                    ]
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                    className: "navbar-brand",
+                                    href: "/",
+                                    style: {
+                                        fontsize: '19px',
+                                        color: 'rgb(255,255,255)'
+                                    },
+                                    children: "Home"
                                 }),
-                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                                    className: "row",
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                    "data-bs-toggle": "collapse",
+                                    className: "navbar-toggler",
+                                    "data-bs-target": "#navcol-1",
                                     children: [
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                                            className: "col-sm-4",
-                                            children: [
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
-                                                    className: "text-center",
-                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("strong", {
-                                                        children: "Document Evaluation"
-                                                    })
-                                                }),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    href: "#demo3",
-                                                    "data-toggle": "collapse",
-                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
-                                                        src: (/*@__PURE__*/$parcel$interopDefault($f52075e0055afba2$exports)),
-                                                        className: "img-circle person",
-                                                        alt: "document",
-                                                        width: "300",
-                                                        height: "300"
-                                                    })
-                                                }),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
-                                            ]
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                            className: "visually-hidden",
+                                            children: "Toggle navigation"
                                         }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                                            className: "col-sm-4",
-                                            children: [
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
-                                                    className: "text-center",
-                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("strong", {
-                                                        children: "Group Communication"
-                                                    })
-                                                }),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    href: "#demo2",
-                                                    "data-toggle": "collapse",
-                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
-                                                        src: (/*@__PURE__*/$parcel$interopDefault($dbeace7e9b049af2$exports)),
-                                                        className: "img-circle person",
-                                                        alt: "communication",
-                                                        width: "300",
-                                                        height: "300"
-                                                    })
-                                                }),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
-                                            ]
-                                        }),
-                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
-                                            className: "col-sm-4",
-                                            children: [
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
-                                                    className: "text-center",
-                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("strong", {
-                                                        children: " Marking scheme"
-                                                    })
-                                                }),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
-                                                    href: "#demo2",
-                                                    "data-toggle": "collapse",
-                                                    children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
-                                                        src: (/*@__PURE__*/$parcel$interopDefault($014e573752dc1b8e$exports)),
-                                                        className: "img-circle person",
-                                                        alt: "marking",
-                                                        width: "300",
-                                                        height: "300"
-                                                    })
-                                                }),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
-                                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
-                                            ]
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                            className: "navbar-toggler-icon"
                                         })
                                     ]
                                 })
                             ]
+                        }),
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                            className: "container",
+                            children: [
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                    className: "navbar-brand",
+                                    href: "/S_ViewTopis",
+                                    style: {
+                                        fontsize: '19px',
+                                        color: 'rgb(255,255,255)'
+                                    },
+                                    children: "Topic Panel"
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                    "data-bs-toggle": "collapse",
+                                    className: "navbar-toggler",
+                                    "data-bs-target": "#navcol-1",
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                            className: "visually-hidden",
+                                            children: "Toggle navigation"
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                            className: "navbar-toggler-icon"
+                                        })
+                                    ]
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                            className: "container",
+                            children: [
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                    className: "navbar-brand",
+                                    href: "/S_ViewThesis",
+                                    style: {
+                                        fontsize: '19px',
+                                        color: 'rgb(255,255,255)'
+                                    },
+                                    children: "Thesis Panel"
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                    "data-bs-toggle": "collapse",
+                                    className: "navbar-toggler",
+                                    "data-bs-target": "#navcol-1",
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                            className: "visually-hidden",
+                                            children: "Toggle navigation"
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                            className: "navbar-toggler-icon"
+                                        })
+                                    ]
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                            className: "container",
+                            children: [
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                    className: "navbar-brand",
+                                    href: "/S_ViewPresentation",
+                                    style: {
+                                        fontsize: '19px',
+                                        color: 'rgb(255,255,255)'
+                                    },
+                                    children: "Presentation Panel"
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                    "data-bs-toggle": "collapse",
+                                    className: "navbar-toggler",
+                                    "data-bs-target": "#navcol-1",
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                            className: "visually-hidden",
+                                            children: "Toggle navigation"
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                            className: "navbar-toggler-icon"
+                                        })
+                                    ]
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                            className: "container",
+                            children: [
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                    className: "navbar-brand",
+                                    href: "/EveHome",
+                                    style: {
+                                        fontsize: '19px',
+                                        color: 'rgb(255,255,255)'
+                                    },
+                                    children: "Evaluations"
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                    "data-bs-toggle": "collapse",
+                                    className: "navbar-toggler",
+                                    "data-bs-target": "#navcol-1",
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                            className: "visually-hidden",
+                                            children: "Toggle navigation"
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                            className: "navbar-toggler-icon"
+                                        })
+                                    ]
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                            className: "container",
+                            children: [
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                    className: "navbar-brand",
+                                    href: "/Supervisors",
+                                    style: {
+                                        fontsize: '19px',
+                                        color: 'rgb(255,255,255)'
+                                    },
+                                    children: "Topic Evaluation"
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                    "data-bs-toggle": "collapse",
+                                    className: "navbar-toggler",
+                                    "data-bs-target": "#navcol-1",
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                            className: "visually-hidden",
+                                            children: "Toggle navigation"
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                            className: "navbar-toggler-icon"
+                                        })
+                                    ]
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                            className: "container",
+                            children: [
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                    className: "navbar-brand",
+                                    href: "#",
+                                    style: {
+                                        fontsize: '19px',
+                                        color: 'rgb(255,255,255)'
+                                    },
+                                    children: "Group Chat "
+                                }),
+                                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("button", {
+                                    "data-bs-toggle": "collapse",
+                                    className: "navbar-toggler",
+                                    "data-bs-target": "#navcol-1",
+                                    children: [
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                            className: "visually-hidden",
+                                            children: "Toggle navigation"
+                                        }),
+                                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("span", {
+                                            className: "navbar-toggler-icon"
+                                        })
+                                    ]
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                            className: "collapse navbar-collapse",
+                            id: "navcol-1",
+                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                className: "btn btn-light action-button",
+                                role: "button",
+                                href: "#",
+                                style: {
+                                    fontsize: '15px',
+                                    background: 'rgb(69,27,158)',
+                                    color: 'rgb(255,255,255)',
+                                    marginLeft: '30px'
+                                },
+                                children: "Logout"
+                            })
                         })
-                    })
+                    ]
+                }),
+                /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("center", {
+                    children: [
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h1", {
+                            style: {
+                                background: '#000080',
+                                color: 'white',
+                                fontSize: '50px'
+                            },
+                            children: " WELCOME TO RESRAECH PROJECT MANAGEMENT SYSTEM "
+                        }),
+                        /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
+                            style: {
+                                backgroundColor: "white"
+                            },
+                            children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                id: "band",
+                                className: "container text-center",
+                                style: {
+                                    backgroundColor: "white"
+                                },
+                                children: [
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                        className: "row",
+                                        children: [
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                className: "col-sm-4",
+                                                children: [
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
+                                                        className: "text-center",
+                                                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("strong", {
+                                                            children: "Topic Evaluation"
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                        href: "#demo",
+                                                        "data-toggle": "collapse",
+                                                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
+                                                            src: (/*@__PURE__*/$parcel$interopDefault($cbe5f43fa61f963a$exports)),
+                                                            className: "img-circle person",
+                                                            alt: "topic",
+                                                            width: "300",
+                                                            height: "300"
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                className: "col-sm-4",
+                                                children: [
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
+                                                        className: "text-center",
+                                                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("strong", {
+                                                            children: "Presentation Evaluation"
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                        href: "#demo2",
+                                                        "data-toggle": "collapse",
+                                                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
+                                                            src: (/*@__PURE__*/$parcel$interopDefault($109783536bdd9cba$exports)),
+                                                            className: "img-circle person",
+                                                            alt: "presentation",
+                                                            width: "300",
+                                                            height: "300"
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                className: "col-sm-4",
+                                                children: [
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
+                                                        className: "text-center",
+                                                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("strong", {
+                                                            children: "Final Thesis Evaluation"
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                        href: "#demo3",
+                                                        "data-toggle": "collapse",
+                                                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
+                                                            src: (/*@__PURE__*/$parcel$interopDefault($90e206f0fe1420cc$exports)),
+                                                            className: "img-circle person",
+                                                            alt: "thesis",
+                                                            width: "300",
+                                                            height: "300"
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
+                                                ]
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                        className: "row",
+                                        children: [
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                className: "col-sm-4",
+                                                children: [
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
+                                                        className: "text-center",
+                                                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("strong", {
+                                                            children: "Document Evaluation"
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                        href: "#demo3",
+                                                        "data-toggle": "collapse",
+                                                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
+                                                            src: (/*@__PURE__*/$parcel$interopDefault($f52075e0055afba2$exports)),
+                                                            className: "img-circle person",
+                                                            alt: "document",
+                                                            width: "300",
+                                                            height: "300"
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                className: "col-sm-4",
+                                                children: [
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
+                                                        className: "text-center",
+                                                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("strong", {
+                                                            children: "Group Communication"
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                        href: "#demo2",
+                                                        "data-toggle": "collapse",
+                                                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
+                                                            src: (/*@__PURE__*/$parcel$interopDefault($dbeace7e9b049af2$exports)),
+                                                            className: "img-circle person",
+                                                            alt: "communication",
+                                                            width: "300",
+                                                            height: "300"
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("div", {
+                                                className: "col-sm-4",
+                                                children: [
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("p", {
+                                                        className: "text-center",
+                                                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("strong", {
+                                                            children: " Marking scheme"
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("a", {
+                                                        href: "#demo2",
+                                                        "data-toggle": "collapse",
+                                                        children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("img", {
+                                                            src: (/*@__PURE__*/$parcel$interopDefault($014e573752dc1b8e$exports)),
+                                                            className: "img-circle person",
+                                                            alt: "marking",
+                                                            width: "300",
+                                                            height: "300"
+                                                        })
+                                                    }),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {}),
+                                                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("br", {})
+                                                ]
+                                            })
+                                        ]
+                                    })
+                                ]
+                            })
+                        })
+                    ]
                 }),
                 /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
                     children: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("div", {
@@ -17726,7 +16780,7 @@ class $22b7a625ff9b923a$export$2e2bcd8739ae039 extends $ltMAx$react.Component {
                                 children: [
                                     /*#__PURE__*/ $ltMAx$reactjsxruntime.jsxs("center", {
                                         children: [
-                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h1", {
+                                            /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx("h4", {
                                                 children: " Discover Your Future"
                                             }),
                                             " "
@@ -18340,6 +17394,14 @@ function $da11a1101b2a894a$export$2e2bcd8739ae039() {
                     /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($ltMAx$reactrouterdom.Route, {
                         path: "/StaffRegistration",
                         element: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($c04888a1e361d578$export$2e2bcd8739ae039, {})
+                    }),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($ltMAx$reactrouterdom.Route, {
+                        path: "/SubmitThesis",
+                        element: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($a0c0ecf59f5749de$export$2e2bcd8739ae039, {})
+                    }),
+                    /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($ltMAx$reactrouterdom.Route, {
+                        path: "/Thesis",
+                        element: /*#__PURE__*/ $ltMAx$reactjsxruntime.jsx($7cd8ac6f066d1d5b$export$2e2bcd8739ae039, {})
                     })
                 ]
             })

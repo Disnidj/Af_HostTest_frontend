@@ -8,7 +8,7 @@ import Homemarking from '../../public/marking.jpeg';
 
 export default class StaffHome extends Component {
     render() {
-        (
+       return (
             <div>
                 
       

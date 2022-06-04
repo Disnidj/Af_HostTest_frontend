@@ -35,18 +35,7 @@ export default class EveHome extends Component {
               <br></br> <br></br>
              </td>
             </tr>
-            <tr>
-            <td>
-            <button className='btn btn-success' style={{marginLeft:'250px'}}><a href="/UploadNaviAdmin" style={{textDecoration:'none', color:'white'}}> Admin Document Upload  </a></button>         
-            <br></br> <br></br>
-            </td>
            
-
-            </tr>
-            <tr>
-            <button className='btn btn-success' style={{marginLeft:'250px'}}><a href="/TempNavbar" style={{textDecoration:'none', color:'white'}}> Templates Submittions  </a></button>         
-            <br></br> <br></br>
-            </tr>
           </table>
           
 
